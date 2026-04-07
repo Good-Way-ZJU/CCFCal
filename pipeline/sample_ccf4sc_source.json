@@ -1,0 +1,69 @@
+[
+  {
+    "id": "cvpr",
+    "title": "CVPR",
+    "sub": "AI",
+    "rank": {
+      "ccf": "A"
+    },
+    "link": "https://cvpr.thecvf.com/",
+    "confs": [
+      {
+        "year": 2027,
+        "timezone": "AoE",
+        "timeline": [
+          {
+            "abstract": "Abstract",
+            "deadline": "2026-11-08 23:59:00"
+          },
+          {
+            "abstract": "Full Paper",
+            "deadline": "2026-11-15 23:59:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "iclr",
+    "title": "ICLR",
+    "sub": "AI",
+    "rank": {
+      "ccf": "A"
+    },
+    "link": "https://iclr.cc/",
+    "confs": [
+      {
+        "year": 2027,
+        "timezone": "AoE",
+        "timeline": [
+          {
+            "abstract": "Full Paper",
+            "deadline": "2026-10-01 23:59:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wise",
+    "title": "WISE",
+    "sub": "DB",
+    "rank": {
+      "ccf": "C"
+    },
+    "link": "https://wise.example.org/",
+    "confs": [
+      {
+        "year": 2027,
+        "timezone": "UTC+8",
+        "timeline": [
+          {
+            "abstract": "Full Paper",
+            "deadline": "2026-08-16 23:59:00"
+          }
+        ]
+      }
+    ]
+  }
+]

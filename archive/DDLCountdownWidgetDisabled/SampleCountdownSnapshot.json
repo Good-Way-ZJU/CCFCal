@@ -1,0 +1,38 @@
+{
+  "generated_at": 1775469000,
+  "items": [
+    {
+      "item_id": "sigmod2027-sample",
+      "title": "SIGMOD2027",
+      "stage": "Deadline",
+      "timestamp": "2026-04-18T11:59:59Z",
+      "display": "2026-04-18 19:59",
+      "ccf_rank": "A",
+      "domains": ["数据库/数据挖掘/内容检索"],
+      "kind": "conference",
+      "url": "https://example.com/sigmod"
+    },
+    {
+      "item_id": "nsdi2027-sample",
+      "title": "NSDI2027",
+      "stage": "Deadline",
+      "timestamp": "2026-04-24T03:59:59Z",
+      "display": "2026-04-24 11:59",
+      "ccf_rank": "A",
+      "domains": ["计算机网络"],
+      "kind": "conference",
+      "url": "https://example.com/nsdi"
+    },
+    {
+      "item_id": "ccs2026-sample",
+      "title": "CCS2026",
+      "stage": "Deadline",
+      "timestamp": "2026-04-30T11:59:59Z",
+      "display": "2026-04-30 19:59",
+      "ccf_rank": "A",
+      "domains": ["网络与信息安全"],
+      "kind": "conference",
+      "url": "https://example.com/ccs"
+    }
+  ]
+}

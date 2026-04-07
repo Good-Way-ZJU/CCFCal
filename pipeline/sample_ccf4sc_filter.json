@@ -1,0 +1,6 @@
+{
+  "conf": ["CVPR", "ICLR"],
+  "rank": "AB",
+  "sub": "AI",
+  "remove": {}
+}

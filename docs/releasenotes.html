@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CCFCal Release Notes</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent: #d62f2b;
+      --text: #202124;
+      --muted: #6b6f76;
+      --card: #ffffff;
+      --line: rgba(0, 0, 0, 0.08);
+      --bg: #f4f6f8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f3f1ed;
+        --muted: #aaa49d;
+        --card: #1f1f1f;
+        --line: rgba(255, 255, 255, 0.12);
+        --bg: #111111;
+      }
+    }
+    body {
+      margin: 0;
+      padding: 32px;
+      background: var(--bg);
+      color: var(--text);
+      font: 15px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 28px 32px;
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.12);
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 28px;
+    }
+    h2 {
+      margin: 28px 0 10px;
+      font-size: 15px;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
+    li {
+      margin: 0.35rem 0;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      margin-bottom: 18px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(214, 47, 43, 0.12);
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="pill">CCFCal Release</div>
+    <h1>CCFCal v1.0.0</h1>
+    <p>A macOS menu bar calendar for tracking the CCF deadlines you actually subscribe to.</p>
+
+    <h2>Highlights</h2>
+    <ul>
+      <li>Browse CCF venues by rank, domain, and keyword.</li>
+      <li>Subscribe to selected conferences or journals.</li>
+      <li>Highlight subscribed DDL dates in the calendar.</li>
+      <li>Show the nearest DDL countdown directly in the menu bar.</li>
+    </ul>
+
+    <h2>Data</h2>
+    <ul>
+      <li>Candidate data is generated from ccfddl-style sources.</li>
+      <li>Installed apps refresh the hosted candidate snapshot at most once per day on launch.</li>
+      <li>Sparkle automatic updates are not enabled in this release.</li>
+    </ul>
+
+    <h2>Install</h2>
+    <ul>
+      <li>Download and unzip CCFCal.</li>
+      <li>Move CCFCal.app to Applications.</li>
+      <li>Grant Calendar access when prompted.</li>
+    </ul>
+  </main>
+</body>
+</html>

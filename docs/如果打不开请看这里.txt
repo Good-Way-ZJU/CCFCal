@@ -1,0 +1,18 @@
+CCFCal 打开失败时，请按下面步骤处理：
+
+1. 先把 CCFCal.app 从 dmg 窗口拖到 Applications（应用程序）文件夹。
+2. 不要直接在 dmg 或“下载”文件夹里运行。
+3. 打开“应用程序”，找到 CCFCal.app，右键点击，选择“打开”。
+4. 如果系统仍提示“已损坏”或“无法验证开发者”，请打开“终端”执行：
+
+xattr -dr com.apple.quarantine /Applications/CCFCal.app
+open /Applications/CCFCal.app
+
+说明：
+
+- 当前版本没有 Apple Developer ID 签名和公证。
+- “已损坏”通常不是文件真的损坏，而是 macOS 的安全拦截提示。
+- 第一次成功打开后，系统会请求“日历”权限，请选择“允许”。
+
+项目主页：
+https://github.com/Good-Way-ZJU/CCFCal/releases/tag/v1.0.0

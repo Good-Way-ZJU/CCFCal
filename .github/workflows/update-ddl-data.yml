@@ -1,0 +1,42 @@
+name: Update DDL Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-ddl-data:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install pipeline dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install requests pyyaml
+
+      - name: Refresh CCFCal DDL candidate snapshot
+        run: |
+          python pipeline/update_ccfcal_candidates.py
+          mkdir -p docs
+          cp CCFCal/CCFCal/DDLCandidates.json docs/DDLCandidates.json
+
+      - name: Commit updated snapshot
+        run: |
+          if git diff --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CCFCal/CCFCal/DDLCandidates.json docs/DDLCandidates.json
+          git commit -m "chore: refresh ddl candidates"
+          git push

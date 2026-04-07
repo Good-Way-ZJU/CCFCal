@@ -1,0 +1,135 @@
+"1 day" = "1 天";
+"1 day before" = "1 天前";
+"1 day before (9 AM)" = "1 天前（上午9时）";
+"1 hour before" = "1 小时前";
+"1 week before" = "1 周前";
+"2 days" = "2 天";
+"2 days before" = "2 天前";
+"2 days before (9 AM)" = "2 天前（上午9时）";
+"2 hours before" = "2 小时前";
+"3 days" = "3 天";
+"4 days" = "4 天";
+"5 days" = "5 天";
+"5 minutes before" = "5 分钟前";
+"6 days" = "6 天";
+"7 days" = "7 天";
+"10 minutes before" = "10 分钟前";
+"14 days" = "14 天";
+"15 minutes before" = "15 分钟前";
+"30 minutes before" = "30 分钟前";
+"31 days" = "31 天";
+"About CCFCal" = "关于 CCFCal";
+/* About prefs tab label */
+"About" = "关于";
+"Add Location or Video Call" = "添加位置或视频通话";
+"Add Notes" = "添加注释";
+"Add URL" = "添加 URL";
+"Alert:" = "警告：";
+"All-day:" = "全天：";
+/* Appearance prefs tab label */
+"Appearance" = "外观";
+"Are you sure you want to delete this event?" = "你确定要删除此事件吗？";
+"At time of event" = "在事件开始时";
+"Automatically check for updates" = "自动检查更新";
+"Beep beep on the hour" = "整点报时";
+"Calendar" = "日历";
+"Calendar access denied.
+
+CCFCal is more useful when it can display events from your calendars. You can change this setting in System Preferences › Security & Privacy › Privacy" = "日历访问被拒绝。
+
+当 CCFCal 可以显示你的日历事件时会更好用。你可以在 “系统偏好设置>安全隐私>隐私” 中更改此设置。";
+"Calendar access was denied." = "日历访问被拒绝。";
+"Cancel" = "取消";
+"Check for Updates…" = "检查更新…";
+"Copy" = "复制";
+/* Dark theme name */
+"Dark" = "深色";
+"Date & Time…" = "日期与时间…";
+"Datetime pattern" = "日期时间模式";
+"Delete…" = "删除…";
+"Delete All Future Events" = "删除所有未来事件";
+"Delete Only This Event" = "仅删除此事件";
+"Delete This Event" = "删除此事件";
+"Do you want to delete this and all future occurrences of this event, or only the selected occurrence?" = "要删除此事件以及将来发生的事件，还是只删除所选的事件？";
+"Donate" = "捐";
+"End Repeat:" = "结束重复：";
+"Ends:" = "结束时间：";
+"Event list shows:" = "显示事件列表：";
+"Every %zd Days" = "每 %zd 天";
+"Every %zd Months" = "每 %zd 月";
+"Every %zd Weeks" = "每 %zd 周";
+"Every %zd Years" = "每 %zd 年";
+"Every Day" = "每天";
+"Every Month" = "每月";
+"Every Week" = "每周";
+"Every Year" = "每年";
+"First day of week:" = "星期开始于：";
+"Follow" = "Follow";
+"Friday" = "星期五";
+/* General prefs tab label */
+"General" = "通用";
+"Go to Date…" = "前往日期…";
+"Go to date" = "前往日期";
+"Help" = "帮助";
+"Help…" = "帮助…";
+"Hide icon" = "隐藏图标";
+"Highlight:" = "高亮：";
+"CCFCal cannot create a new event unless there is at least one calendar you have permission to modify." = "除非有至少一个有权限修改的日历，否则 CCFCal 无法创建新事件。";
+"CCFCal is more useful when you allow it to add events to your calendars. You can change this setting in System Preferences › Security & Privacy › Privacy." = "当你允许 CCFCal 将事件添加到你的日历中时会更好用。 你可以在 “系统偏好设置>安全隐私>隐私” 中更改此设置。";
+"CCFCal must be run from the Applications folder in order to work properly.
+
+Please quit CCFCal, move it to the Applications folder, and relaunch." = "必须从应用程序文件夹运行 CCFCal 才能正常工作。
+
+请退出 CCFCal，将其移动到应用程序文件夹，然后重新启动。";
+"Keyboard shortcut" = "键盘快捷键";
+"Launch at login" = "登录时启动";
+/* Light theme name */
+"Light" = "浅色";
+"Menu Bar" = "菜单栏";
+"Monday" = "星期一";
+"Move CCFCal to the Applications folder" = "将 CCFCal 移动到应用程序文件夹";
+/* Repeat ends never */
+"Never" = "从不";
+"New Event" = "新事件";
+"New Event   ⌘N" = "新事件   ⌘N";
+"No events" = "不显示";
+"No subscribed venues match the current filters." = "没有符合当前筛选条件的已订阅会议或期刊。";
+/* Alert none
+   Repeat none */
+"None" = "无";
+"On Date" = "时间到了";
+"On day of event (9 AM)" = "日程发生当天（上午9时）";
+"Open Calendar" = "打开日历";
+"Open Calendar   ⌘O" = "打开日历   ⌘O";
+"Options" = "选项";
+"or" = "or";
+"Pin CCFCal   P" = "固定 CCFCal   P";
+"Preferences…" = "偏好设置…";
+"Quit CCFCal" = "退出 CCFCal";
+"Repeat:" = "重复：";
+"Saturday" = "星期六";
+"Settings…" = "设置…";
+"Save Event" = "保存事件";
+"Show calendar weeks" = "显示日历周";
+"Show day of week in icon" = "在图标中显示星期几";
+"Show days with no events" = "显示没有活动的日子";
+"Show event dots" = "显示事件圆点";
+"Show event location" = "显示事件位置";
+"Show month in icon" = "在图标中显示月份";
+"Starts:" = "开始：";
+"Subscribed" = "只看已订阅";
+"Sunday" = "星期天";
+/* System theme name */
+"System" = "系统";
+/* Alert box message when we fail to launch the Calendar application */
+"The Calendar application could not be found." = "找不到日历应用程序。";
+"Theme:" = "主题：";
+"There are no modifiable calendars." = "没有可修改的日历。";
+"Thursday" = "星期四";
+"Tuesday" = "星期二";
+"Use colored dots" = "使用彩色圆点";
+"Wednesday" = "星期三";
+"You're deleting an event." = "你正在删除事件。";
+/* Spanning event ends */
+"ends" = "结束时间";
+"DDL Subscriptions" = "DDL订阅";

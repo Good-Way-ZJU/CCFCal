@@ -1,0 +1,132 @@
+"1 day" = "1 Tag";
+"1 day before" = "1 Tag vorher";
+"1 day before (9 AM)" = "1 Tag vorher (9 Uhr)";
+"1 hour before" = "1 Stunde vorher";
+"1 week before" = "1 Woche vorher";
+"2 days" = "2 Tage";
+"2 days before" = "2 Tage vorher";
+"2 days before (9 AM)" = "2 Tage vorher (9 Uhr)";
+"2 hours before" = "2 Stunden vorher";
+"3 days" = "3 Tage";
+"4 days" = "4 Tage";
+"5 days" = "5 Tage";
+"5 minutes before" = "5 Minuten vorher";
+"6 days" = "6 Tage";
+"7 days" = "7 Tage";
+"10 minutes before" = "10 Minuten vorher";
+"14 days" = "14 Tage";
+"15 minutes before" = "15 Minuten vorher";
+"30 minutes before" = "30 Minuten vorher";
+"31 days" = "31 Tage";
+"About CCFCal" = "Über CCFCal";
+/* About prefs tab label */
+"About" = "Über CCFCal";
+"Add Location or Video Call" = "Standort oder Videoanruf hinzufügen";
+"Add Notes" = "Notizen hinzufügen";
+"Add URL" = "URL hinzufügen";
+"Alert:" = "Warnhinweis:";
+"All-day:" = "Ganztägig:";
+/* Appearance prefs tab label */
+"Appearance" = "Erscheinungsbild";
+"Are you sure you want to delete this event?" = "Sind Sie sicher, dass Sie dieses Ereignis entfernen möchten?";
+"At time of event" = "Bei Ereignisstart";
+"Automatically check for updates" = "Automatisch nach Aktualisierung suchen";
+"Beep beep on the hour" = "Ton zur vollen Stunde";
+"Calendar" = "Kalender";
+"Calendar access denied.
+
+CCFCal is more useful when it can display events from your calendars. You can change this setting in System Preferences › Security & Privacy › Privacy" = "Kalenderzugriff verweigert.
+
+CCFCal ist nützlicher, wenn es Ereignisse aus Ihrem Kalender angezeigt werden können. Sie können diese Einstellung unter Systemeinstellungen › Sicherheit › Privatsphäre anpassen.";
+"Calendar access was denied." = "Kalenderzugriff verweigert.";
+"Cancel" = "Abbrechen";
+"Check for Updates…" = "Nach Updates suchen …";
+"Copy" = "Kopieren";
+/* Dark theme name */
+"Dark" = "Dunkles Design";
+"Date & Time…" = "Datum & Uhrzeit …";
+"Datetime pattern" = "Datum & Zeit Muster";
+"Delete…" = "Löschen …";
+"Delete All Future Events" = "Alle zukünftigen Ereignisse löschen";
+"Delete Only This Event" = "Nur dieses Ereignis löschen";
+"Delete This Event" = "Löschen";
+"Do you want to delete this and all future occurrences of this event, or only the selected occurrence?" = "Möchtest du dieses und alle zukünftigen Vorkommen dieses Ereignisses löschen oder nur das ausgewählte Vorkommen?";
+"Donate" = "Spenden";
+"End Repeat:" = "Beenden:";
+"Ends:" = "Bis:";
+"Event list shows:" = "Ereignisliste zeigt:";
+"Every %zd Days" = "Alle %zd Tage";
+"Every %zd Months" = "Alle %zd Monate";
+"Every %zd Weeks" = "Alle %zd Wochen";
+"Every %zd Years" = "Alle %zd Jahre";
+"Every Day" = "Täglich";
+"Every Month" = "Monatlich";
+"Every Week" = "Wöchentlich";
+"Every Year" = "Jährlich";
+"First day of week:" = "Erster Wochentag:";
+"Follow" = "Folgen Sie";
+"Friday" = "Freitag";
+/* General prefs tab label */
+"General" = "Allgemein";
+"Go to Date…" = "Datum anzeigen …";
+"Go to date" = "Datum anzeigen";
+"Help" = "Hilfe";
+"Help…" = "Hilfe …";
+"Hide icon" = "Menüleistensymbol verbergen";
+"Highlight:" = "Hervorheben:";
+"CCFCal cannot create a new event unless there is at least one calendar you have permission to modify." = "CCFCal kann kein neues Ereignis erstellen, wenn es mindestens ein Kalender erlaubt ist modifiziert werden.";
+"CCFCal is more useful when you allow it to add events to your calendars. You can change this setting in System Preferences › Security & Privacy › Privacy." = "CCFCal ist nützlicher, wenn es Veranstaltungen zu Ihrem Kalender hinzuzufügen kann. Sie können diese Einstellung unter Systemeinstellungen › Sicherheit › Privatsphäre anpassen.";
+"CCFCal must be run from the Applications folder in order to work properly.
+
+Please quit CCFCal, move it to the Applications folder, and relaunch." = "CCFCal muss aus dem Programme-Ordner laufen, um ordnungsgemäß zu funktionieren.
+
+Bitte beenden Sie CCFCal, es in den Programme-Ordner zu verschieben, und erneut starten.";
+"Keyboard shortcut" = "Tastaturkurzbefehl";
+"Launch at login" = "Starte CCFCal bei der Anmeldung";
+/* Light theme name */
+"Light" = "Helles Design";
+"Menu Bar" = "Menüleiste";
+"Monday" = "Montag";
+"Move CCFCal to the Applications folder" = "In den Programme-Ordner CCFCal verschieben";
+/* Repeat ends never */
+"Never" = "Niemals";
+"New Event" = "Neues Ereignis";
+"New Event   ⌘N" = "Neues Ereignis   ⌘N";
+"No events" = "Keine Ereignisse";
+/* Alert none
+   Repeat none */
+"None" = "Ohne";
+"On Date" = "Datum";
+"On day of event (9 AM)" = "Gleicher Tag (9 Uhr)";
+"Open Calendar" = "Kalender öffnen";
+"Open Calendar   ⌘O" = "Kalender öffnen   ⌘O";
+"Options" = "Optionen";
+"or" = "oder";
+"Pin CCFCal   P" = "CCFCal soll sichtbar bleiben   P";
+"Preferences…" = "Einstellungen …";
+"Quit CCFCal" = "CCFCal beenden";
+"Repeat:" = "Wiederholen:";
+"Saturday" = "Samstag";
+"Save Event" = "Ereignis sichern";
+"Settings…" = "Einstellungen …";
+"Show calendar weeks" = "Kalenderwoche anzeigen";
+"Show day of week in icon" = "Menüleistensymbol zeigt Wochentag";
+"Show days with no events" = "Tage ohne Veranstaltungen anzeigen";
+"Show event dots" = "Punkte unter Tagen mit Ereignis anzeigen";
+"Show event location" = "Veranstaltungsort anzeigen";
+"Show month in icon" = "Menüleistensymbol zeigt Monat";
+"Starts:" = "Von:";
+"Sunday" = "Sonntag";
+/* System theme name */
+"System" = "System";
+/* Alert box message when we fail to launch the Calendar application */
+"The Calendar application could not be found." = "Die Kalender-Anwendung konnte nicht gefunden werden.";
+"Theme:" = "Design:";
+"There are no modifiable calendars." = "Keine beschreibbaren Kalender.";
+"Thursday" = "Donnerstag";
+"Tuesday" = "Dienstag";
+"Use colored dots" = "Farbige Punkte verwenden";
+"Wednesday" = "Mittwoch";
+"You're deleting an event." = "Sie löschen ein Ereignis.";
+/* Spanning event ends */
+"ends" = "Endet um";

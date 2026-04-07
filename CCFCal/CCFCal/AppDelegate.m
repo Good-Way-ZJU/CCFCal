@@ -1,0 +1,283 @@
+//
+//  AppDelegate.m
+//  Itsycal
+//
+//  Created by Sanjay Madan on 2/4/15.
+//  Copyright (c) 2015 mowglii.com. All rights reserved.
+//
+
+#import "AppDelegate.h"
+#import "CCFCal.h"
+#import "CCFCalWindow.h"
+#import "ViewController.h"
+#import "Themer.h"
+#import "Sizer.h"
+#import "MoUtils.h"
+#import "DDLCalendarSyncManager.h"
+#import "DDLSubscriptionManager.h"
+#import "MASShortcut/Shortcut.h"
+#import "NSMenuItem+NoImages.h"
+
+@implementation AppDelegate
+{
+    NSWindowController *_wc;
+}
+
++ (void)initialize
+{
+    // Get the default firstWeekday for user's locale.
+    // User can change this in preferences.
+    NSCalendar *cal = [NSCalendar autoupdatingCurrentCalendar];
+    NSInteger weekStartDOW = MIN(MAX(cal.firstWeekday - 1, 0), 6);
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults registerDefaults:@{
+        kPinCCFCal:           @(NO),
+        kShowWeeks:            @(NO),
+        kHighlightedDOWs:      @0,
+        kShowEventDays:        @7,
+        kSizePreference:       @(SizePreferenceMedium),
+        kWeekStartDOW:         @(weekStartDOW), // Sun=0, Mon=1,... (MoCalendar.h)
+        kShowMonthInIcon:      @(NO),
+        kShowDayOfWeekInIcon:  @(NO),
+        kShowEventDots:        @(YES),
+        kUseColoredDots:       @(YES),
+        kThemePreference:      @0, // System=0, Light=1, Dark=2
+        kHideIcon:             @(NO),
+        kHideMenuBarCountdown: @(NO),
+        kShowLocation:         @(NO),
+        kEnableTahoeMenuIcons: @(NO),
+        kDoNotDrawOutlineAroundCurrentMonth: @(NO)
+    }];
+    
+    // Constrain kShowEventDays to values 0...9 in (unlikely) case it is invalid.
+    NSInteger validDays = MIN(MAX([defaults integerForKey:kShowEventDays], 0), 9);
+    [defaults setInteger:validDays forKey:kShowEventDays];
+    
+    // Set kThemePreference to defaultThemePref in the unlikely case it's invalid.
+    NSInteger themePref = [defaults integerForKey:kThemePreference];
+    if (themePref < 0 || themePref > 2) {
+        [defaults setInteger:0 forKey:kThemePreference];
+    }
+}
+
+- (void)applicationWillFinishLaunching:(NSNotification *)aNotification
+{
+    // macOS 26 Tahoe pollutes menus with superflous icons. Disable them
+    // unless the user explicitly opts-in.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (![defaults boolForKey:kEnableTahoeMenuIcons]) {
+        [NSMenuItem rs_disableImages];
+    }
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    // Ensure the user has moved Itsycal to the /Applications folder.
+    // Having the user manually move Itsycal to /Applications turns off
+    // Gatekeeper Path Randomization (introduced in 10.12) and allows
+    // Itsycal to be updated with Sparkle. :P
+#ifndef DEBUG
+    [self checkIfRunFromApplicationsFolder];
+#endif
+
+    // Initialize the 'Theme' global variable which can be
+    // used throught the app instead of '[Themer shared]'.
+    [Themer shared];
+
+    // Initialize the 'SizePref' global variable which can be
+    // used throught the app instead of '[Sizer shared]'.
+    [Sizer shared];
+
+    // Create our Application Support folder if it doesn't exist.
+    // ~/Library/Application Support/com.guwei.CCFCalApp/
+    NSURL *url = [[NSFileManager.defaultManager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] firstObject];
+    if (url) {
+        NSString *bundleID = NSBundle.mainBundle.bundleIdentifier;
+        url = [url URLByAppendingPathComponent:bundleID isDirectory:YES];
+        [[NSFileManager defaultManager] createDirectoryAtURL:url withIntermediateDirectories:YES attributes:nil error:NULL];
+    }
+
+    // 0.11.1 introduced a new way to highlight columns in the calendar.
+    [self weekendHighlightFixup];
+    
+    // 0.11.11 uses a new theme preference scheme that enables following
+    // the system's appearance.
+    [self themeFixup];
+
+    // 0.13.2 uses an NSDictionary instead of NSData to store the shortcut.
+    [self shortcutFixup];
+
+    // 0.14.1 introduces more menu bar icon types
+    [self menuBarIconTypeFixup];
+
+    // Register keyboard shortcut.
+    [[MASShortcutBinder sharedBinder] setBindingOptions:@{NSValueTransformerNameBindingOption: MASDictionaryTransformerName}];
+    [[MASShortcutBinder sharedBinder] bindShortcutWithDefaultsKey:kKeyboardShortcut toAction:^{
+         [(ViewController *)self->_wc.contentViewController keyboardShortcutActivated];
+     }];
+
+    // Establish the binding to NSUserDefaultsController. This call
+    // must be made BEFORE the window is created because sizes are
+    // used when initializing views.
+    [SizePref bind:@"sizePreference" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:[@"values." stringByAppendingString:kSizePreference] options:@{NSContinuouslyUpdatesValueBindingOption: @(YES)}];
+
+    ViewController *vc = [ViewController new];
+    _wc = [[NSWindowController alloc] initWithWindow:[CCFCalWindow  new]];
+    _wc.contentViewController = vc;
+    _wc.window.delegate = vc;
+
+    // Let the menu bar UI settle first. EventKit and NSURLSession can both
+    // talk to system XPC services on first use, which is noticeably slow right
+    // after a fresh debug launch if we trigger them on the main thread.
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(8.0 * NSEC_PER_SEC)), dispatch_get_global_queue(QOS_CLASS_UTILITY, 0), ^{
+        [[DDLSubscriptionManager sharedManager] refreshRemoteCandidatesIfNeeded];
+        [[DDLCalendarSyncManager sharedManager] syncSubscribedDeadlinesAsync];
+    });
+    
+    // Establish the binding to NSUserDefaultsController. On macOS
+    // 10.14+, it is crucial for this call to be made AFTER the window
+    // is created because Theme instantiation relies on checking a
+    // property on the window to determine its appearance.
+    [Theme bind:@"themePreference" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:[@"values." stringByAppendingString:kThemePreference] options:@{NSContinuouslyUpdatesValueBindingOption: @(YES)}];
+}
+
+- (void)applicationWillTerminate:(NSNotification *)aNotification
+{
+    [(ViewController *)_wc.contentViewController removeStatusItem];
+    [[MASShortcutMonitor sharedMonitor] unregisterAllShortcuts];
+}
+
+- (void)application:(NSApplication *)application openURLs:(NSArray<NSURL *> *)urls
+{
+    if (urls.count >= 1) {
+        // We can only handle showing one date at a time, so we pick the first one
+        NSURL *url = urls[0];
+        if ([url.host isEqualToString:@"date"] && url.pathComponents.count == 2) {
+            NSString *dateString = url.pathComponents[1];
+            
+            if ([dateString isEqualToString:@"now"]) {
+                [(ViewController *)_wc.contentViewController dateURLReceived:[NSDate new]];
+            } else {
+                NSDateFormatter *format = [NSDateFormatter new];
+                format.dateFormat = @"yyyy-MM-dd";
+                NSDate *date = [format dateFromString:dateString];
+                
+                if (date) {
+                    [(ViewController *)_wc.contentViewController dateURLReceived:date];
+                }
+            }
+        }
+    }
+}
+
+#pragma mark -
+#pragma mark Applications folder check
+
+- (void)checkIfRunFromApplicationsFolder
+{
+    // This check can be short-circuited.
+    if ([[NSUserDefaults standardUserDefaults] boolForKey:kAllowOutsideApplicationsFolder]) {
+        return;
+    }
+    NSString *bundlePath = [[NSBundle mainBundle] bundlePath];
+    NSArray *applicationDirs = NSSearchPathForDirectoriesInDomains(NSApplicationDirectory, NSLocalDomainMask | NSUserDomainMask, YES);
+    for (NSString *appDir in applicationDirs) {
+        if ([bundlePath hasPrefix:appDir]) {
+            return; // Ok, CCFCal is being run from /Applications.
+        }
+    }
+    // CCFCal is not being run from /Applications.
+    [[NSApplication sharedApplication] activateIgnoringOtherApps:YES];
+    NSAlert *alert = [NSAlert new];
+    alert.messageText = NSLocalizedString(@"Move CCFCal to the Applications folder", nil);
+    alert.informativeText = [NSLocalizedString(@"CCFCal must be run from the Applications folder in order to work properly.\n\nPlease quit CCFCal, move it to the Applications folder, and relaunch.", nil) stringByAppendingString:[NSString stringWithFormat:@"\n\n%@", bundlePath]];
+    alert.icon = [NSImage imageNamed:@"move"];
+    alert.showsHelp = YES;
+    alert.delegate = self;
+    [alert addButtonWithTitle:NSLocalizedString(@"Quit CCFCal", @"")];
+    [alert runModal];
+    [NSApp terminate:nil];
+}
+
+- (BOOL)alertShowHelp:(NSAlert *)alert
+{
+    NSURL *url = [NSURL URLWithString:@"https://github.com/Good-Way-ZJU/CCFCal/releases/latest"];
+    [[NSWorkspace sharedWorkspace] openURL:url];
+    return YES;
+}
+
+#pragma mark -
+#pragma mark Weekend highlight fixup
+
+// Itsycal 0.11.1 moves away from using a trio of possible defaults
+// (HighlightWeekend, WeekendIsFridaySaturday, WeekendIsSaturdaySunday) and
+// a hardcoded list of countries with Fri/Sat weekends to the method
+// of allowing the user to specify highlighted DOWs. If the user had
+// HighlightWeekend == YES, migrate their highlight settings. In either
+// case, remove the old default keys.
+- (void)weekendHighlightFixup
+{
+    NSArray *countriesWithFridaySaturdayWeekend = @[
+        @"AF", @"DZ", @"BH", @"BD", @"EG", @"IQ", @"JO", @"KW", @"LY",
+        @"MV", @"OM", @"PS", @"QA", @"SA", @"SD", @"SY", @"AE", @"YE"];
+    NSString *countryCode = [NSLocale currentLocale].countryCode;
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults boolForKey:@"HighlightWeekend"]) {
+        if ([defaults boolForKey:@"WeekendIsFridaySaturday"] ||
+            [countriesWithFridaySaturdayWeekend containsObject:countryCode]) {
+            // Fri + Sat = (1<<5) + (1<<6) = 32 + 64 = 96
+            [defaults setInteger:96 forKey:kHighlightedDOWs];
+        }
+        else {
+            // Sat + Sun = (1<<6) + (1<<0) = 64 + 1 = 65
+            [defaults setInteger:65 forKey:kHighlightedDOWs];
+        }
+    }
+    [defaults removeObjectForKey:@"HighlightWeekend"];
+    [defaults removeObjectForKey:@"WeekendIsFridaySaturday"];
+    [defaults removeObjectForKey:@"WeekendIsSaturdaySunday"];
+}
+
+// Itsycal 0.11.11 uses ThemePreference instead of ThemeIndex to
+// express the user's theme preference. ThemePreference can be
+// System in addition to explicitly Light or Dark.
+- (void)themeFixup
+{
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"ThemeIndex"];
+}
+
+// 0.13.2 uses an NSDictionary instead of NSData to store the shortcut.
+// Apple deprecated NSKeyedUnarchiveFromDataTransformer so now we use
+// MASDictionaryTransformer instead. This conversion also has the nice
+// effect of making the stored value human-readable.
+- (void)shortcutFixup
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSData *data = [defaults dataForKey:@"KeyboardShortcut"];
+    [defaults removeObjectForKey:@"KeyboardShortcut"];
+    if (!data) return;
+    MASShortcut *shortcut = [NSKeyedUnarchiver unarchivedObjectOfClass:[MASShortcut class] fromData:data error:NULL];
+    if (!shortcut) return;
+    MASDictionaryTransformer *transformer = [MASDictionaryTransformer new];
+    [defaults setObject:[transformer reverseTransformedValue:shortcut] forKey:kKeyboardShortcut];
+}
+
+// 0.14.1 introduces a couple new menu bar icon types
+// represented by kMenuBarIconType:
+//   0 == solid round rect (default)
+//   1 == outlined round rect (formerly kUseOutlineIcon == YES)
+//   2 == generic calendar icon (new)
+//   3 == Itsycal icon (new)
+// As a result, kUseOutlineIcon is no longer used.
+- (void)menuBarIconTypeFixup
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    BOOL useOutlineIcon = [defaults boolForKey:@"UseOutlineIcon"];
+    [defaults removeObjectForKey:@"UseOutlineIcon"];
+    if (useOutlineIcon) {
+        [defaults setInteger:1 forKey:kMenuBarIconType];
+    }
+}
+
+@end

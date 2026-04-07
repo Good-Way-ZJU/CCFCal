@@ -1,0 +1,102 @@
+[
+  {
+    "title": "International Conference on Learning Representations",
+    "short_name": "ICLR 2027",
+    "kind": "conference",
+    "ccf_rank": "A",
+    "domains": ["AI", "ML"],
+    "url": "https://iclr.cc",
+    "deadlines": [
+      {
+        "stage": "Abstract",
+        "timestamp": "2026-09-27T07:59:00Z",
+        "timezone": "AoE"
+      },
+      {
+        "stage": "Full Paper",
+        "timestamp": "2026-10-01T07:59:00Z",
+        "timezone": "AoE"
+      }
+    ]
+  },
+  {
+    "title": "IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+    "short_name": "CVPR 2027",
+    "kind": "conference",
+    "ccf_rank": "A",
+    "domains": ["CV", "AI"],
+    "url": "https://cvpr.thecvf.com",
+    "deadlines": [
+      {
+        "stage": "Abstract",
+        "timestamp": "2026-11-08T07:59:00Z",
+        "timezone": "AoE"
+      },
+      {
+        "stage": "Full Paper",
+        "timestamp": "2026-11-15T07:59:00Z",
+        "timezone": "AoE"
+      }
+    ]
+  },
+  {
+    "title": "ACM SIGMOD International Conference on Management of Data",
+    "short_name": "SIGMOD 2027",
+    "kind": "conference",
+    "ccf_rank": "A",
+    "domains": ["DB"],
+    "url": "https://2027.sigmod.org",
+    "deadlines": [
+      {
+        "stage": "Research Track",
+        "timestamp": "2026-07-14T23:59:00-05:00",
+        "timezone": "America/Chicago"
+      }
+    ]
+  },
+  {
+    "title": "Journal of Software",
+    "short_name": "JOS",
+    "kind": "journal",
+    "ccf_rank": "B",
+    "domains": ["SE"],
+    "url": "https://www.jos.org.cn",
+    "deadlines": [
+      {
+        "stage": "Monthly Submission Window",
+        "timestamp": "2026-05-31T15:59:00Z",
+        "timezone": "Asia/Shanghai"
+      }
+    ]
+  },
+  {
+    "title": "International Symposium on Computer Architecture",
+    "short_name": "ISCA 2027",
+    "kind": "conference",
+    "ccf_rank": "A",
+    "domains": ["ARCH"],
+    "url": "https://iscaconf.org",
+    "deadlines": [
+      {
+        "stage": "Full Paper",
+        "timestamp": "2026-11-21T04:59:00Z",
+        "timezone": "AoE"
+      }
+    ]
+  },
+  {
+    "title": "International Conference on Web Information Systems Engineering",
+    "short_name": "WISE 2027",
+    "kind": "conference",
+    "ccf_rank": "C",
+    "domains": ["WEB", "DB"],
+    "url": "https://wise2027.example.org",
+    "deadlines": [
+      {
+        "stage": "Full Paper",
+        "timestamp": "2026-08-16T07:59:00Z",
+        "timezone": "AoE"
+      }
+    ]
+  }
+]
