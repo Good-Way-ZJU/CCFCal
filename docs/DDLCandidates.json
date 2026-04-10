@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-09T12:39:01+08:00",
+  "generated_at": "2026-04-10T12:51:48+08:00",
   "items": [
-    {
-      "id": "sc2026-1e62a7022647",
-      "title": "SC2026",
-      "short_name": "SC2026",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://sc26.supercomputing.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-09T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-09T11:59:00Z",
-      "next_deadline_display": "2026-04-09 19:59"
-    },
     {
       "id": "ijcb2026-2f0c974e3c14",
       "title": "IJCB2026",
@@ -793,6 +774,29 @@
       "next_deadline_display": "2026-05-07 19:59"
     },
     {
+      "id": "ndss2027-d254df7a501d",
+      "title": "NDSS2027",
+      "short_name": "NDSS2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.ndss-symposium.org/ndss2027/",
+      "deadlines": [
+        {
+          "stage": "Summer",
+          "timestamp": "2026-05-07T11:59:59Z"
+        },
+        {
+          "stage": "Fall",
+          "timestamp": "2026-08-20T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-07T11:59:59Z",
+      "next_deadline_display": "2026-05-07 19:59"
+    },
+    {
       "id": "iswc2026-a416a616ed03",
       "title": "ISWC2026",
       "short_name": "ISWC2026",
@@ -1118,6 +1122,25 @@
       ],
       "next_deadline_timestamp": "2026-06-07T11:59:59Z",
       "next_deadline_display": "2026-06-07 19:59"
+    },
+    {
+      "id": "pg2026-e71e593f107b",
+      "title": "PG2026",
+      "short_name": "PG2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://pacificgraphics2026.github.io/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-09T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-09T11:59:59Z",
+      "next_deadline_display": "2026-06-09 19:59"
     },
     {
       "id": "sigops-atc2026-b1998cb73d6f",
