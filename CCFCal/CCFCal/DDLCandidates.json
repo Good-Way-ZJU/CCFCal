@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-11T12:26:25+08:00",
+  "generated_at": "2026-04-12T12:51:13+08:00",
   "items": [
-    {
-      "id": "ijcb2026-2f0c974e3c14",
-      "title": "IJCB2026",
-      "short_name": "IJCB2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://ijcb2026.ieee-biometrics.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-11T11:59:59Z",
-      "next_deadline_display": "2026-04-11 19:59"
-    },
-    {
-      "id": "appt2026-4913fe0c746a",
-      "title": "APPT2026",
-      "short_name": "APPT2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.appt-conference.com/2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-11T11:59:59Z",
-      "next_deadline_display": "2026-04-11 19:59"
-    },
     {
       "id": "re2026-c7268bfee2f9",
       "title": "RE2026",
@@ -77,25 +39,6 @@
       ],
       "next_deadline_timestamp": "2026-04-15T11:59:59Z",
       "next_deadline_display": "2026-04-15 19:59"
-    },
-    {
-      "id": "prcv2026-338047e7df8b",
-      "title": "PRCV2026",
-      "short_name": "PRCV2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.prcv.cn/web/#/home",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-15T15:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-15T15:59:59Z",
-      "next_deadline_display": "2026-04-15 23:59"
     },
     {
       "id": "egsr2026-d64b926e890f",
@@ -574,6 +517,25 @@
       "next_deadline_display": "2026-04-30 19:59"
     },
     {
+      "id": "prcv2026-338047e7df8b",
+      "title": "PRCV2026",
+      "short_name": "PRCV2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://www.prcv.cn/web/#/home",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-04-30T15:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-04-30T15:59:59Z",
+      "next_deadline_display": "2026-04-30 23:59"
+    },
+    {
       "id": "nspw2026-4629a50a04ad",
       "title": "NSPW2026",
       "short_name": "NSPW2026",
@@ -989,6 +951,25 @@
       ],
       "next_deadline_timestamp": "2026-05-26T15:59:59Z",
       "next_deadline_display": "2026-05-26 23:59"
+    },
+    {
+      "id": "acsac2026-ec0b278e3c90",
+      "title": "ACSAC2026",
+      "short_name": "ACSAC2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.acsac.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-05-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-27T11:59:59Z",
+      "next_deadline_display": "2026-05-27 19:59"
     },
     {
       "id": "bmvc2026-a05198539110",
