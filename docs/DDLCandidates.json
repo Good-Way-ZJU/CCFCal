@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-14T12:49:34+08:00",
+  "generated_at": "2026-04-15T12:49:51+08:00",
   "items": [
-    {
-      "id": "re2026-c7268bfee2f9",
-      "title": "RE2026",
-      "short_name": "RE2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://conf.researchr.org/home/RE-2026",
-      "deadlines": [
-        {
-          "stage": "Journal Paper",
-          "timestamp": "2026-04-14T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-14T11:59:59Z",
-      "next_deadline_display": "2026-04-14 19:59"
-    },
     {
       "id": "iccad2026-0b4b3f2448e2",
       "title": "ICCAD2026",
@@ -313,6 +294,25 @@
         "NET"
       ],
       "url": "https://www.ieeelcn.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-04-21T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-04-21T11:59:59Z",
+      "next_deadline_display": "2026-04-21 19:59"
+    },
+    {
+      "id": "mobihoc2026-a7f1ccecfc9f",
+      "title": "MobiHoc2026",
+      "short_name": "MobiHoc2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://www.sigmobile.org/mobihoc/2026/",
       "deadlines": [
         {
           "stage": "Deadline",
