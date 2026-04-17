@@ -1,87 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-16T12:55:40+08:00",
+  "generated_at": "2026-04-17T12:53:08+08:00",
   "items": [
-    {
-      "id": "sgp2026-5f75fd083546",
-      "title": "SGP2026",
-      "short_name": "SGP2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://sgp26.org/",
-      "deadlines": [
-        {
-          "stage": "Second round",
-          "timestamp": "2026-04-16T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-16T11:59:59Z",
-      "next_deadline_display": "2026-04-16 19:59"
-    },
-    {
-      "id": "asplos2027-e48cd018d065",
-      "title": "ASPLOS2027",
-      "short_name": "ASPLOS2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.asplos-conference.org/asplos2027/cfp/",
-      "deadlines": [
-        {
-          "stage": "April Cycle Submission Deadline",
-          "timestamp": "2026-04-16T11:59:59Z"
-        },
-        {
-          "stage": "September Cycle Submission Deadline",
-          "timestamp": "2026-09-10T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-16T11:59:59Z",
-      "next_deadline_display": "2026-04-16 19:59"
-    },
-    {
-      "id": "jcc2026-8e053266aa76",
-      "title": "JCC2026",
-      "short_name": "JCC2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://jointcloud.cloud",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-16T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-16T11:59:59Z",
-      "next_deadline_display": "2026-04-16 19:59"
-    },
-    {
-      "id": "ches2026-a07a7bf84b04",
-      "title": "CHES2026",
-      "short_name": "CHES2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://ches.iacr.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Schedule for TCHES Volume 2026/4",
-          "timestamp": "2026-04-16T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-16T11:59:59Z",
-      "next_deadline_display": "2026-04-16 19:59"
-    },
     {
       "id": "raid2026-be2d838fdf09",
       "title": "RAID2026",
@@ -1434,6 +1354,25 @@
       ],
       "next_deadline_timestamp": "2026-08-26T11:59:59Z",
       "next_deadline_display": "2026-08-26 19:59"
+    },
+    {
+      "id": "asplos2027-e48cd018d065",
+      "title": "ASPLOS2027",
+      "short_name": "ASPLOS2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.asplos-conference.org/asplos2027/cfp/",
+      "deadlines": [
+        {
+          "stage": "September Cycle Submission Deadline",
+          "timestamp": "2026-09-10T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-10T11:59:59Z",
+      "next_deadline_display": "2026-09-10 19:59"
     },
     {
       "id": "fast2027-2320939fe861",
