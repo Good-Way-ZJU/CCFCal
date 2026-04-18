@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-17T12:53:08+08:00",
+  "generated_at": "2026-04-18T12:36:46+08:00",
   "items": [
-    {
-      "id": "raid2026-be2d838fdf09",
-      "title": "RAID2026",
-      "short_name": "RAID2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://raid2026.org",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-17T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-17T11:59:59Z",
-      "next_deadline_display": "2026-04-17 19:59"
-    },
     {
       "id": "sigmod2027-0beb843bcdb9",
       "title": "SIGMOD2027",
