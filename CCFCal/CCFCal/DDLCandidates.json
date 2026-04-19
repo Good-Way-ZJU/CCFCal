@@ -1,57 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-18T12:36:46+08:00",
+  "generated_at": "2026-04-19T12:55:26+08:00",
   "items": [
-    {
-      "id": "sigmod2027-0beb843bcdb9",
-      "title": "SIGMOD2027",
-      "short_name": "SIGMOD2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://2027.sigmod.org/",
-      "deadlines": [
-        {
-          "stage": "round 2",
-          "timestamp": "2026-04-18T11:59:00Z"
-        },
-        {
-          "stage": "round 3",
-          "timestamp": "2026-07-18T11:59:00Z"
-        },
-        {
-          "stage": "round 4",
-          "timestamp": "2026-10-18T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-18T11:59:00Z",
-      "next_deadline_display": "2026-04-18 19:59"
-    },
-    {
-      "id": "sca2026-77211138a653",
-      "title": "SCA2026",
-      "short_name": "SCA2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://computeranimation.org/",
-      "deadlines": [
-        {
-          "stage": "Submission deadline (papers)",
-          "timestamp": "2026-04-18T11:59:59Z"
-        },
-        {
-          "stage": "Submission deadline (posters)",
-          "timestamp": "2026-06-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-18T11:59:59Z",
-      "next_deadline_display": "2026-04-18 19:59"
-    },
     {
       "id": "smc2026-5c80fbd83777",
       "title": "SMC2026",
@@ -892,6 +842,25 @@
       "next_deadline_display": "2026-06-02 06:59"
     },
     {
+      "id": "sca2026-77211138a653",
+      "title": "SCA2026",
+      "short_name": "SCA2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://computeranimation.org/",
+      "deadlines": [
+        {
+          "stage": "Submission deadline (posters)",
+          "timestamp": "2026-06-02T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-02T11:59:59Z",
+      "next_deadline_display": "2026-06-02 19:59"
+    },
+    {
       "id": "hotstorage2026-d4dddb5eeaa9",
       "title": "HotStorage2026",
       "short_name": "HotStorage2026",
@@ -1257,6 +1226,29 @@
       "next_deadline_display": "2026-07-15 19:59"
     },
     {
+      "id": "sigmod2027-0beb843bcdb9",
+      "title": "SIGMOD2027",
+      "short_name": "SIGMOD2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://2027.sigmod.org/",
+      "deadlines": [
+        {
+          "stage": "round 3",
+          "timestamp": "2026-07-18T11:59:00Z"
+        },
+        {
+          "stage": "round 4",
+          "timestamp": "2026-10-18T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-18T11:59:00Z",
+      "next_deadline_display": "2026-07-18 19:59"
+    },
+    {
       "id": "cscloud2026-a8224addf739",
       "title": "CSCloud2026",
       "short_name": "CSCloud2026",
@@ -1274,6 +1266,25 @@
       ],
       "next_deadline_timestamp": "2026-08-02T11:59:59Z",
       "next_deadline_display": "2026-08-02 19:59"
+    },
+    {
+      "id": "cidr2027-70c24c1d92ee",
+      "title": "CIDR2027",
+      "short_name": "CIDR2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://www.cidrdb.org/cidr2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-05T06:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-05T06:59:59Z",
+      "next_deadline_display": "2026-08-05 14:59"
     },
     {
       "id": "mmm2027-0d71bebc726e",
