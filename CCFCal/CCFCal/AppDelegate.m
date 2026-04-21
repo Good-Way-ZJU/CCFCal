@@ -21,6 +21,7 @@
 @implementation AppDelegate
 {
     NSWindowController *_wc;
+    NSTimer *_ddlRefreshTimer;
 }
 
 + (void)initialize
@@ -134,12 +135,28 @@
         [[DDLSubscriptionManager sharedManager] refreshRemoteCandidatesIfNeeded];
         [[DDLCalendarSyncManager sharedManager] syncSubscribedDeadlinesAsync];
     });
+
+    // Refresh DDL candidate data once every 24 hours while the app is running
+    // so long-lived sessions stay up-to-date without requiring a restart.
+    _ddlRefreshTimer = [NSTimer scheduledTimerWithTimeInterval:24 * 60 * 60
+                                                        target:self
+                                                      selector:@selector(timedDDLRefresh:)
+                                                      userInfo:nil
+                                                       repeats:YES];
     
     // Establish the binding to NSUserDefaultsController. On macOS
     // 10.14+, it is crucial for this call to be made AFTER the window
     // is created because Theme instantiation relies on checking a
     // property on the window to determine its appearance.
     [Theme bind:@"themePreference" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:[@"values." stringByAppendingString:kThemePreference] options:@{NSContinuouslyUpdatesValueBindingOption: @(YES)}];
+}
+
+- (void)timedDDLRefresh:(NSTimer *)timer
+{
+    #pragma unused(timer)
+    dispatch_async(dispatch_get_global_queue(QOS_CLASS_UTILITY, 0), ^{
+        [[DDLSubscriptionManager sharedManager] refreshRemoteCandidatesIfNeeded];
+    });
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification

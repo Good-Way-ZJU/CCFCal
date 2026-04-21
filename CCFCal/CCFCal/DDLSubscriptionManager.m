@@ -490,6 +490,10 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
 
 - (NSString *)highlightColorHexForCandidateID:(NSString *)candidateID
 {
+    NSString *stored = self.highlightColorsByItemID[candidateID];
+    if (stored.length > 0) {
+        return stored;
+    }
     DDLCandidate *candidate = [self candidateForIdentifier:candidateID];
     return DDLDefaultColorHexForRank(candidate.ccfRank);
 }
@@ -501,7 +505,23 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
 
 - (void)setHighlightColor:(NSColor *)color forCandidateID:(NSString *)candidateID
 {
-    #pragma unused(color, candidateID)
+    if (candidateID.length == 0 || !color) {
+        return;
+    }
+    NSColor *srgb = [color colorUsingColorSpace:[NSColorSpace sRGBColorSpace]];
+    if (!srgb) {
+        return;
+    }
+    CGFloat r, g, b, a;
+    [srgb getRed:&r green:&g blue:&b alpha:&a];
+    NSString *hex = [NSString stringWithFormat:@"#%02X%02X%02X",
+                     (int)round(r * 255.0),
+                     (int)round(g * 255.0),
+                     (int)round(b * 255.0)];
+    NSMutableDictionary *mutable = [self.highlightColorsByItemID mutableCopy] ?: [NSMutableDictionary new];
+    mutable[candidateID] = hex;
+    self.highlightColorsByItemID = [mutable copy];
+    [[NSUserDefaults standardUserDefaults] setObject:self.highlightColorsByItemID forKey:kDDLHighlightColorsByItemID];
 }
 
 - (NSString *)metadataValueForKey:(NSString *)key inText:(NSString *)text

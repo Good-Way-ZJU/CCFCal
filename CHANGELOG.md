@@ -4,6 +4,14 @@
 
 格式基于 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.0.0/) 规范，并遵循 [语义化版本控制](https://semver.org/lang/zh-CN/)。
 
+## [1.0.1] - 2026-04-21
+
+### 修复
+
+- **后台数据刷新**：修复 App 长时间运行时 DDL 数据不更新的问题。现在 App 每 24 小时会在后台自动刷新一次候选数据，无需重启。
+- **订阅颜色自定义**：修复 `setHighlightColor:forCandidateID:` 为空操作的问题，颜色选择现在会正确持久化到 UserDefaults。
+- **订阅颜色读取**：修复 `highlightColorHexForCandidateID:` 始终返回按等级默认颜色的问题，现在会优先返回用户设置的自定义颜色。
+
 ## [1.0.0] - 2026-04-07
 
 ### 新增
