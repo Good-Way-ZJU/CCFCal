@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-22T12:50:39+08:00",
+  "generated_at": "2026-04-23T12:54:31+08:00",
   "items": [
-    {
-      "id": "recsys2026-0ad884a7fd84",
-      "title": "RecSys2026",
-      "short_name": "RecSys2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://recsys.acm.org/recsys26",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-22T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-22T11:59:59Z",
-      "next_deadline_display": "2026-04-22 19:59"
-    },
-    {
-      "id": "esorics2026-55d45d20dad9",
-      "title": "ESORICS2026",
-      "short_name": "ESORICS2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://sites.google.com/di.uniroma1.it/esorics2026/home",
-      "deadlines": [
-        {
-          "stage": "Second Submission deadline",
-          "timestamp": "2026-04-22T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-22T11:59:59Z",
-      "next_deadline_display": "2026-04-22 19:59"
-    },
     {
       "id": "nsdi2027-bdc8ebd908f5",
       "title": "NSDI2027",
