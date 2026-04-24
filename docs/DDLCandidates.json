@@ -1,30 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-23T12:54:31+08:00",
+  "generated_at": "2026-04-24T13:13:06+08:00",
   "items": [
-    {
-      "id": "nsdi2027-bdc8ebd908f5",
-      "title": "NSDI2027",
-      "short_name": "NSDI2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://www.usenix.org/conference/nsdi27",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-24T03:59:59Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-18T03:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-24T03:59:59Z",
-      "next_deadline_display": "2026-04-24 11:59"
-    },
     {
       "id": "itc2026-2f3e06a72f70",
       "title": "ITC2026",
@@ -210,6 +187,25 @@
         "AI"
       ],
       "url": "https://ijcb2026.ieee-biometrics.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-05-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-01T11:59:59Z",
+      "next_deadline_display": "2026-05-01 19:59"
+    },
+    {
+      "id": "cluster2026-db38225b7f33",
+      "title": "CLUSTER2026",
+      "short_name": "CLUSTER2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://clustercomp.org/2026",
       "deadlines": [
         {
           "stage": "Deadline",
@@ -1350,6 +1346,25 @@
       ],
       "next_deadline_timestamp": "2026-09-16T11:59:00Z",
       "next_deadline_display": "2026-09-16 19:59"
+    },
+    {
+      "id": "nsdi2027-bdc8ebd908f5",
+      "title": "NSDI2027",
+      "short_name": "NSDI2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://www.usenix.org/conference/nsdi27",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-18T03:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-18T03:59:59Z",
+      "next_deadline_display": "2026-09-18 11:59"
     },
     {
       "id": "dcc2027-3681dc9be45b",
