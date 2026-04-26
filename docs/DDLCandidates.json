@@ -1,68 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-25T12:40:15+08:00",
+  "generated_at": "2026-04-26T13:16:43+08:00",
   "items": [
-    {
-      "id": "itc2026-2f3e06a72f70",
-      "title": "ITC2026",
-      "short_name": "ITC2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.itctestweek.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-25T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-25T11:59:59Z",
-      "next_deadline_display": "2026-04-25 19:59"
-    },
-    {
-      "id": "srds2026-4fdab86cc919",
-      "title": "SRDS2026",
-      "short_name": "SRDS2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://srds-conference.org/",
-      "deadlines": [
-        {
-          "stage": "Abstract Submission",
-          "timestamp": "2026-04-25T11:59:59Z"
-        },
-        {
-          "stage": "Full Paper Submission",
-          "timestamp": "2026-05-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-25T11:59:59Z",
-      "next_deadline_display": "2026-04-25 19:59"
-    },
-    {
-      "id": "itc-asia2026-c64082219e3a",
-      "title": "ITC-Asia2026",
-      "short_name": "ITC-Asia2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.castest.com.cn/itcasia_2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-25T15:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-25T15:59:59Z",
-      "next_deadline_display": "2026-04-25 23:59"
-    },
     {
       "id": "fmcad2026-25c5778376bb",
       "title": "FMCAD2026",
@@ -372,6 +311,25 @@
         {
           "stage": "fourth round",
           "timestamp": "2026-11-02T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-02T11:59:59Z",
+      "next_deadline_display": "2026-05-02 19:59"
+    },
+    {
+      "id": "srds2026-4fdab86cc919",
+      "title": "SRDS2026",
+      "short_name": "SRDS2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://srds-conference.org/",
+      "deadlines": [
+        {
+          "stage": "Full Paper Submission",
+          "timestamp": "2026-05-02T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-05-02T11:59:59Z",
