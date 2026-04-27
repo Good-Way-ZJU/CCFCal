@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-26T13:16:43+08:00",
+  "generated_at": "2026-04-27T13:29:52+08:00",
   "items": [
     {
       "id": "fmcad2026-25c5778376bb",
@@ -126,25 +126,6 @@
         "AI"
       ],
       "url": "https://ijcb2026.ieee-biometrics.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-01T11:59:59Z",
-      "next_deadline_display": "2026-05-01 19:59"
-    },
-    {
-      "id": "cluster2026-db38225b7f33",
-      "title": "CLUSTER2026",
-      "short_name": "CLUSTER2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://clustercomp.org/2026",
       "deadlines": [
         {
           "stage": "Deadline",
@@ -328,8 +309,12 @@
       "url": "https://srds-conference.org/",
       "deadlines": [
         {
-          "stage": "Full Paper Submission",
+          "stage": "Abstract Submission",
           "timestamp": "2026-05-02T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper Submission",
+          "timestamp": "2026-05-09T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-05-02T11:59:59Z",
@@ -386,6 +371,25 @@
       "deadlines": [
         {
           "stage": "second round",
+          "timestamp": "2026-05-05T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-05T11:59:59Z",
+      "next_deadline_display": "2026-05-05 19:59"
+    },
+    {
+      "id": "internetware2026-a9e50bab3951",
+      "title": "Internetware2026",
+      "short_name": "Internetware2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SE"
+      ],
+      "url": "https://conf.researchr.org/home/internetware-2026",
+      "deadlines": [
+        {
+          "stage": "Round 2",
           "timestamp": "2026-05-05T11:59:59Z"
         }
       ],
@@ -452,6 +456,44 @@
       ],
       "next_deadline_timestamp": "2026-05-08T11:59:59Z",
       "next_deadline_display": "2026-05-08 19:59"
+    },
+    {
+      "id": "cluster2026-db38225b7f33",
+      "title": "CLUSTER2026",
+      "short_name": "CLUSTER2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://clustercomp.org/2026",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-05-08T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-08T11:59:59Z",
+      "next_deadline_display": "2026-05-08 19:59"
+    },
+    {
+      "id": "seke2026-864d6a137a81",
+      "title": "SEKE2026",
+      "short_name": "SEKE2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SE"
+      ],
+      "url": "https://ksiresearch.org/seke/seke26.html",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-05-11T04:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-11T04:59:00Z",
+      "next_deadline_display": "2026-05-11 12:59"
     },
     {
       "id": "iconip2026-20854922fdab",
@@ -1323,6 +1365,25 @@
       ],
       "next_deadline_timestamp": "2026-09-18T03:59:59Z",
       "next_deadline_display": "2026-09-18 11:59"
+    },
+    {
+      "id": "date2027-f2c1c1771332",
+      "title": "DATE2027",
+      "short_name": "DATE2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.date-conference.com/date-2027-call-papers",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-21T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-21T11:59:59Z",
+      "next_deadline_display": "2026-09-21 19:59"
     },
     {
       "id": "dcc2027-3681dc9be45b",
