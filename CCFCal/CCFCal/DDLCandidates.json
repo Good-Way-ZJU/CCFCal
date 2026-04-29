@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-28T13:35:54+08:00",
+  "generated_at": "2026-04-29T13:31:38+08:00",
   "items": [
-    {
-      "id": "concur2026-b53da91ebe2f",
-      "title": "CONCUR2026",
-      "short_name": "CONCUR2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "TH"
-      ],
-      "url": "https://confest-2026.github.io/concur/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-28T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-28T11:59:59Z",
-      "next_deadline_display": "2026-04-28 19:59"
-    },
-    {
-      "id": "wisa2026-a805daf72cc5",
-      "title": "WISA2026",
-      "short_name": "WISA2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://conf.ccf.org.cn/WISA2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-28T15:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-28T15:59:59Z",
-      "next_deadline_display": "2026-04-28 23:59"
-    },
     {
       "id": "imc2026-f9f7fb15873c",
       "title": "IMC2026",
@@ -77,25 +39,6 @@
       ],
       "next_deadline_timestamp": "2026-04-30T11:59:59Z",
       "next_deadline_display": "2026-04-30 19:59"
-    },
-    {
-      "id": "prcv2026-338047e7df8b",
-      "title": "PRCV2026",
-      "short_name": "PRCV2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.prcv.cn/web/#/home",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-04-30T15:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-30T15:59:59Z",
-      "next_deadline_display": "2026-04-30 23:59"
     },
     {
       "id": "ijcb2026-2f0c974e3c14",
@@ -764,6 +707,25 @@
       ],
       "next_deadline_timestamp": "2026-05-30T06:59:59Z",
       "next_deadline_display": "2026-05-30 14:59"
+    },
+    {
+      "id": "prcv2026-338047e7df8b",
+      "title": "PRCV2026",
+      "short_name": "PRCV2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://www.prcv.cn/web/#/home",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-05-31T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-31T11:59:59Z",
+      "next_deadline_display": "2026-05-31 19:59"
     },
     {
       "id": "mswim2026-dfc489912696",
