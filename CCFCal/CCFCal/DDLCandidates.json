@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-29T13:31:38+08:00",
+  "generated_at": "2026-04-30T13:35:26+08:00",
   "items": [
     {
       "id": "imc2026-f9f7fb15873c",
@@ -1228,6 +1228,25 @@
       ],
       "next_deadline_timestamp": "2026-08-17T11:59:59Z",
       "next_deadline_display": "2026-08-17 19:59"
+    },
+    {
+      "id": "wsdm2027-8f2bc00a51b2",
+      "title": "WSDM2027",
+      "short_name": "WSDM2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://wsdm-conference.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-19T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-19T11:59:59Z",
+      "next_deadline_display": "2026-08-19 19:59"
     },
     {
       "id": "bigdata2026-bec88d2dbfd0",
