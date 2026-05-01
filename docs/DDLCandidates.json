@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-04-30T13:35:26+08:00",
+  "generated_at": "2026-05-01T13:46:54+08:00",
   "items": [
-    {
-      "id": "imc2026-f9f7fb15873c",
-      "title": "IMC2026",
-      "short_name": "IMC2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://conferences.sigcomm.org/imc/2026/",
-      "deadlines": [
-        {
-          "stage": "Cycle 2 Deadline",
-          "timestamp": "2026-04-30T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-30T11:59:59Z",
-      "next_deadline_display": "2026-04-30 19:59"
-    },
-    {
-      "id": "ccs2026-a97b16a0c5e8",
-      "title": "CCS2026",
-      "short_name": "CCS2026",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://www.sigsac.org/ccs/CCS2026/",
-      "deadlines": [
-        {
-          "stage": "Second Review Cycle",
-          "timestamp": "2026-04-30T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-04-30T11:59:59Z",
-      "next_deadline_display": "2026-04-30 19:59"
-    },
     {
       "id": "ijcb2026-2f0c974e3c14",
       "title": "IJCB2026",
@@ -151,6 +113,29 @@
         {
           "stage": "Deadline",
           "timestamp": "2026-05-02T07:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-02T07:59:59Z",
+      "next_deadline_display": "2026-05-02 15:59"
+    },
+    {
+      "id": "inscrypt2026-2572cb9b9852",
+      "title": "INSCRYPT2026",
+      "short_name": "INSCRYPT2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://inscrypt2026.comp.polyu.edu.hk",
+      "deadlines": [
+        {
+          "stage": "1st Round",
+          "timestamp": "2026-05-02T07:59:59Z"
+        },
+        {
+          "stage": "2nd Round",
+          "timestamp": "2026-07-02T07:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-05-02T07:59:59Z",
@@ -920,6 +905,29 @@
       ],
       "next_deadline_timestamp": "2026-06-12T00:00:00Z",
       "next_deadline_display": "2026-06-12 08:00"
+    },
+    {
+      "id": "ieee-acm-cgo2027-974747322277",
+      "title": "IEEE/ACM CGO2027",
+      "short_name": "IEEE/ACM CGO2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://conf.researchr.org/home/cgo-2027",
+      "deadlines": [
+        {
+          "stage": "First Submission",
+          "timestamp": "2026-06-12T11:59:59Z"
+        },
+        {
+          "stage": "Second Submission",
+          "timestamp": "2026-09-11T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-12T11:59:59Z",
+      "next_deadline_display": "2026-06-12 19:59"
     },
     {
       "id": "scam2026-fcf94cecefb1",
