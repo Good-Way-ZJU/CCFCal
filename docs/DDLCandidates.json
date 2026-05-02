@@ -1,104 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-01T13:46:54+08:00",
+  "generated_at": "2026-05-02T13:15:54+08:00",
   "items": [
-    {
-      "id": "ijcb2026-2f0c974e3c14",
-      "title": "IJCB2026",
-      "short_name": "IJCB2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://ijcb2026.ieee-biometrics.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-01T11:59:59Z",
-      "next_deadline_display": "2026-05-01 19:59"
-    },
-    {
-      "id": "nspw2026-4629a50a04ad",
-      "title": "NSPW2026",
-      "short_name": "NSPW2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://www.nspw.org/2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-01T11:59:59Z",
-      "next_deadline_display": "2026-05-01 19:59"
-    },
-    {
-      "id": "vldb2027-2a32785e2024",
-      "title": "VLDB2027",
-      "short_name": "VLDB2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://www.vldb.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-10-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-11-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-12-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-01-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-02-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-03-02T00:00:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-02T00:00:00Z",
-      "next_deadline_display": "2026-05-02 08:00"
-    },
     {
       "id": "collaboratecom2026-e77e0403a90d",
       "title": "CollaborateCom2026",
@@ -730,6 +633,61 @@
       ],
       "next_deadline_timestamp": "2026-06-01T22:59:59Z",
       "next_deadline_display": "2026-06-02 06:59"
+    },
+    {
+      "id": "vldb2027-2a32785e2024",
+      "title": "VLDB2027",
+      "short_name": "VLDB2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://www.vldb.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-07-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-11-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-12-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-01-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-02-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-03-02T00:00:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-02T00:00:00Z",
+      "next_deadline_display": "2026-06-02 08:00"
     },
     {
       "id": "sca2026-77211138a653",
