@@ -1,137 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-02T13:15:54+08:00",
+  "generated_at": "2026-05-03T13:35:25+08:00",
   "items": [
-    {
-      "id": "collaboratecom2026-e77e0403a90d",
-      "title": "CollaborateCom2026",
-      "short_name": "CollaborateCom2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "HCI"
-      ],
-      "url": "https://collaboratecom.eai-conferences.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-02T07:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-02T07:59:59Z",
-      "next_deadline_display": "2026-05-02 15:59"
-    },
-    {
-      "id": "inscrypt2026-2572cb9b9852",
-      "title": "INSCRYPT2026",
-      "short_name": "INSCRYPT2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://inscrypt2026.comp.polyu.edu.hk",
-      "deadlines": [
-        {
-          "stage": "1st Round",
-          "timestamp": "2026-05-02T07:59:59Z"
-        },
-        {
-          "stage": "2nd Round",
-          "timestamp": "2026-07-02T07:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-02T07:59:59Z",
-      "next_deadline_display": "2026-05-02 15:59"
-    },
-    {
-      "id": "icpp2026-ab20620c7411",
-      "title": "ICPP2026",
-      "short_name": "ICPP2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://icpp2026.github.io/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-02T11:59:59Z",
-      "next_deadline_display": "2026-05-02 19:59"
-    },
-    {
-      "id": "sec2026-c548aa1a1e9e",
-      "title": "SEC2026",
-      "short_name": "SEC2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://acm-ieee-sec.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-02T11:59:59Z",
-      "next_deadline_display": "2026-05-02 19:59"
-    },
-    {
-      "id": "ubicomp-iswc2026-37c2f0800f04",
-      "title": "UbiComp/ISWC2026",
-      "short_name": "UbiComp/ISWC2026",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "HCI"
-      ],
-      "url": "https://www.ubicomp.org/ubicomp-iswc-2026",
-      "deadlines": [
-        {
-          "stage": "second round",
-          "timestamp": "2026-05-02T11:59:59Z"
-        },
-        {
-          "stage": "third round (only for resubmissions after major revisions)",
-          "timestamp": "2026-08-02T11:59:59Z"
-        },
-        {
-          "stage": "fourth round",
-          "timestamp": "2026-11-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-02T11:59:59Z",
-      "next_deadline_display": "2026-05-02 19:59"
-    },
-    {
-      "id": "srds2026-4fdab86cc919",
-      "title": "SRDS2026",
-      "short_name": "SRDS2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://srds-conference.org/",
-      "deadlines": [
-        {
-          "stage": "Abstract Submission",
-          "timestamp": "2026-05-02T11:59:59Z"
-        },
-        {
-          "stage": "Full Paper Submission",
-          "timestamp": "2026-05-09T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-02T11:59:59Z",
-      "next_deadline_display": "2026-05-02 19:59"
-    },
     {
       "id": "globecom2026-3978d65af8bd",
       "title": "GLOBECOM2026",
@@ -169,25 +39,6 @@
       ],
       "next_deadline_timestamp": "2026-05-04T06:59:59Z",
       "next_deadline_display": "2026-05-04 14:59"
-    },
-    {
-      "id": "apweb-waim2026-7b57d20b204b",
-      "title": "APWeb-WAIM2026",
-      "short_name": "APWeb-WAIM2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://conferences.sigappfr.org/apweb2026/",
-      "deadlines": [
-        {
-          "stage": "second round",
-          "timestamp": "2026-05-05T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-05T11:59:59Z",
-      "next_deadline_display": "2026-05-05 19:59"
     },
     {
       "id": "internetware2026-a9e50bab3951",
@@ -289,6 +140,48 @@
       "next_deadline_display": "2026-05-08 19:59"
     },
     {
+      "id": "inscrypt2026-2572cb9b9852",
+      "title": "INSCRYPT2026",
+      "short_name": "INSCRYPT2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://inscrypt2026.comp.polyu.edu.hk",
+      "deadlines": [
+        {
+          "stage": "1st Round",
+          "timestamp": "2026-05-09T07:59:59Z"
+        },
+        {
+          "stage": "2nd Round",
+          "timestamp": "2026-07-02T07:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-09T07:59:59Z",
+      "next_deadline_display": "2026-05-09 15:59"
+    },
+    {
+      "id": "srds2026-4fdab86cc919",
+      "title": "SRDS2026",
+      "short_name": "SRDS2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://srds-conference.org/",
+      "deadlines": [
+        {
+          "stage": "Full Paper Submission",
+          "timestamp": "2026-05-09T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-09T11:59:59Z",
+      "next_deadline_display": "2026-05-09 19:59"
+    },
+    {
       "id": "seke2026-864d6a137a81",
       "title": "SEKE2026",
       "short_name": "SEKE2026",
@@ -344,6 +237,25 @@
       ],
       "next_deadline_timestamp": "2026-05-13T11:59:00Z",
       "next_deadline_display": "2026-05-13 19:59"
+    },
+    {
+      "id": "apweb-waim2026-7b57d20b204b",
+      "title": "APWeb-WAIM2026",
+      "short_name": "APWeb-WAIM2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://conferences.sigappfr.org/apweb2026/",
+      "deadlines": [
+        {
+          "stage": "second round",
+          "timestamp": "2026-05-15T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-05-15T11:59:59Z",
+      "next_deadline_display": "2026-05-15 19:59"
     },
     {
       "id": "eurosys2027-dfce2bbb94bb",
@@ -888,6 +800,29 @@
       "next_deadline_display": "2026-06-12 19:59"
     },
     {
+      "id": "s-p2027-faa47003dafe",
+      "title": "S&P2027",
+      "short_name": "S&P2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://sp2027.ieee-security.org/index.html",
+      "deadlines": [
+        {
+          "stage": "First Paper submission deadline",
+          "timestamp": "2026-06-12T11:59:59Z"
+        },
+        {
+          "stage": "Second Paper submission deadline",
+          "timestamp": "2026-11-18T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-12T11:59:59Z",
+      "next_deadline_display": "2026-06-12 19:59"
+    },
+    {
       "id": "scam2026-fcf94cecefb1",
       "title": "SCAM2026",
       "short_name": "SCAM2026",
@@ -1137,6 +1072,29 @@
       ],
       "next_deadline_timestamp": "2026-07-18T11:59:00Z",
       "next_deadline_display": "2026-07-18 19:59"
+    },
+    {
+      "id": "ubicomp-iswc2026-37c2f0800f04",
+      "title": "UbiComp/ISWC2026",
+      "short_name": "UbiComp/ISWC2026",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "HCI"
+      ],
+      "url": "https://www.ubicomp.org/ubicomp-iswc-2026",
+      "deadlines": [
+        {
+          "stage": "third round (only for resubmissions after major revisions)",
+          "timestamp": "2026-08-02T11:59:59Z"
+        },
+        {
+          "stage": "fourth round",
+          "timestamp": "2026-11-02T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-02T11:59:59Z",
+      "next_deadline_display": "2026-08-02 19:59"
     },
     {
       "id": "cscloud2026-a8224addf739",
