@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-03T13:35:25+08:00",
+  "generated_at": "2026-05-04T13:39:36+08:00",
   "items": [
-    {
-      "id": "globecom2026-3978d65af8bd",
-      "title": "GLOBECOM2026",
-      "short_name": "GLOBECOM2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://globecom2026.ieee-globecom.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-04T03:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-04T03:59:59Z",
-      "next_deadline_display": "2026-05-04 11:59"
-    },
     {
       "id": "smc2026-5c80fbd83777",
       "title": "SMC2026",
@@ -1072,6 +1053,25 @@
       ],
       "next_deadline_timestamp": "2026-07-18T11:59:00Z",
       "next_deadline_display": "2026-07-18 19:59"
+    },
+    {
+      "id": "aaai2027-b00c7668bd6a",
+      "title": "AAAI2027",
+      "short_name": "AAAI2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://aaai.org/conference/aaai/aaai-27/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-07-28T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-28T11:59:59Z",
+      "next_deadline_display": "2026-07-28 19:59"
     },
     {
       "id": "ubicomp-iswc2026-37c2f0800f04",
