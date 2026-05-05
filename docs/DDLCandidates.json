@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-04T13:39:36+08:00",
+  "generated_at": "2026-05-05T13:19:47+08:00",
   "items": [
-    {
-      "id": "smc2026-5c80fbd83777",
-      "title": "SMC2026",
-      "short_name": "SMC2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://www.ieeesmc2026.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-04T06:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-04T06:59:59Z",
-      "next_deadline_display": "2026-05-04 14:59"
-    },
     {
       "id": "internetware2026-a9e50bab3951",
       "title": "Internetware2026",
