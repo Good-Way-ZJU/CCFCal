@@ -59,6 +59,10 @@ static NSString *AgendaDDLStageLabel(EKEvent *event) {
     if ([normalized isEqualToString:@"deadline"]) {
         return @"";
     }
+    if ([normalized isEqualToString:@"first round"]) return @"1st round";
+    if ([normalized isEqualToString:@"second round"]) return @"2nd round";
+    if ([normalized isEqualToString:@"third round"]) return @"3rd round";
+    if ([normalized isEqualToString:@"fourth round"]) return @"4th round";
     return stage;
 }
 
@@ -149,6 +153,7 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
     _tv.headerView = nil;
     _tv.allowsColumnResizing = NO;
     _tv.intercellSpacing = NSMakeSize(0, 0);
+    _tv.autoresizingMask = NSViewWidthSizable;
     _tv.backgroundColor = NSColor.clearColor;
     _tv.floatsGroupRows = YES;
     _tv.refusesFirstResponder = YES;
@@ -165,9 +170,9 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
     NSScrollView *tvContainer = [NSScrollView new];
     tvContainer.translatesAutoresizingMaskIntoConstraints = NO;
     tvContainer.drawsBackground = NO;
-    tvContainer.hasVerticalScroller = YES;
+    tvContainer.hasVerticalScroller = NO;
+    tvContainer.scrollerStyle = NSScrollerStyleOverlay;
     tvContainer.documentView = _tv;
-    tvContainer.verticalScroller = [ThemedScroller new];
     
     [v addSubview:tvContainer];
     [v addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[tv]|" options:0 metrics:nil views:@{@"tv": tvContainer}]];
@@ -214,6 +219,13 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
 
 - (void)viewDidLayout
 {
+    NSTableColumn *column = _tv.tableColumns.firstObject;
+    CGFloat tableWidth = NSWidth(_tv.enclosingScrollView.contentView.bounds);
+    if (column && tableWidth > 0 && fabs(column.width - tableWidth) > 0.5) {
+        column.width = tableWidth;
+        [_tv noteHeightOfRowsWithIndexesChanged:[NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, _tv.numberOfRows)]];
+    }
+
     // Calculate height of view based on _tv row heights.
     // We set the view's height using preferredContentSize.
     NSInteger rows = [_tv numberOfRows];
@@ -697,6 +709,7 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
         cell.eventInfo = info;
         cell.titleTextField.stringValue = title;
         cell.titleTextField.textColor = Theme.agendaEventTextColor;
+        cell.locationTextField.lineBreakMode = NSLineBreakByWordWrapping;
         cell.locationTextField.stringValue = location;
         cell.locationTextField.textColor = Theme.agendaEventDateTextColor;
         cell.durationTextField.stringValue = duration;
@@ -747,6 +760,7 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
 
     cell.titleTextField.stringValue = title;
     cell.titleTextField.textColor = Theme.agendaEventTextColor;
+    cell.locationTextField.lineBreakMode = NSLineBreakByTruncatingTail;
     cell.locationTextField.stringValue = location;
     cell.locationTextField.textColor = Theme.agendaEventDateTextColor;
     cell.durationTextField.stringValue = duration;
@@ -821,12 +835,17 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
 
 @implementation AgendaRowView
 
+static const CGFloat kDDLCardHorizontalInset = 2.0;
+static const CGFloat kDDLCardVerticalInset = 1.0;
+
 - (void)drawBackgroundInRect:(NSRect)dirtyRect {
-    if (self.isHovered) {
-        NSColor *hoverColor = self.isDDL
-            ? [[self.ddlAccentColor ?: [NSColor systemRedColor] colorWithAlphaComponent:0.18] colorUsingColorSpace:[NSColorSpace sRGBColorSpace]]
-            : Theme.agendaHoverColor;
-        [hoverColor set];
+    if (self.isDDL) {
+        NSColor *fillColor = [[self.ddlAccentColor ?: [NSColor systemRedColor] colorWithAlphaComponent:(self.isHovered ? 0.18 : 0.14)] colorUsingColorSpace:[NSColorSpace sRGBColorSpace]];
+        [fillColor set];
+        NSRect rect = NSInsetRect(self.bounds, kDDLCardHorizontalInset, kDDLCardVerticalInset);
+        [[NSBezierPath bezierPathWithRoundedRect:rect xRadius:5 yRadius:5] fill];
+    } else if (self.isHovered) {
+        [Theme.agendaHoverColor set];
         NSRect rect = NSInsetRect(self.bounds, 8, 1);
         [[NSBezierPath bezierPathWithRoundedRect:rect xRadius:5 yRadius:5] fill];
     }
@@ -1075,10 +1094,6 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
     BOOL isPending = [[self.eventInfo.event valueForKey:@"participationStatus"] integerValue] == EKParticipantStatusPending;
     if (self.eventInfo.event.hasAttendees && isPending) {
         [[NSColor colorWithPatternImage:[self pendingPatternImage]] set];
-        [[NSBezierPath bezierPathWithRoundedRect:NSInsetRect(self.bounds, 8, 1) xRadius:5 yRadius:5] fill];
-    }
-    if (self.isDDLCard) {
-        [[(self.ddlAccentColor ?: [NSColor systemRedColor]) colorWithAlphaComponent:(self.dim ? 0.10 : 0.14)] set];
         [[NSBezierPath bezierPathWithRoundedRect:NSInsetRect(self.bounds, 8, 1) xRadius:5 yRadius:5] fill];
     }
     // Draw colored dot. Dot is elongated for all-day events.
