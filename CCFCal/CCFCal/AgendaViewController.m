@@ -122,6 +122,16 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
 @implementation AgendaViewController
 {
     NSPopover *_popover;
+    __weak NSWindow *_observedWindow;
+}
+
+- (void)dealloc
+{
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center removeObserver:self name:NSApplicationDidChangeScreenParametersNotification object:nil];
+    if (_observedWindow) {
+        [center removeObserver:self name:NSWindowDidChangeBackingPropertiesNotification object:_observedWindow];
+    }
 }
 
 - (void)loadView
@@ -164,6 +174,36 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
     [v addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[tv]|" options:0 metrics:nil views:@{@"tv": tvContainer}]];
     
     self.view = v;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    [center addObserver:self selector:@selector(screenConfigurationDidChange:) name:NSApplicationDidChangeScreenParametersNotification object:nil];
+}
+
+- (void)viewDidAppear
+{
+    [super viewDidAppear];
+    if (_observedWindow == self.view.window) return;
+    NSNotificationCenter *center = [NSNotificationCenter defaultCenter];
+    if (_observedWindow) {
+        [center removeObserver:self name:NSWindowDidChangeBackingPropertiesNotification object:_observedWindow];
+    }
+    if (self.view.window) {
+        [center addObserver:self selector:@selector(screenConfigurationDidChange:) name:NSWindowDidChangeBackingPropertiesNotification object:self.view.window];
+    }
+    _observedWindow = self.view.window;
+}
+
+- (void)viewWillDisappear
+{
+    [super viewWillDisappear];
+    if (_observedWindow) {
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:NSWindowDidChangeBackingPropertiesNotification object:_observedWindow];
+        _observedWindow = nil;
+    }
 }
 
 - (void)viewWillAppear
@@ -215,12 +255,27 @@ static NSString *AgendaDDLSubtitle(EKEvent *event) {
 - (void)updateViewConstraints
 {
     // Tell _tv that row heights need to be recalculated.
-    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, [_tv numberOfRows])];
     [NSAnimationContext beginGrouping];
     [[NSAnimationContext currentContext] setDuration:0];
-    [_tv noteHeightOfRowsWithIndexesChanged:indexSet];
+    [self invalidateAgendaRowHeights];
     [NSAnimationContext endGrouping];
     [super updateViewConstraints];
+}
+
+- (void)invalidateAgendaRowHeights
+{
+    if (!_tv) return;
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, _tv.numberOfRows)];
+    [_tv noteHeightOfRowsWithIndexesChanged:indexSet];
+}
+
+- (void)screenConfigurationDidChange:(NSNotification *)note
+{
+    if (!_tv) return;
+    [self invalidateAgendaRowHeights];
+    [_tv setNeedsDisplay:YES];
+    [self.view setNeedsLayout:YES];
+    [self.view setNeedsDisplay:YES];
 }
 
 - (void)setShowLocation:(BOOL)showLocation
