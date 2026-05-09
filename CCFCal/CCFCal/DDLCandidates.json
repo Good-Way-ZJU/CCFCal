@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-08T12:56:35+08:00",
+  "generated_at": "2026-05-09T13:26:42+08:00",
   "items": [
-    {
-      "id": "iswc2026-a416a616ed03",
-      "title": "ISWC2026",
-      "short_name": "ISWC2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://iswc2026.semanticweb.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-08T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-08T11:59:59Z",
-      "next_deadline_display": "2026-05-08 19:59"
-    },
-    {
-      "id": "cluster2026-db38225b7f33",
-      "title": "CLUSTER2026",
-      "short_name": "CLUSTER2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://clustercomp.org/2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-08T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-08T11:59:59Z",
-      "next_deadline_display": "2026-05-08 19:59"
-    },
     {
       "id": "inscrypt2026-2572cb9b9852",
       "title": "INSCRYPT2026",
