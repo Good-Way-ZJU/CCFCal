@@ -1,49 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-09T13:26:42+08:00",
+  "generated_at": "2026-05-10T13:41:46+08:00",
   "items": [
-    {
-      "id": "inscrypt2026-2572cb9b9852",
-      "title": "INSCRYPT2026",
-      "short_name": "INSCRYPT2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://inscrypt2026.comp.polyu.edu.hk",
-      "deadlines": [
-        {
-          "stage": "1st Round",
-          "timestamp": "2026-05-09T07:59:59Z"
-        },
-        {
-          "stage": "2nd Round",
-          "timestamp": "2026-07-02T07:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-09T07:59:59Z",
-      "next_deadline_display": "2026-05-09 15:59"
-    },
-    {
-      "id": "srds2026-4fdab86cc919",
-      "title": "SRDS2026",
-      "short_name": "SRDS2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://srds-conference.org/",
-      "deadlines": [
-        {
-          "stage": "Full Paper Submission",
-          "timestamp": "2026-05-09T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-09T11:59:59Z",
-      "next_deadline_display": "2026-05-09 19:59"
-    },
     {
       "id": "seke2026-864d6a137a81",
       "title": "SEKE2026",
@@ -62,25 +20,6 @@
       ],
       "next_deadline_timestamp": "2026-05-11T04:59:00Z",
       "next_deadline_display": "2026-05-11 12:59"
-    },
-    {
-      "id": "iconip2026-20854922fdab",
-      "title": "ICONIP2026",
-      "short_name": "ICONIP2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://www.iconip2026.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-11T11:59:59Z",
-      "next_deadline_display": "2026-05-11 19:59"
     },
     {
       "id": "acm-siggraph-asia2026-54c74136e964",
@@ -389,6 +328,25 @@
       ],
       "next_deadline_timestamp": "2026-05-31T11:59:59Z",
       "next_deadline_display": "2026-05-31 19:59"
+    },
+    {
+      "id": "iconip2026-20854922fdab",
+      "title": "ICONIP2026",
+      "short_name": "ICONIP2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://www.iconip2026.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-01T11:59:59Z",
+      "next_deadline_display": "2026-06-01 19:59"
     },
     {
       "id": "pets2027-ac58aa8d5178",
@@ -850,6 +808,25 @@
       "next_deadline_display": "2026-07-01 19:59"
     },
     {
+      "id": "inscrypt2026-2572cb9b9852",
+      "title": "INSCRYPT2026",
+      "short_name": "INSCRYPT2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://inscrypt2026.comp.polyu.edu.hk",
+      "deadlines": [
+        {
+          "stage": "2nd Round",
+          "timestamp": "2026-07-02T07:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-02T07:59:59Z",
+      "next_deadline_display": "2026-07-02 15:59"
+    },
+    {
       "id": "bibm2026-a86ab352bd40",
       "title": "BIBM2026",
       "short_name": "BIBM2026",
@@ -1137,6 +1114,29 @@
         {
           "stage": "Deadline",
           "timestamp": "2026-08-22T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-22T11:59:59Z",
+      "next_deadline_display": "2026-08-22 19:59"
+    },
+    {
+      "id": "asiaccs2027-0ffc23142fee",
+      "title": "AsiaCCS2027",
+      "short_name": "AsiaCCS2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://asiaccs2027.cityu.edu.mo/index.html",
+      "deadlines": [
+        {
+          "stage": "1st round Deadline",
+          "timestamp": "2026-08-22T11:59:59Z"
+        },
+        {
+          "stage": "2nd round Deadline",
+          "timestamp": "2026-12-12T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-08-22T11:59:59Z",
