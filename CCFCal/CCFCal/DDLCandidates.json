@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-10T13:41:46+08:00",
+  "generated_at": "2026-05-11T14:04:00+08:00",
   "items": [
-    {
-      "id": "seke2026-864d6a137a81",
-      "title": "SEKE2026",
-      "short_name": "SEKE2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://ksiresearch.org/seke/seke26.html",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-11T04:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-11T04:59:00Z",
-      "next_deadline_display": "2026-05-11 12:59"
-    },
     {
       "id": "acm-siggraph-asia2026-54c74136e964",
       "title": "ACM SIGGRAPH ASIA2026",
