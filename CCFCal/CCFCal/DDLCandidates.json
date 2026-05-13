@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-12T13:43:26+08:00",
+  "generated_at": "2026-05-13T13:53:42+08:00",
   "items": [
-    {
-      "id": "acm-siggraph-asia2026-54c74136e964",
-      "title": "ACM SIGGRAPH ASIA2026",
-      "short_name": "ACM SIGGRAPH ASIA2026",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://asia.siggraph.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-13T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-13T11:59:00Z",
-      "next_deadline_display": "2026-05-13 19:59"
-    },
     {
       "id": "apweb-waim2026-7b57d20b204b",
       "title": "APWeb-WAIM2026",
@@ -454,6 +435,25 @@
       "next_deadline_display": "2026-06-02 19:59"
     },
     {
+      "id": "iccd2026-39aa0852b916",
+      "title": "ICCD2026",
+      "short_name": "ICCD2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.iccd-conf.com/2026/home.html",
+      "deadlines": [
+        {
+          "stage": "abstract and full paper deadline",
+          "timestamp": "2026-06-06T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-06T11:59:00Z",
+      "next_deadline_display": "2026-06-06 19:59"
+    },
+    {
       "id": "sensys2027-8bf321e0d344",
       "title": "SenSys2027",
       "short_name": "SenSys2027",
@@ -470,6 +470,29 @@
         }
       ],
       "next_deadline_timestamp": "2026-06-06T11:59:00Z",
+      "next_deadline_display": "2026-06-06 19:59"
+    },
+    {
+      "id": "fpt2026-0b782998c164",
+      "title": "FPT2026",
+      "short_name": "FPT2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://fpt2026.uark.edu",
+      "deadlines": [
+        {
+          "stage": "Title and Abstract Due (Conference Track)",
+          "timestamp": "2026-06-06T11:59:59Z"
+        },
+        {
+          "stage": "Submission Due (Conference Track)",
+          "timestamp": "2026-06-13T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-06T11:59:59Z",
       "next_deadline_display": "2026-06-06 19:59"
     },
     {
@@ -585,6 +608,29 @@
       ],
       "next_deadline_timestamp": "2026-06-10T23:59:59Z",
       "next_deadline_display": "2026-06-11 07:59"
+    },
+    {
+      "id": "edbt2027-07bcd7fbe605",
+      "title": "EDBT2027",
+      "short_name": "EDBT2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://edbticdt2027.github.io/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-11T11:59:59Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-08T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-11T11:59:59Z",
+      "next_deadline_display": "2026-06-11 19:59"
     },
     {
       "id": "icde2027-40f881678ad5",
@@ -922,6 +968,25 @@
       "next_deadline_display": "2026-07-15 19:59"
     },
     {
+      "id": "hotnets2026-da04b1eef28f",
+      "title": "HotNets2026",
+      "short_name": "HotNets2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://conferences.sigcomm.org/hotnets/2026/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-07-17T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-17T11:59:59Z",
+      "next_deadline_display": "2026-07-17 19:59"
+    },
+    {
       "id": "sigmod2027-0beb843bcdb9",
       "title": "SIGMOD2027",
       "short_name": "SIGMOD2027",
@@ -1082,6 +1147,25 @@
       "next_deadline_display": "2026-08-20 19:59"
     },
     {
+      "id": "msn2026-2147f69f2d8a",
+      "title": "MSN2026",
+      "short_name": "MSN2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://ieee-msn.org/2026",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-21T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-21T11:59:59Z",
+      "next_deadline_display": "2026-08-21 19:59"
+    },
+    {
       "id": "bigdata2026-bec88d2dbfd0",
       "title": "BigData2026",
       "short_name": "BigData2026",
@@ -1164,6 +1248,44 @@
       ],
       "next_deadline_timestamp": "2026-09-10T11:59:59Z",
       "next_deadline_display": "2026-09-10 19:59"
+    },
+    {
+      "id": "icdt2027-8a3e52b46353",
+      "title": "ICDT2027",
+      "short_name": "ICDT2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://edbticdt2027.github.io/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-11T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-11T11:59:59Z",
+      "next_deadline_display": "2026-09-11 19:59"
+    },
+    {
+      "id": "chi2027-d2279900eb68",
+      "title": "CHI2027",
+      "short_name": "CHI2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "HCI"
+      ],
+      "url": "https://chi2027.acm.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-11T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-11T11:59:59Z",
+      "next_deadline_display": "2026-09-11 19:59"
     },
     {
       "id": "fast2027-2320939fe861",
