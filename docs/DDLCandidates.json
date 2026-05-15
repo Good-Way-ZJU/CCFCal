@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-14T13:52:44+08:00",
+  "generated_at": "2026-05-15T13:59:39+08:00",
   "items": [
     {
       "id": "apweb-waim2026-7b57d20b204b",
@@ -797,6 +797,25 @@
       "next_deadline_display": "2026-06-23 19:59"
     },
     {
+      "id": "isaac2026-d4d20f640ec2",
+      "title": "ISAAC2026",
+      "short_name": "ISAAC2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "TH"
+      ],
+      "url": "https://www.algo-door.com/isaac2026/index.html",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-27T11:59:59Z",
+      "next_deadline_display": "2026-06-27 19:59"
+    },
+    {
       "id": "ictai2026-4516888eba77",
       "title": "ICTAI2026",
       "short_name": "ICTAI2026",
@@ -852,6 +871,25 @@
       ],
       "next_deadline_timestamp": "2026-07-02T07:59:59Z",
       "next_deadline_display": "2026-07-02 15:59"
+    },
+    {
+      "id": "ncmmsc2026-eb326b9195f4",
+      "title": "NCMMSC2026",
+      "short_name": "NCMMSC2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://www.ncmmsc.org.cn/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-07-05T15:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-05T15:59:59Z",
+      "next_deadline_display": "2026-07-05 23:59"
     },
     {
       "id": "bibm2026-a86ab352bd40",
