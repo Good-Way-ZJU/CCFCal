@@ -1,49 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-15T13:59:39+08:00",
+  "generated_at": "2026-05-16T13:31:51+08:00",
   "items": [
-    {
-      "id": "apweb-waim2026-7b57d20b204b",
-      "title": "APWeb-WAIM2026",
-      "short_name": "APWeb-WAIM2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://conferences.sigappfr.org/apweb2026/",
-      "deadlines": [
-        {
-          "stage": "second round",
-          "timestamp": "2026-05-15T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-15T11:59:59Z",
-      "next_deadline_display": "2026-05-15 19:59"
-    },
-    {
-      "id": "eurosys2027-dfce2bbb94bb",
-      "title": "EuroSys2027",
-      "short_name": "EuroSys2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://2027.eurosys.org/",
-      "deadlines": [
-        {
-          "stage": "Spring Submission Deadline",
-          "timestamp": "2026-05-15T11:59:59Z"
-        },
-        {
-          "stage": "Fall Submission Deadline",
-          "timestamp": "2026-09-25T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-15T11:59:59Z",
-      "next_deadline_display": "2026-05-15 19:59"
-    },
     {
       "id": "esem2026-41eac54a115e",
       "title": "ESEM2026",
@@ -1381,6 +1339,25 @@
       ],
       "next_deadline_timestamp": "2026-09-21T11:59:59Z",
       "next_deadline_display": "2026-09-21 19:59"
+    },
+    {
+      "id": "eurosys2027-dfce2bbb94bb",
+      "title": "EuroSys2027",
+      "short_name": "EuroSys2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://2027.eurosys.org/",
+      "deadlines": [
+        {
+          "stage": "Fall Submission Deadline",
+          "timestamp": "2026-09-25T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-25T11:59:59Z",
+      "next_deadline_display": "2026-09-25 19:59"
     },
     {
       "id": "dcc2027-3681dc9be45b",
