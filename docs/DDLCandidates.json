@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-19T14:14:32+08:00",
+  "generated_at": "2026-05-20T14:14:45+08:00",
   "items": [
-    {
-      "id": "esem2026-41eac54a115e",
-      "title": "ESEM2026",
-      "short_name": "ESEM2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://conf.researchr.org/home/eseiw-2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-19T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-19T11:59:59Z",
-      "next_deadline_display": "2026-05-19 19:59"
-    },
     {
       "id": "rtss2026-19bc2c746c65",
       "title": "RTSS2026",
