@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-21T14:16:10+08:00",
+  "generated_at": "2026-05-22T14:14:14+08:00",
   "items": [
     {
       "id": "rtss2026-19bc2c746c65",
@@ -1320,6 +1320,25 @@
       ],
       "next_deadline_timestamp": "2026-09-16T11:59:00Z",
       "next_deadline_display": "2026-09-16 19:59"
+    },
+    {
+      "id": "icassp2027-14d416dd10e7",
+      "title": "ICASSP2027",
+      "short_name": "ICASSP2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://2027.ieeeicassp.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-17T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-17T11:59:59Z",
+      "next_deadline_display": "2026-09-17 19:59"
     },
     {
       "id": "nsdi2027-bdc8ebd908f5",
