@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-22T14:14:14+08:00",
+  "generated_at": "2026-05-23T13:43:47+08:00",
   "items": [
-    {
-      "id": "rtss2026-19bc2c746c65",
-      "title": "RTSS2026",
-      "short_name": "RTSS2026",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SYS"
-      ],
-      "url": "http://2026.rtss.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-22T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-22T11:59:59Z",
-      "next_deadline_display": "2026-05-22 19:59"
-    },
-    {
-      "id": "asiacrypt2026-b44ccce16221",
-      "title": "ASIACRYPT2026",
-      "short_name": "ASIACRYPT2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://asiacrypt.iacr.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-22T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-22T11:59:59Z",
-      "next_deadline_display": "2026-05-22 19:59"
-    },
     {
       "id": "icnp2026-f69aef6a0e26",
       "title": "ICNP2026",
