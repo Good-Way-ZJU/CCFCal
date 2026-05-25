@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-24T14:06:58+08:00",
+  "generated_at": "2026-05-25T14:41:21+08:00",
   "items": [
-    {
-      "id": "cikm2026-789bdfc22964",
-      "title": "CIKM2026",
-      "short_name": "CIKM2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://cikm2026.diag.uniroma1.it/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-24T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-24T11:59:59Z",
-      "next_deadline_display": "2026-05-24 19:59"
-    },
-    {
-      "id": "icics2026-7337a8de2a82",
-      "title": "ICICS2026",
-      "short_name": "ICICS2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://sulab-sever.u-aizu.ac.jp/icics2026/cfp.html",
-      "deadlines": [
-        {
-          "stage": "Second round",
-          "timestamp": "2026-05-24T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-24T11:59:59Z",
-      "next_deadline_display": "2026-05-24 19:59"
-    },
     {
       "id": "emnlp2026-6e41117fddd0",
       "title": "EMNLP2026",
