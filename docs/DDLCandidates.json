@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-26T14:12:38+08:00",
+  "generated_at": "2026-05-27T14:26:29+08:00",
   "items": [
-    {
-      "id": "emnlp2026-6e41117fddd0",
-      "title": "EMNLP2026",
-      "short_name": "EMNLP2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://2026.emnlp.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-26T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-26T11:59:59Z",
-      "next_deadline_display": "2026-05-26 19:59"
-    },
-    {
-      "id": "nlpcc2026-4b1d8ead0831",
-      "title": "NLPCC2026",
-      "short_name": "NLPCC2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "http://tcci.ccf.org.cn/conference/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-26T15:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-26T15:59:59Z",
-      "next_deadline_display": "2026-05-26 23:59"
-    },
     {
       "id": "acsac2026-ec0b278e3c90",
       "title": "ACSAC2026",
