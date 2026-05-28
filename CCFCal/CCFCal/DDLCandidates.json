@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-27T14:26:29+08:00",
+  "generated_at": "2026-05-28T14:18:22+08:00",
   "items": [
-    {
-      "id": "acsac2026-ec0b278e3c90",
-      "title": "ACSAC2026",
-      "short_name": "ACSAC2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://www.acsac.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-27T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-27T11:59:59Z",
-      "next_deadline_display": "2026-05-27 19:59"
-    },
     {
       "id": "aft2026-4716877df2ef",
       "title": "AFT2026",
