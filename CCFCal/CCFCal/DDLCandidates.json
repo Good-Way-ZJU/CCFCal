@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-28T14:18:22+08:00",
+  "generated_at": "2026-05-29T14:20:12+08:00",
   "items": [
-    {
-      "id": "aft2026-4716877df2ef",
-      "title": "AFT2026",
-      "short_name": "AFT2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://aft.ifca.ai/aft26/index.html",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-28T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-28T11:59:59Z",
-      "next_deadline_display": "2026-05-28 19:59"
-    },
     {
       "id": "bmvc2026-a05198539110",
       "title": "BMVC2026",
