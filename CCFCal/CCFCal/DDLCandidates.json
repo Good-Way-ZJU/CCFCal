@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-30T13:52:33+08:00",
+  "generated_at": "2026-05-31T14:25:24+08:00",
   "items": [
-    {
-      "id": "sigspatial2026-83863c0b6255",
-      "title": "SIGSPATIAL2026",
-      "short_name": "SIGSPATIAL2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://sigspatial2026.sigspatial.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-30T06:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-30T06:59:59Z",
-      "next_deadline_display": "2026-05-30 14:59"
-    },
     {
       "id": "prcv2026-338047e7df8b",
       "title": "PRCV2026",
