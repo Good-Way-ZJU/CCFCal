@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-05-31T14:25:24+08:00",
+  "generated_at": "2026-06-01T15:06:41+08:00",
   "items": [
-    {
-      "id": "prcv2026-338047e7df8b",
-      "title": "PRCV2026",
-      "short_name": "PRCV2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.prcv.cn/web/#/home",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-05-31T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-05-31T11:59:59Z",
-      "next_deadline_display": "2026-05-31 19:59"
-    },
     {
       "id": "iconip2026-20854922fdab",
       "title": "ICONIP2026",
