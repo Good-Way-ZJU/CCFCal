@@ -1,150 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-01T15:06:41+08:00",
+  "generated_at": "2026-06-02T14:47:41+08:00",
   "items": [
-    {
-      "id": "iconip2026-20854922fdab",
-      "title": "ICONIP2026",
-      "short_name": "ICONIP2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://www.iconip2026.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-01T11:59:59Z",
-      "next_deadline_display": "2026-06-01 19:59"
-    },
-    {
-      "id": "pets2027-ac58aa8d5178",
-      "title": "PETS2027",
-      "short_name": "PETS2027",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://petsymposium.org/cfp27.php",
-      "deadlines": [
-        {
-          "stage": "Issue 1 Paper Submission Deadline",
-          "timestamp": "2026-06-01T11:59:59Z"
-        },
-        {
-          "stage": "Issue 2 Paper Submission Deadline",
-          "timestamp": "2026-09-01T11:59:59Z"
-        },
-        {
-          "stage": "Issue 3 Paper Submission Deadline",
-          "timestamp": "2026-12-01T11:59:59Z"
-        },
-        {
-          "stage": "Issue 4 Paper Submission Deadline",
-          "timestamp": "2027-03-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-01T11:59:59Z",
-      "next_deadline_display": "2026-06-01 19:59"
-    },
-    {
-      "id": "rv2026-bbc52d5cea03",
-      "title": "RV2026",
-      "short_name": "RV2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://rv2026.smithengineering.queensu.ca/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-01T11:59:59Z",
-      "next_deadline_display": "2026-06-01 19:59"
-    },
-    {
-      "id": "mswim2026-dfc489912696",
-      "title": "MSWiM2026",
-      "short_name": "MSWiM2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://mswimconf.com/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-01T22:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-01T22:59:59Z",
-      "next_deadline_display": "2026-06-02 06:59"
-    },
-    {
-      "id": "vldb2027-2a32785e2024",
-      "title": "VLDB2027",
-      "short_name": "VLDB2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://www.vldb.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-10-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-11-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-12-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-01-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-02-02T00:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-03-02T00:00:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-02T00:00:00Z",
-      "next_deadline_display": "2026-06-02 08:00"
-    },
     {
       "id": "sca2026-77211138a653",
       "title": "SCA2026",
@@ -603,6 +460,57 @@
       "next_deadline_display": "2026-07-01 19:59"
     },
     {
+      "id": "vldb2027-2a32785e2024",
+      "title": "VLDB2027",
+      "short_name": "VLDB2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://www.vldb.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-07-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-11-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-12-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-01-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-02-02T00:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-03-02T00:00:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-02T00:00:00Z",
+      "next_deadline_display": "2026-07-02 08:00"
+    },
+    {
       "id": "inscrypt2026-2572cb9b9852",
       "title": "INSCRYPT2026",
       "short_name": "INSCRYPT2026",
@@ -1016,6 +924,33 @@
       ],
       "next_deadline_timestamp": "2026-08-26T11:59:59Z",
       "next_deadline_display": "2026-08-26 19:59"
+    },
+    {
+      "id": "pets2027-ac58aa8d5178",
+      "title": "PETS2027",
+      "short_name": "PETS2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://petsymposium.org/cfp27.php",
+      "deadlines": [
+        {
+          "stage": "Issue 2 Paper Submission Deadline",
+          "timestamp": "2026-09-01T11:59:59Z"
+        },
+        {
+          "stage": "Issue 3 Paper Submission Deadline",
+          "timestamp": "2026-12-01T11:59:59Z"
+        },
+        {
+          "stage": "Issue 4 Paper Submission Deadline",
+          "timestamp": "2027-03-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-01T11:59:59Z",
+      "next_deadline_display": "2026-09-01 19:59"
     },
     {
       "id": "asplos2027-e48cd018d065",
