@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-02T14:47:41+08:00",
+  "generated_at": "2026-06-03T14:58:50+08:00",
   "items": [
-    {
-      "id": "sca2026-77211138a653",
-      "title": "SCA2026",
-      "short_name": "SCA2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://computeranimation.org/",
-      "deadlines": [
-        {
-          "stage": "Submission deadline (posters)",
-          "timestamp": "2026-06-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-02T11:59:59Z",
-      "next_deadline_display": "2026-06-02 19:59"
-    },
     {
       "id": "iccd2026-39aa0852b916",
       "title": "ICCD2026",
