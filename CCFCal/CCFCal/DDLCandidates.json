@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-04T14:48:42+08:00",
+  "generated_at": "2026-06-05T14:37:37+08:00",
   "items": [
     {
       "id": "iccd2026-39aa0852b916",
@@ -365,6 +365,25 @@
       "next_deadline_display": "2026-06-18 19:59"
     },
     {
+      "id": "nlpcc2026-4b1d8ead0831",
+      "title": "NLPCC2026",
+      "short_name": "NLPCC2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "http://tcci.ccf.org.cn/conference/2026/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-20T15:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-20T15:59:59Z",
+      "next_deadline_display": "2026-06-20 23:59"
+    },
+    {
       "id": "isc2026-fda4ed3f57d7",
       "title": "ISC2026",
       "short_name": "ISC2026",
@@ -401,6 +420,29 @@
       ],
       "next_deadline_timestamp": "2026-06-27T11:59:59Z",
       "next_deadline_display": "2026-06-27 19:59"
+    },
+    {
+      "id": "iceccs2026-77be13558302",
+      "title": "ICECCS2026",
+      "short_name": "ICECCS2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SE"
+      ],
+      "url": "https://formal-analysis.com/iceccs/2026/",
+      "deadlines": [
+        {
+          "stage": "Abstract submission",
+          "timestamp": "2026-06-30T11:59:59Z"
+        },
+        {
+          "stage": "Full paper submission",
+          "timestamp": "2026-07-07T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-30T11:59:59Z",
+      "next_deadline_display": "2026-06-30 19:59"
     },
     {
       "id": "ictai2026-4516888eba77",
@@ -509,6 +551,25 @@
       ],
       "next_deadline_timestamp": "2026-07-02T07:59:59Z",
       "next_deadline_display": "2026-07-02 15:59"
+    },
+    {
+      "id": "wine2026-d38e3c6b6f4d",
+      "title": "WINE2026",
+      "short_name": "WINE2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "SYS"
+      ],
+      "url": "https://wine2026conf.github.io/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-07-03T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-03T11:59:59Z",
+      "next_deadline_display": "2026-07-03 19:59"
     },
     {
       "id": "ncmmsc2026-eb326b9195f4",
@@ -625,6 +686,33 @@
       "next_deadline_display": "2026-07-11 13:00"
     },
     {
+      "id": "sigmetrics2027-57095695c812",
+      "title": "SIGMETRICS2027",
+      "short_name": "SIGMETRICS2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.sigmetrics.org/sigmetrics2027/",
+      "deadlines": [
+        {
+          "stage": "summer round",
+          "timestamp": "2026-07-11T11:59:00Z"
+        },
+        {
+          "stage": "fall round",
+          "timestamp": "2026-10-10T11:59:00Z"
+        },
+        {
+          "stage": "winter round",
+          "timestamp": "2027-01-12T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-11T11:59:00Z",
+      "next_deadline_display": "2026-07-11 19:59"
+    },
+    {
       "id": "socc2026-cae8f2ca4e6a",
       "title": "SoCC2026",
       "short_name": "SoCC2026",
@@ -705,6 +793,25 @@
       "next_deadline_display": "2026-07-28 19:59"
     },
     {
+      "id": "hpca2027-d6113bf03b26",
+      "title": "HPCA2027",
+      "short_name": "HPCA2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://conf.researchr.org/home/hpca-2027",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-01T11:59:59Z",
+      "next_deadline_display": "2026-08-01 19:59"
+    },
+    {
       "id": "ubicomp-iswc2026-37c2f0800f04",
       "title": "UbiComp/ISWC2026",
       "short_name": "UbiComp/ISWC2026",
@@ -745,6 +852,29 @@
       ],
       "next_deadline_timestamp": "2026-08-02T11:59:59Z",
       "next_deadline_display": "2026-08-02 19:59"
+    },
+    {
+      "id": "dai2026-d2eeaad89fac",
+      "title": "DAI2026",
+      "short_name": "DAI2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://www.adai.ai/dai/2026/index.html",
+      "deadlines": [
+        {
+          "stage": "Research / Industry Track",
+          "timestamp": "2026-08-04T11:59:59Z"
+        },
+        {
+          "stage": "AI Paper Track",
+          "timestamp": "2026-08-11T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-04T11:59:59Z",
+      "next_deadline_display": "2026-08-04 19:59"
     },
     {
       "id": "cidr2027-70c24c1d92ee",
@@ -1084,6 +1214,25 @@
       ],
       "next_deadline_timestamp": "2026-09-25T11:59:59Z",
       "next_deadline_display": "2026-09-25 19:59"
+    },
+    {
+      "id": "saner2027-cdde0de53bba",
+      "title": "SANER2027",
+      "short_name": "SANER2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "SE"
+      ],
+      "url": "https://conf.researchr.org/home/saner-2027",
+      "deadlines": [
+        {
+          "stage": "Research Track Paper submission deadline",
+          "timestamp": "2026-09-26T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-26T11:59:59Z",
+      "next_deadline_display": "2026-09-26 19:59"
     },
     {
       "id": "dcc2027-3681dc9be45b",
