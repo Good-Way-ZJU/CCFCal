@@ -1,144 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-06T13:58:29+08:00",
+  "generated_at": "2026-06-07T14:35:31+08:00",
   "items": [
-    {
-      "id": "iccd2026-39aa0852b916",
-      "title": "ICCD2026",
-      "short_name": "ICCD2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.iccd-conf.com/2026/home.html",
-      "deadlines": [
-        {
-          "stage": "abstract and full paper deadline",
-          "timestamp": "2026-06-06T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-06T11:59:00Z",
-      "next_deadline_display": "2026-06-06 19:59"
-    },
-    {
-      "id": "sensys2027-8bf321e0d344",
-      "title": "SenSys2027",
-      "short_name": "SenSys2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://sensys.acm.org/2027/",
-      "deadlines": [
-        {
-          "stage": "1st deadline",
-          "timestamp": "2026-06-06T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-06T11:59:00Z",
-      "next_deadline_display": "2026-06-06 19:59"
-    },
-    {
-      "id": "fpt2026-0b782998c164",
-      "title": "FPT2026",
-      "short_name": "FPT2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://fpt2026.uark.edu",
-      "deadlines": [
-        {
-          "stage": "Title and Abstract Due (Conference Track)",
-          "timestamp": "2026-06-06T11:59:59Z"
-        },
-        {
-          "stage": "Submission Due (Conference Track)",
-          "timestamp": "2026-06-13T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-06T11:59:59Z",
-      "next_deadline_display": "2026-06-06 19:59"
-    },
-    {
-      "id": "hotstorage2026-d4dddb5eeaa9",
-      "title": "HotStorage2026",
-      "short_name": "HotStorage2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.hotstorage.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-06T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-06T11:59:59Z",
-      "next_deadline_display": "2026-06-06 19:59"
-    },
-    {
-      "id": "conext2026-425d6d55ebd0",
-      "title": "CoNEXT2026",
-      "short_name": "CoNEXT2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://conferences.sigcomm.org/co-next/2026/#!/home",
-      "deadlines": [
-        {
-          "stage": "June Cycle",
-          "timestamp": "2026-06-06T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-06T11:59:59Z",
-      "next_deadline_display": "2026-06-06 19:59"
-    },
-    {
-      "id": "ats2026-47cdcd14281e",
-      "title": "ATS2026",
-      "short_name": "ATS2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.ats2026.tw/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-06T15:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-06T15:59:59Z",
-      "next_deadline_display": "2026-06-06 23:59"
-    },
-    {
-      "id": "acml2026-35c2eb443676",
-      "title": "ACML2026",
-      "short_name": "ACML2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://www.acml-conf.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Journal Track",
-          "timestamp": "2026-06-07T06:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-07T06:59:59Z",
-      "next_deadline_display": "2026-06-07 14:59"
-    },
     {
       "id": "icdm2026-8ac766e164b8",
       "title": "ICDM2026",
@@ -308,6 +171,25 @@
       "next_deadline_display": "2026-06-12 19:59"
     },
     {
+      "id": "fpt2026-0b782998c164",
+      "title": "FPT2026",
+      "short_name": "FPT2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://fpt2026.uark.edu",
+      "deadlines": [
+        {
+          "stage": "Submission Due (Conference Track)",
+          "timestamp": "2026-06-13T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-13T11:59:59Z",
+      "next_deadline_display": "2026-06-13 19:59"
+    },
+    {
       "id": "pricai2026-98d05e30a8fe",
       "title": "PRICAI2026",
       "short_name": "PRICAI2026",
@@ -382,6 +264,29 @@
       ],
       "next_deadline_timestamp": "2026-06-20T15:59:59Z",
       "next_deadline_display": "2026-06-20 23:59"
+    },
+    {
+      "id": "acml2026-35c2eb443676",
+      "title": "ACML2026",
+      "short_name": "ACML2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://www.acml-conf.org/2026/",
+      "deadlines": [
+        {
+          "stage": "Journal Track",
+          "timestamp": "2026-06-21T11:59:59Z"
+        },
+        {
+          "stage": "Conference Track",
+          "timestamp": "2026-06-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-21T11:59:59Z",
+      "next_deadline_display": "2026-06-21 19:59"
     },
     {
       "id": "isc2026-fda4ed3f57d7",
@@ -495,43 +400,43 @@
       "deadlines": [
         {
           "stage": "Deadline",
-          "timestamp": "2026-07-02T00:00:00Z"
+          "timestamp": "2026-07-01T17:00:00Z"
         },
         {
           "stage": "Deadline",
-          "timestamp": "2026-08-02T00:00:00Z"
+          "timestamp": "2026-08-01T17:00:00Z"
         },
         {
           "stage": "Deadline",
-          "timestamp": "2026-09-02T00:00:00Z"
+          "timestamp": "2026-09-01T17:00:00Z"
         },
         {
           "stage": "Deadline",
-          "timestamp": "2026-10-02T00:00:00Z"
+          "timestamp": "2026-10-01T17:00:00Z"
         },
         {
           "stage": "Deadline",
-          "timestamp": "2026-11-02T00:00:00Z"
+          "timestamp": "2026-11-01T17:00:00Z"
         },
         {
           "stage": "Deadline",
-          "timestamp": "2026-12-02T00:00:00Z"
+          "timestamp": "2026-12-01T17:00:00Z"
         },
         {
           "stage": "Deadline",
-          "timestamp": "2027-01-02T00:00:00Z"
+          "timestamp": "2027-01-01T17:00:00Z"
         },
         {
           "stage": "Deadline",
-          "timestamp": "2027-02-02T00:00:00Z"
+          "timestamp": "2027-02-01T17:00:00Z"
         },
         {
           "stage": "Deadline",
-          "timestamp": "2027-03-02T00:00:00Z"
+          "timestamp": "2027-03-01T17:00:00Z"
         }
       ],
-      "next_deadline_timestamp": "2026-07-02T00:00:00Z",
-      "next_deadline_display": "2026-07-02 08:00"
+      "next_deadline_timestamp": "2026-07-01T17:00:00Z",
+      "next_deadline_display": "2026-07-02 01:00"
     },
     {
       "id": "inscrypt2026-2572cb9b9852",
