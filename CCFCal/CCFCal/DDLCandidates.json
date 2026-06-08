@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-07T14:35:31+08:00",
+  "generated_at": "2026-06-08T14:51:16+08:00",
   "items": [
-    {
-      "id": "icdm2026-8ac766e164b8",
-      "title": "ICDM2026",
-      "short_name": "ICDM2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "http://icdm2026.neu.edu.cn/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-07T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-07T11:59:59Z",
-      "next_deadline_display": "2026-06-07 19:59"
-    },
     {
       "id": "pg2026-e71e593f107b",
       "title": "PG2026",
@@ -940,6 +921,25 @@
       ],
       "next_deadline_timestamp": "2026-08-26T11:59:59Z",
       "next_deadline_display": "2026-08-26 19:59"
+    },
+    {
+      "id": "ieee-vr2027-fe2989fe6a02",
+      "title": "IEEE VR2027",
+      "short_name": "IEEE VR2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://ieeevr.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-01T11:59:59Z",
+      "next_deadline_display": "2026-09-01 19:59"
     },
     {
       "id": "pets2027-ac58aa8d5178",
