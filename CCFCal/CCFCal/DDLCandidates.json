@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-08T14:51:16+08:00",
+  "generated_at": "2026-06-09T14:14:44+08:00",
   "items": [
     {
       "id": "pg2026-e71e593f107b",
@@ -298,6 +298,25 @@
         "TH"
       ],
       "url": "https://www.algo-door.com/isaac2026/index.html",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-27T11:59:59Z",
+      "next_deadline_display": "2026-06-27 19:59"
+    },
+    {
+      "id": "adma2026-3f801e6c5a40",
+      "title": "ADMA2026",
+      "short_name": "ADMA2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://adma2026.github.io/",
       "deadlines": [
         {
           "stage": "Deadline",
@@ -839,6 +858,25 @@
       "next_deadline_display": "2026-08-20 19:59"
     },
     {
+      "id": "iui2027-42eacda301dd",
+      "title": "IUI2027",
+      "short_name": "IUI2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "HCI"
+      ],
+      "url": "https://iui.hosting.acm.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-21T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-21T11:59:59Z",
+      "next_deadline_display": "2026-08-21 19:59"
+    },
+    {
       "id": "msn2026-2147f69f2d8a",
       "title": "MSN2026",
       "short_name": "MSN2026",
@@ -1042,6 +1080,25 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-16T11:59:00Z",
+      "next_deadline_display": "2026-09-16 19:59"
+    },
+    {
+      "id": "wcnc2027-153077a2c490",
+      "title": "WCNC2027",
+      "short_name": "WCNC2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://wcnc2027.ieee-wcnc.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-16T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-16T11:59:59Z",
       "next_deadline_display": "2026-09-16 19:59"
     },
     {
