@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-09T14:14:44+08:00",
+  "generated_at": "2026-06-10T14:37:06+08:00",
   "items": [
-    {
-      "id": "pg2026-e71e593f107b",
-      "title": "PG2026",
-      "short_name": "PG2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://pacificgraphics2026.github.io/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-09T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-09T11:59:59Z",
-      "next_deadline_display": "2026-06-09 19:59"
-    },
-    {
-      "id": "sigops-atc2026-b1998cb73d6f",
-      "title": "SIGOPS ATC2026",
-      "short_name": "SIGOPS ATC2026",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://sigops.org/s/conferences/atc/2026/index.html",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-10T23:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-10T23:59:59Z",
-      "next_deadline_display": "2026-06-11 07:59"
-    },
     {
       "id": "edbt2027-07bcd7fbe605",
       "title": "EDBT2027",
@@ -58,6 +20,25 @@
         {
           "stage": "Deadline",
           "timestamp": "2026-10-08T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-11T11:59:59Z",
+      "next_deadline_display": "2026-06-11 19:59"
+    },
+    {
+      "id": "sigops-atc2026-b1998cb73d6f",
+      "title": "SIGOPS ATC2026",
+      "short_name": "SIGOPS ATC2026",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://sigops.org/s/conferences/atc/2026/index.html",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-11T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-06-11T11:59:59Z",
@@ -679,6 +660,25 @@
       "next_deadline_display": "2026-07-18 19:59"
     },
     {
+      "id": "iss2026-1daebf0f9bd1",
+      "title": "ISS2026",
+      "short_name": "ISS2026",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "HCI"
+      ],
+      "url": "https://iss.acm.org/2026/",
+      "deadlines": [
+        {
+          "stage": "Summer round",
+          "timestamp": "2026-07-23T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-23T11:59:59Z",
+      "next_deadline_display": "2026-07-23 19:59"
+    },
+    {
       "id": "aaai2027-b00c7668bd6a",
       "title": "AAAI2027",
       "short_name": "AAAI2027",
@@ -1197,13 +1197,13 @@
       "next_deadline_display": "2026-09-26 19:59"
     },
     {
-      "id": "dcc2027-3681dc9be45b",
+      "id": "dcc2027-964db4610068",
       "title": "DCC2027",
       "short_name": "DCC2027",
       "kind": "conference",
       "ccf_rank": "B",
       "domains": [
-        "ARCH"
+        "CG"
       ],
       "url": "https://datacompressionconference.org/",
       "deadlines": [
