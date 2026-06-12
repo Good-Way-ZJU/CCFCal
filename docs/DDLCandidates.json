@@ -1,72 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-11T14:55:42+08:00",
+  "generated_at": "2026-06-12T14:48:34+08:00",
   "items": [
-    {
-      "id": "edbt2027-07bcd7fbe605",
-      "title": "EDBT2027",
-      "short_name": "EDBT2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://edbticdt2027.github.io/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-11T11:59:59Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-10-08T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-11T11:59:59Z",
-      "next_deadline_display": "2026-06-11 19:59"
-    },
-    {
-      "id": "sigops-atc2026-b1998cb73d6f",
-      "title": "SIGOPS ATC2026",
-      "short_name": "SIGOPS ATC2026",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://sigops.org/s/conferences/atc/2026/index.html",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-11T11:59:59Z",
-      "next_deadline_display": "2026-06-11 19:59"
-    },
-    {
-      "id": "icde2027-40f881678ad5",
-      "title": "ICDE2027",
-      "short_name": "ICDE2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://icde2027.github.io/",
-      "deadlines": [
-        {
-          "stage": "first round",
-          "timestamp": "2026-06-12T00:00:00Z"
-        },
-        {
-          "stage": "second round",
-          "timestamp": "2026-11-12T00:00:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-12T00:00:00Z",
-      "next_deadline_display": "2026-06-12 08:00"
-    },
     {
       "id": "ieee-acm-cgo2027-974747322277",
       "title": "IEEE/ACM CGO2027",
@@ -1228,11 +1163,11 @@
       "deadlines": [
         {
           "stage": "Deadline",
-          "timestamp": "2026-10-03T11:59:59Z"
+          "timestamp": "2026-10-02T23:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-03T11:59:59Z",
-      "next_deadline_display": "2026-10-03 19:59"
+      "next_deadline_timestamp": "2026-10-02T23:59:59Z",
+      "next_deadline_display": "2026-10-03 07:59"
     },
     {
       "id": "fse2027-1592ee1504f6",
@@ -1252,6 +1187,44 @@
       ],
       "next_deadline_timestamp": "2026-10-03T11:59:59Z",
       "next_deadline_display": "2026-10-03 19:59"
+    },
+    {
+      "id": "edbt2027-07bcd7fbe605",
+      "title": "EDBT2027",
+      "short_name": "EDBT2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://edbticdt2027.github.io/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-08T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-08T11:59:59Z",
+      "next_deadline_display": "2026-10-08 19:59"
+    },
+    {
+      "id": "icde2027-40f881678ad5",
+      "title": "ICDE2027",
+      "short_name": "ICDE2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://icde2027.github.io/",
+      "deadlines": [
+        {
+          "stage": "second round",
+          "timestamp": "2026-11-12T00:00:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-12T00:00:00Z",
+      "next_deadline_display": "2026-11-12 08:00"
     },
     {
       "id": "refsq2027-41325ed9666c",
