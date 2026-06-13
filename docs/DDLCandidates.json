@@ -1,72 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-12T14:48:34+08:00",
+  "generated_at": "2026-06-13T14:22:22+08:00",
   "items": [
-    {
-      "id": "ieee-acm-cgo2027-974747322277",
-      "title": "IEEE/ACM CGO2027",
-      "short_name": "IEEE/ACM CGO2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://conf.researchr.org/home/cgo-2027",
-      "deadlines": [
-        {
-          "stage": "First Submission",
-          "timestamp": "2026-06-12T11:59:59Z"
-        },
-        {
-          "stage": "Second Submission",
-          "timestamp": "2026-09-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-12T11:59:59Z",
-      "next_deadline_display": "2026-06-12 19:59"
-    },
-    {
-      "id": "s-p2027-faa47003dafe",
-      "title": "S&P2027",
-      "short_name": "S&P2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://sp2027.ieee-security.org/index.html",
-      "deadlines": [
-        {
-          "stage": "First Paper submission deadline",
-          "timestamp": "2026-06-12T11:59:59Z"
-        },
-        {
-          "stage": "Second Paper submission deadline",
-          "timestamp": "2026-11-18T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-12T11:59:59Z",
-      "next_deadline_display": "2026-06-12 19:59"
-    },
-    {
-      "id": "scam2026-fcf94cecefb1",
-      "title": "SCAM2026",
-      "short_name": "SCAM2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://conf.researchr.org/home/scam-2026",
-      "deadlines": [
-        {
-          "stage": "co-located with ICSME 2026",
-          "timestamp": "2026-06-12T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-12T11:59:59Z",
-      "next_deadline_display": "2026-06-12 19:59"
-    },
     {
       "id": "fpt2026-0b782998c164",
       "title": "FPT2026",
@@ -85,25 +20,6 @@
       ],
       "next_deadline_timestamp": "2026-06-13T11:59:59Z",
       "next_deadline_display": "2026-06-13 19:59"
-    },
-    {
-      "id": "pricai2026-98d05e30a8fe",
-      "title": "PRICAI2026",
-      "short_name": "PRICAI2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://2026.pricai.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-14T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-14T11:59:59Z",
-      "next_deadline_display": "2026-06-14 19:59"
     },
     {
       "id": "apbc2026-d8cb2685db8f",
@@ -241,6 +157,25 @@
       ],
       "next_deadline_timestamp": "2026-06-27T11:59:59Z",
       "next_deadline_display": "2026-06-27 19:59"
+    },
+    {
+      "id": "pricai2026-98d05e30a8fe",
+      "title": "PRICAI2026",
+      "short_name": "PRICAI2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://2026.pricai.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-06-28T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-28T11:59:59Z",
+      "next_deadline_display": "2026-06-28 19:59"
     },
     {
       "id": "iceccs2026-77be13558302",
@@ -999,6 +934,25 @@
       "next_deadline_display": "2026-09-11 19:59"
     },
     {
+      "id": "ieee-acm-cgo2027-974747322277",
+      "title": "IEEE/ACM CGO2027",
+      "short_name": "IEEE/ACM CGO2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://conf.researchr.org/home/cgo-2027",
+      "deadlines": [
+        {
+          "stage": "Second Submission",
+          "timestamp": "2026-09-11T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-11T11:59:59Z",
+      "next_deadline_display": "2026-09-11 19:59"
+    },
+    {
       "id": "chi2027-d2279900eb68",
       "title": "CHI2027",
       "short_name": "CHI2027",
@@ -1244,6 +1198,25 @@
       ],
       "next_deadline_timestamp": "2026-11-13T11:59:59Z",
       "next_deadline_display": "2026-11-13 19:59"
+    },
+    {
+      "id": "s-p2027-faa47003dafe",
+      "title": "S&P2027",
+      "short_name": "S&P2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://sp2027.ieee-security.org/index.html",
+      "deadlines": [
+        {
+          "stage": "Second Paper submission deadline",
+          "timestamp": "2026-11-18T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-18T11:59:59Z",
+      "next_deadline_display": "2026-11-18 19:59"
     }
   ]
 }
