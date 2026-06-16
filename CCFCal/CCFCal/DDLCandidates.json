@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-15T15:27:37+08:00",
+  "generated_at": "2026-06-16T15:33:00+08:00",
   "items": [
-    {
-      "id": "apbc2026-d8cb2685db8f",
-      "title": "APBC2026",
-      "short_name": "APBC2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://www.apbc2026.com/home",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-15T23:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-15T23:59:59Z",
-      "next_deadline_display": "2026-06-16 07:59"
-    },
     {
       "id": "slt2026-0cf77c504bcb",
       "title": "SLT2026",
