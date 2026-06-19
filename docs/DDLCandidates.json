@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-18T14:58:35+08:00",
+  "generated_at": "2026-06-19T15:18:29+08:00",
   "items": [
-    {
-      "id": "slt2026-0cf77c504bcb",
-      "title": "SLT2026",
-      "short_name": "SLT2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://attend.ieee.org/slt-2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-18T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-18T11:59:59Z",
-      "next_deadline_display": "2026-06-18 19:59"
-    },
     {
       "id": "nlpcc2026-4b1d8ead0831",
       "title": "NLPCC2026",
@@ -608,6 +589,25 @@
         "ARCH"
       ],
       "url": "https://conf.researchr.org/home/hpca-2027",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-01T11:59:59Z",
+      "next_deadline_display": "2026-08-01 19:59"
+    },
+    {
+      "id": "infocom2027-a219264d2825",
+      "title": "INFOCOM2027",
+      "short_name": "INFOCOM2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://infocom2027.ieee-infocom.org/",
       "deadlines": [
         {
           "stage": "Deadline",
