@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-19T15:18:29+08:00",
+  "generated_at": "2026-06-20T14:35:42+08:00",
   "items": [
     {
       "id": "nlpcc2026-4b1d8ead0831",
@@ -1060,6 +1060,25 @@
       "next_deadline_display": "2026-09-18 11:59"
     },
     {
+      "id": "eurocrypt2027-1e2ba92cde33",
+      "title": "EUROCRYPT2027",
+      "short_name": "EUROCRYPT2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://eurocrypt.iacr.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-18T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-18T11:59:59Z",
+      "next_deadline_display": "2026-09-18 19:59"
+    },
+    {
       "id": "date2027-f2c1c1771332",
       "title": "DATE2027",
       "short_name": "DATE2027",
@@ -1172,6 +1191,25 @@
       ],
       "next_deadline_timestamp": "2026-10-08T11:59:59Z",
       "next_deadline_display": "2026-10-08 19:59"
+    },
+    {
+      "id": "iscas2027-91149ac3d1a7",
+      "title": "ISCAS2027",
+      "short_name": "ISCAS2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://2027.ieee-iscas.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-14T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-14T11:59:59Z",
+      "next_deadline_display": "2026-10-14 19:59"
     },
     {
       "id": "icde2027-40f881678ad5",
