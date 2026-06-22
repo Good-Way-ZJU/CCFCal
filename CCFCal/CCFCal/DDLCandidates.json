@@ -1,30 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-21T14:56:50+08:00",
+  "generated_at": "2026-06-22T15:31:30+08:00",
   "items": [
-    {
-      "id": "acml2026-35c2eb443676",
-      "title": "ACML2026",
-      "short_name": "ACML2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://www.acml-conf.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Journal Track",
-          "timestamp": "2026-06-21T11:59:59Z"
-        },
-        {
-          "stage": "Conference Track",
-          "timestamp": "2026-06-27T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-21T11:59:59Z",
-      "next_deadline_display": "2026-06-21 19:59"
-    },
     {
       "id": "isc2026-fda4ed3f57d7",
       "title": "ISC2026",
@@ -43,6 +20,25 @@
       ],
       "next_deadline_timestamp": "2026-06-23T11:59:59Z",
       "next_deadline_display": "2026-06-23 19:59"
+    },
+    {
+      "id": "acml2026-35c2eb443676",
+      "title": "ACML2026",
+      "short_name": "ACML2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://www.acml-conf.org/2026/",
+      "deadlines": [
+        {
+          "stage": "Conference Track",
+          "timestamp": "2026-06-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-06-27T11:59:59Z",
+      "next_deadline_display": "2026-06-27 19:59"
     },
     {
       "id": "isaac2026-d4d20f640ec2",
