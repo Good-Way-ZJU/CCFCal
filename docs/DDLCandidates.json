@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-23T14:14:01+08:00",
+  "generated_at": "2026-06-24T14:11:58+08:00",
   "items": [
-    {
-      "id": "isc2026-fda4ed3f57d7",
-      "title": "ISC2026",
-      "short_name": "ISC2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://isc2026.github.io/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-23T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-23T11:59:59Z",
-      "next_deadline_display": "2026-06-23 19:59"
-    },
     {
       "id": "acml2026-35c2eb443676",
       "title": "ACML2026",
@@ -536,6 +517,25 @@
       ],
       "next_deadline_timestamp": "2026-07-23T11:59:59Z",
       "next_deadline_display": "2026-07-23 19:59"
+    },
+    {
+      "id": "sigkdd2027-956ccf06d138",
+      "title": "SIGKDD2027",
+      "short_name": "SIGKDD2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://kdd2027.kdd.org/",
+      "deadlines": [
+        {
+          "stage": "1st round of 2 total rounds",
+          "timestamp": "2026-07-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-27T11:59:59Z",
+      "next_deadline_display": "2026-07-27 19:59"
     },
     {
       "id": "aaai2027-b00c7668bd6a",
