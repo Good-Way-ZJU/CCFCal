@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-24T14:11:58+08:00",
+  "generated_at": "2026-06-25T14:13:44+08:00",
   "items": [
     {
       "id": "acml2026-35c2eb443676",
@@ -1244,6 +1244,25 @@
       ],
       "next_deadline_timestamp": "2026-11-18T11:59:59Z",
       "next_deadline_display": "2026-11-18 19:59"
+    },
+    {
+      "id": "osdi2027-de7a125ae2fa",
+      "title": "OSDI2027",
+      "short_name": "OSDI2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SE"
+      ],
+      "url": "https://www.usenix.org/conference/osdi27",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-12-08T22:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-12-08T22:59:59Z",
+      "next_deadline_display": "2026-12-09 06:59"
     }
   ]
 }
