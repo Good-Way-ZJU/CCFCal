@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-27T13:57:49+08:00",
+  "generated_at": "2026-06-28T14:24:55+08:00",
   "items": [
-    {
-      "id": "isaac2026-d4d20f640ec2",
-      "title": "ISAAC2026",
-      "short_name": "ISAAC2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "TH"
-      ],
-      "url": "https://www.algo-door.com/isaac2026/index.html",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-27T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-27T11:59:59Z",
-      "next_deadline_display": "2026-06-27 19:59"
-    },
-    {
-      "id": "adma2026-3f801e6c5a40",
-      "title": "ADMA2026",
-      "short_name": "ADMA2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://adma2026.github.io/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-27T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-27T11:59:59Z",
-      "next_deadline_display": "2026-06-27 19:59"
-    },
     {
       "id": "pricai2026-98d05e30a8fe",
       "title": "PRICAI2026",
@@ -1187,6 +1149,25 @@
       ],
       "next_deadline_timestamp": "2026-10-08T11:59:59Z",
       "next_deadline_display": "2026-10-08 19:59"
+    },
+    {
+      "id": "aamas2027-6ff341e55b00",
+      "title": "AAMAS2027",
+      "short_name": "AAMAS2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-09T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-09T11:59:00Z",
+      "next_deadline_display": "2026-10-09 19:59"
     },
     {
       "id": "iscas2027-91149ac3d1a7",
