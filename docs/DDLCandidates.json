@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-06-28T14:24:55+08:00",
+  "generated_at": "2026-06-29T14:56:04+08:00",
   "items": [
-    {
-      "id": "pricai2026-98d05e30a8fe",
-      "title": "PRICAI2026",
-      "short_name": "PRICAI2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://2026.pricai.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-06-28T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-06-28T11:59:59Z",
-      "next_deadline_display": "2026-06-28 19:59"
-    },
     {
       "id": "iceccs2026-77be13558302",
       "title": "ICECCS2026",
