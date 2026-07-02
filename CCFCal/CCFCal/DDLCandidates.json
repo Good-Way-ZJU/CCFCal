@@ -1,115 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-01T14:38:51+08:00",
+  "generated_at": "2026-07-02T14:04:47+08:00",
   "items": [
-    {
-      "id": "ictai2026-4516888eba77",
-      "title": "ICTAI2026",
-      "short_name": "ICTAI2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://ictai.computer.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-01T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-01T11:59:00Z",
-      "next_deadline_display": "2026-07-01 19:59"
-    },
-    {
-      "id": "icpads2026-08d6b7605f51",
-      "title": "ICPADS2026",
-      "short_name": "ICPADS2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.cloud-conf.net/icpads2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-01T11:59:59Z",
-      "next_deadline_display": "2026-07-01 19:59"
-    },
-    {
-      "id": "icse2027-62dc7cbc8b4d",
-      "title": "ICSE2027",
-      "short_name": "ICSE2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://conf.researchr.org/home/icse-2027",
-      "deadlines": [
-        {
-          "stage": "Single Submission Cycle Deadline",
-          "timestamp": "2026-07-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-01T11:59:59Z",
-      "next_deadline_display": "2026-07-01 19:59"
-    },
-    {
-      "id": "vldb2027-2a32785e2024",
-      "title": "VLDB2027",
-      "short_name": "VLDB2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://www.vldb.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-01T17:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-01T17:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-01T17:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-10-01T17:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-11-01T17:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-12-01T17:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-01-01T17:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-02-01T17:00:00Z"
-        },
-        {
-          "stage": "Deadline",
-          "timestamp": "2027-03-01T17:00:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-01T17:00:00Z",
-      "next_deadline_display": "2026-07-02 01:00"
-    },
     {
       "id": "inscrypt2026-2572cb9b9852",
       "title": "INSCRYPT2026",
@@ -532,6 +424,53 @@
       ],
       "next_deadline_timestamp": "2026-08-01T11:59:59Z",
       "next_deadline_display": "2026-08-01 19:59"
+    },
+    {
+      "id": "vldb2027-2a32785e2024",
+      "title": "VLDB2027",
+      "short_name": "VLDB2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://www.vldb.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-01T17:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-01T17:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-01T17:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-11-01T17:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-12-01T17:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-01-01T17:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-02-01T17:00:00Z"
+        },
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-03-01T17:00:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-01T17:00:00Z",
+      "next_deadline_display": "2026-08-02 01:00"
     },
     {
       "id": "ubicomp-iswc2026-37c2f0800f04",
