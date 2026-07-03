@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-02T14:04:47+08:00",
+  "generated_at": "2026-07-03T13:58:59+08:00",
   "items": [
-    {
-      "id": "inscrypt2026-2572cb9b9852",
-      "title": "INSCRYPT2026",
-      "short_name": "INSCRYPT2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://inscrypt2026.comp.polyu.edu.hk",
-      "deadlines": [
-        {
-          "stage": "2nd Round",
-          "timestamp": "2026-07-02T07:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-02T07:59:59Z",
-      "next_deadline_display": "2026-07-02 15:59"
-    },
     {
       "id": "wine2026-d38e3c6b6f4d",
       "title": "WINE2026",
