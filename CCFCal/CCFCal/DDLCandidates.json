@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-03T13:58:59+08:00",
+  "generated_at": "2026-07-04T13:51:28+08:00",
   "items": [
-    {
-      "id": "wine2026-d38e3c6b6f4d",
-      "title": "WINE2026",
-      "short_name": "WINE2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://wine2026conf.github.io/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-03T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-03T11:59:59Z",
-      "next_deadline_display": "2026-07-03 19:59"
-    },
     {
       "id": "ncmmsc2026-eb326b9195f4",
       "title": "NCMMSC2026",
@@ -1000,6 +981,25 @@
         "CG"
       ],
       "url": "https://datacompressionconference.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-02T23:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-02T23:59:59Z",
+      "next_deadline_display": "2026-10-03 07:59"
+    },
+    {
+      "id": "ecir2027-3526900eb939",
+      "title": "ECIR2027",
+      "short_name": "ECIR2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://ecir2027.co.uk/",
       "deadlines": [
         {
           "stage": "Deadline",
