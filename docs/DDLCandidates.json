@@ -1,45 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-05T14:10:40+08:00",
+  "generated_at": "2026-07-06T14:42:20+08:00",
   "items": [
-    {
-      "id": "ncmmsc2026-eb326b9195f4",
-      "title": "NCMMSC2026",
-      "short_name": "NCMMSC2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.ncmmsc.org.cn/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-05T15:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-05T15:59:59Z",
-      "next_deadline_display": "2026-07-05 23:59"
-    },
-    {
-      "id": "bibm2026-a86ab352bd40",
-      "title": "BIBM2026",
-      "short_name": "BIBM2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://ieeebibm.org/BIBM2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-05T22:00:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-05T22:00:00Z",
-      "next_deadline_display": "2026-07-06 06:00"
-    },
     {
       "id": "accv2026-8e560669c072",
       "title": "ACCV2026",
