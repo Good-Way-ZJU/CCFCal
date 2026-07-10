@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-09T14:11:09+08:00",
+  "generated_at": "2026-07-10T14:10:04+08:00",
   "items": [
     {
       "id": "soda2027-a2dd846422e1",
@@ -196,6 +196,25 @@
       ],
       "next_deadline_timestamp": "2026-07-18T11:59:00Z",
       "next_deadline_display": "2026-07-18 19:59"
+    },
+    {
+      "id": "iceccs2026-77be13558302",
+      "title": "ICECCS2026",
+      "short_name": "ICECCS2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SE"
+      ],
+      "url": "https://formal-analysis.com/iceccs/2026/",
+      "deadlines": [
+        {
+          "stage": "Abstract and full paper submission",
+          "timestamp": "2026-07-21T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-21T11:59:59Z",
+      "next_deadline_display": "2026-07-21 19:59"
     },
     {
       "id": "iss2026-1daebf0f9bd1",
@@ -399,6 +418,25 @@
         {
           "stage": "AI Paper Track",
           "timestamp": "2026-08-11T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-04T11:59:59Z",
+      "next_deadline_display": "2026-08-04 19:59"
+    },
+    {
+      "id": "mmasia2026-483fcad042e0",
+      "title": "MMAsia2026",
+      "short_name": "MMAsia2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://www.mmasia2026.org/",
+      "deadlines": [
+        {
+          "stage": "Regular Paper / Special Session Submission",
+          "timestamp": "2026-08-04T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-08-04T11:59:59Z",
@@ -1008,6 +1046,25 @@
       ],
       "next_deadline_timestamp": "2026-10-14T11:59:59Z",
       "next_deadline_display": "2026-10-14 19:59"
+    },
+    {
+      "id": "www2027-8bcfb6790f9c",
+      "title": "WWW2027",
+      "short_name": "WWW2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SYS"
+      ],
+      "url": "https://acmweb2027.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-19T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-19T11:59:59Z",
+      "next_deadline_display": "2026-10-19 19:59"
     },
     {
       "id": "icde2027-40f881678ad5",
