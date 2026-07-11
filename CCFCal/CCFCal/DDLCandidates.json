@@ -1,83 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-10T14:10:04+08:00",
+  "generated_at": "2026-07-11T13:18:11+08:00",
   "items": [
-    {
-      "id": "soda2027-a2dd846422e1",
-      "title": "SODA2027",
-      "short_name": "SODA2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "TH"
-      ],
-      "url": "https://www.siam.org/conferences-events/siam-conferences/soda27/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-10T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-10T11:59:59Z",
-      "next_deadline_display": "2026-07-10 19:59"
-    },
-    {
-      "id": "popl2027-384a6fcbc968",
-      "title": "POPL2027",
-      "short_name": "POPL2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://popl27.sigplan.org/",
-      "deadlines": [
-        {
-          "stage": "Submission Deadline",
-          "timestamp": "2026-07-10T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-10T11:59:59Z",
-      "next_deadline_display": "2026-07-10 19:59"
-    },
-    {
-      "id": "asp-dac2027-26aa4a84155a",
-      "title": "ASP-DAC2027",
-      "short_name": "ASP-DAC2027",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.aspdac.com/aspdac2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-11T05:00:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-11T05:00:00Z",
-      "next_deadline_display": "2026-07-11 13:00"
-    },
-    {
-      "id": "ica3pp2026-ab642a1e8b2b",
-      "title": "ICA3PP2026",
-      "short_name": "ICA3PP2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://hpcn.exeter.ac.uk/ica3pp2026/",
-      "deadlines": [
-        {
-          "stage": "Paper Submission Due",
-          "timestamp": "2026-07-11T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-11T11:59:00Z",
-      "next_deadline_display": "2026-07-11 19:59"
-    },
     {
       "id": "sigmetrics2027-57095695c812",
       "title": "SIGMETRICS2027",
@@ -234,6 +158,25 @@
       ],
       "next_deadline_timestamp": "2026-07-23T11:59:59Z",
       "next_deadline_display": "2026-07-23 19:59"
+    },
+    {
+      "id": "ica3pp2026-ab642a1e8b2b",
+      "title": "ICA3PP2026",
+      "short_name": "ICA3PP2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://hpcn.exeter.ac.uk/ica3pp2026/",
+      "deadlines": [
+        {
+          "stage": "Paper Submission Due",
+          "timestamp": "2026-07-26T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-07-26T11:59:00Z",
+      "next_deadline_display": "2026-07-26 19:59"
     },
     {
       "id": "sigkdd2027-956ccf06d138",
