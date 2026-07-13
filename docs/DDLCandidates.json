@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-12T13:33:52+08:00",
+  "generated_at": "2026-07-13T13:43:26+08:00",
   "items": [
     {
       "id": "socc2026-cae8f2ca4e6a",
@@ -1080,6 +1080,25 @@
       ],
       "next_deadline_timestamp": "2026-12-08T22:59:59Z",
       "next_deadline_display": "2026-12-09 06:59"
+    },
+    {
+      "id": "ijcnn2027-255929db4f7b",
+      "title": "IJCNN2027",
+      "short_name": "IJCNN2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://ijcnn.org/2027",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-02-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2027-02-01T11:59:59Z",
+      "next_deadline_display": "2027-02-01 19:59"
     }
   ]
 }
