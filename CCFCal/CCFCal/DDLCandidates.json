@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-14T12:55:53+08:00",
+  "generated_at": "2026-07-15T12:56:13+08:00",
   "items": [
     {
       "id": "socc2026-cae8f2ca4e6a",
@@ -1061,6 +1061,25 @@
       ],
       "next_deadline_timestamp": "2026-11-18T11:59:59Z",
       "next_deadline_display": "2026-11-18 19:59"
+    },
+    {
+      "id": "dsn2027-91cf1dac2c62",
+      "title": "DSN2027",
+      "short_name": "DSN2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://dsn2027-berlin.github.io/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-12-03T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-12-03T11:59:59Z",
+      "next_deadline_display": "2026-12-03 19:59"
     },
     {
       "id": "osdi2027-de7a125ae2fa",
