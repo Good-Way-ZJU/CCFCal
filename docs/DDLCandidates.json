@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-15T12:56:13+08:00",
+  "generated_at": "2026-07-16T13:15:50+08:00",
   "items": [
-    {
-      "id": "socc2026-cae8f2ca4e6a",
-      "title": "SoCC2026",
-      "short_name": "SoCC2026",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://acmsocc.org/2026/",
-      "deadlines": [
-        {
-          "stage": "Second round",
-          "timestamp": "2026-07-15T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-15T11:59:59Z",
-      "next_deadline_display": "2026-07-15 19:59"
-    },
     {
       "id": "ches2027-c64bda20b6fb",
       "title": "CHES2027",
@@ -557,6 +538,25 @@
       "next_deadline_display": "2026-08-26 19:59"
     },
     {
+      "id": "3dv2027-83f681fd4005",
+      "title": "3DV2027",
+      "short_name": "3DV2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://3dvconf.github.io/2027/",
+      "deadlines": [
+        {
+          "stage": "Supplementary material due Sep 2, 2026. All deadlines are 11:00 am PDT.",
+          "timestamp": "2026-08-28T18:00:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-28T18:00:00Z",
+      "next_deadline_display": "2026-08-29 02:00"
+    },
+    {
       "id": "ieee-vr2027-fe2989fe6a02",
       "title": "IEEE VR2027",
       "short_name": "IEEE VR2027",
@@ -886,6 +886,25 @@
       ],
       "next_deadline_timestamp": "2026-10-02T23:59:59Z",
       "next_deadline_display": "2026-10-03 07:59"
+    },
+    {
+      "id": "icc2027-91800f5de342",
+      "title": "ICC2027",
+      "short_name": "ICC2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://icc2027.ieee-icc.org",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-03T03:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-03T03:59:59Z",
+      "next_deadline_display": "2026-10-03 11:59"
     },
     {
       "id": "fse2027-1592ee1504f6",
