@@ -1,38 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-16T13:15:50+08:00",
+  "generated_at": "2026-07-17T13:18:39+08:00",
   "items": [
-    {
-      "id": "ches2027-c64bda20b6fb",
-      "title": "CHES2027",
-      "short_name": "CHES2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://ches.iacr.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Schedule for TCHES Volume 2027/1",
-          "timestamp": "2026-07-16T11:59:59Z"
-        },
-        {
-          "stage": "Schedule for TCHES Volume 2027/2",
-          "timestamp": "2026-10-16T11:59:59Z"
-        },
-        {
-          "stage": "Schedule for TCHES Volume 2027/3",
-          "timestamp": "2027-01-16T11:59:59Z"
-        },
-        {
-          "stage": "Schedule for TCHES Volume 2027/4",
-          "timestamp": "2027-04-16T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-16T11:59:59Z",
-      "next_deadline_display": "2026-07-16 19:59"
-    },
     {
       "id": "hotnets2026-da04b1eef28f",
       "title": "HotNets2026",
@@ -1004,6 +973,33 @@
       ],
       "next_deadline_timestamp": "2026-10-14T11:59:59Z",
       "next_deadline_display": "2026-10-14 19:59"
+    },
+    {
+      "id": "ches2027-c64bda20b6fb",
+      "title": "CHES2027",
+      "short_name": "CHES2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://ches.iacr.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Schedule for TCHES Volume 2027/2",
+          "timestamp": "2026-10-16T11:59:59Z"
+        },
+        {
+          "stage": "Schedule for TCHES Volume 2027/3",
+          "timestamp": "2027-01-16T11:59:59Z"
+        },
+        {
+          "stage": "Schedule for TCHES Volume 2027/4",
+          "timestamp": "2027-04-16T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-16T11:59:59Z",
+      "next_deadline_display": "2026-10-16 19:59"
     },
     {
       "id": "www2027-8bcfb6790f9c",
