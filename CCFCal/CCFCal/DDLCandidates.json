@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-17T13:18:39+08:00",
+  "generated_at": "2026-07-18T12:53:03+08:00",
   "items": [
-    {
-      "id": "hotnets2026-da04b1eef28f",
-      "title": "HotNets2026",
-      "short_name": "HotNets2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://conferences.sigcomm.org/hotnets/2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-17T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-17T11:59:59Z",
-      "next_deadline_display": "2026-07-17 19:59"
-    },
     {
       "id": "sigmod2027-0beb843bcdb9",
       "title": "SIGMOD2027",
