@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-20T13:45:35+08:00",
+  "generated_at": "2026-07-21T13:26:00+08:00",
   "items": [
     {
       "id": "iceccs2026-77be13558302",
@@ -96,6 +96,41 @@
       ],
       "next_deadline_timestamp": "2026-07-29T11:59:59Z",
       "next_deadline_display": "2026-07-29 19:59"
+    },
+    {
+      "id": "adma2026-3f801e6c5a40",
+      "title": "ADMA2026",
+      "short_name": "ADMA2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://adma2026.github.io/",
+      "deadlines": [
+        {
+          "stage": "Industry Track",
+          "timestamp": "2026-08-01T11:59:59Z"
+        },
+        {
+          "stage": "Special Session Paper",
+          "timestamp": "2026-08-01T11:59:59Z"
+        },
+        {
+          "stage": "Short Paper",
+          "timestamp": "2026-08-08T11:59:59Z"
+        },
+        {
+          "stage": "Poster Paper",
+          "timestamp": "2026-09-12T11:59:59Z"
+        },
+        {
+          "stage": "Encore Paper",
+          "timestamp": "2026-09-12T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-01T11:59:59Z",
+      "next_deadline_display": "2026-08-01 19:59"
     },
     {
       "id": "hpca2027-d6113bf03b26",
