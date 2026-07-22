@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-21T13:26:00+08:00",
+  "generated_at": "2026-07-22T13:24:34+08:00",
   "items": [
-    {
-      "id": "iceccs2026-77be13558302",
-      "title": "ICECCS2026",
-      "short_name": "ICECCS2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://formal-analysis.com/iceccs/2026/",
-      "deadlines": [
-        {
-          "stage": "Abstract and full paper submission",
-          "timestamp": "2026-07-21T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-21T11:59:59Z",
-      "next_deadline_display": "2026-07-21 19:59"
-    },
     {
       "id": "iss2026-1daebf0f9bd1",
       "title": "ISS2026",
