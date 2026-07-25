@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-24T13:25:36+08:00",
+  "generated_at": "2026-07-25T13:19:10+08:00",
   "items": [
     {
       "id": "ica3pp2026-ab642a1e8b2b",
@@ -552,6 +552,25 @@
       ],
       "next_deadline_timestamp": "2026-09-01T11:59:59Z",
       "next_deadline_display": "2026-09-01 19:59"
+    },
+    {
+      "id": "mobicom2027-b0e0a0e25023",
+      "title": "MobiCom2027",
+      "short_name": "MobiCom2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://www.sigmobile.org/mobicom/2027/",
+      "deadlines": [
+        {
+          "stage": "Summer Deadlines",
+          "timestamp": "2026-09-03T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-03T11:59:59Z",
+      "next_deadline_display": "2026-09-03 19:59"
     },
     {
       "id": "asplos2027-e48cd018d065",
