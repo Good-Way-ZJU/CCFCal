@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-25T13:19:10+08:00",
+  "generated_at": "2026-07-26T13:37:19+08:00",
   "items": [
     {
       "id": "ica3pp2026-ab642a1e8b2b",
@@ -934,6 +934,25 @@
       "next_deadline_display": "2026-10-09 19:59"
     },
     {
+      "id": "ipdps2027-87558d4f9313",
+      "title": "IPDPS2027",
+      "short_name": "IPDPS2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.ipdps.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-09T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-09T11:59:59Z",
+      "next_deadline_display": "2026-10-09 19:59"
+    },
+    {
       "id": "sigmetrics2027-57095695c812",
       "title": "SIGMETRICS2027",
       "short_name": "SIGMETRICS2027",
@@ -1115,6 +1134,25 @@
       ],
       "next_deadline_timestamp": "2026-11-18T11:59:59Z",
       "next_deadline_display": "2026-11-18 19:59"
+    },
+    {
+      "id": "secon2027-b62856bd067d",
+      "title": "SECON2027",
+      "short_name": "SECON2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://secon2027.ieee-secon.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-12-01T04:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-12-01T04:59:59Z",
+      "next_deadline_display": "2026-12-01 12:59"
     },
     {
       "id": "dsn2027-91cf1dac2c62",
