@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-26T13:37:19+08:00",
+  "generated_at": "2026-07-27T13:55:46+08:00",
   "items": [
-    {
-      "id": "ica3pp2026-ab642a1e8b2b",
-      "title": "ICA3PP2026",
-      "short_name": "ICA3PP2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://hpcn.exeter.ac.uk/ica3pp2026/",
-      "deadlines": [
-        {
-          "stage": "Paper Submission Due",
-          "timestamp": "2026-07-26T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-26T11:59:00Z",
-      "next_deadline_display": "2026-07-26 19:59"
-    },
     {
       "id": "sigkdd2027-956ccf06d138",
       "title": "SIGKDD2027",
