@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-27T13:55:46+08:00",
+  "generated_at": "2026-07-28T13:19:42+08:00",
   "items": [
-    {
-      "id": "sigkdd2027-956ccf06d138",
-      "title": "SIGKDD2027",
-      "short_name": "SIGKDD2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://kdd2027.kdd.org/",
-      "deadlines": [
-        {
-          "stage": "1st round of 2 total rounds",
-          "timestamp": "2026-07-27T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-27T11:59:59Z",
-      "next_deadline_display": "2026-07-27 19:59"
-    },
     {
       "id": "aaai2027-b00c7668bd6a",
       "title": "AAAI2027",
@@ -628,6 +609,25 @@
       ],
       "next_deadline_timestamp": "2026-09-11T11:59:59Z",
       "next_deadline_display": "2026-09-11 19:59"
+    },
+    {
+      "id": "icra2027-d35047b60dd1",
+      "title": "ICRA2027",
+      "short_name": "ICRA2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://2027.ieee-icra.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-16T06:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-16T06:59:59Z",
+      "next_deadline_display": "2026-09-16 14:59"
     },
     {
       "id": "fast2027-2320939fe861",
