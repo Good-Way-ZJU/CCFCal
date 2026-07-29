@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-28T13:19:42+08:00",
+  "generated_at": "2026-07-29T13:27:12+08:00",
   "items": [
     {
       "id": "aaai2027-b00c7668bd6a",
@@ -666,6 +666,25 @@
       ],
       "next_deadline_timestamp": "2026-09-16T11:59:59Z",
       "next_deadline_display": "2026-09-16 19:59"
+    },
+    {
+      "id": "iclr2027-69b9075de04e",
+      "title": "ICLR2027",
+      "short_name": "ICLR2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://iclr.cc/Conferences/2027",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-17T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-17T11:59:59Z",
+      "next_deadline_display": "2026-09-17 19:59"
     },
     {
       "id": "icassp2027-14d416dd10e7",
