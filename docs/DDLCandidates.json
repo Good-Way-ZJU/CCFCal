@@ -1,26 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-29T13:27:12+08:00",
+  "generated_at": "2026-07-30T13:13:57+08:00",
   "items": [
-    {
-      "id": "aaai2027-b00c7668bd6a",
-      "title": "AAAI2027",
-      "short_name": "AAAI2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://aaai.org/conference/aaai/aaai-27/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-07-29T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-07-29T11:59:59Z",
-      "next_deadline_display": "2026-07-29 19:59"
-    },
     {
       "id": "adma2026-3f801e6c5a40",
       "title": "ADMA2026",
@@ -668,25 +649,6 @@
       "next_deadline_display": "2026-09-16 19:59"
     },
     {
-      "id": "iclr2027-69b9075de04e",
-      "title": "ICLR2027",
-      "short_name": "ICLR2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://iclr.cc/Conferences/2027",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-17T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-17T11:59:59Z",
-      "next_deadline_display": "2026-09-17 19:59"
-    },
-    {
       "id": "icassp2027-14d416dd10e7",
       "title": "ICASSP2027",
       "short_name": "ICASSP2027",
@@ -799,6 +761,25 @@
       ],
       "next_deadline_timestamp": "2026-09-25T11:59:59Z",
       "next_deadline_display": "2026-09-25 19:59"
+    },
+    {
+      "id": "iclr2027-69b9075de04e",
+      "title": "ICLR2027",
+      "short_name": "ICLR2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://iclr.cc/Conferences/2027",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-26T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-26T11:59:59Z",
+      "next_deadline_display": "2026-09-26 19:59"
     },
     {
       "id": "saner2027-cdde0de53bba",
