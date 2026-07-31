@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-07-30T13:13:57+08:00",
+  "generated_at": "2026-07-31T13:41:04+08:00",
   "items": [
     {
       "id": "adma2026-3f801e6c5a40",
@@ -401,8 +401,12 @@
       "url": "https://wsdm-conference.org/2027/",
       "deadlines": [
         {
-          "stage": "Deadline",
+          "stage": "Full Paper",
           "timestamp": "2026-08-25T11:59:59Z"
+        },
+        {
+          "stage": "Short Paper",
+          "timestamp": "2026-11-18T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-08-25T11:59:59Z",
