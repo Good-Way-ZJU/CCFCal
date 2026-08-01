@@ -15,4 +15,4 @@ open /Applications/CCFCal.app
 - 第一次成功打开后，系统会请求“日历”权限，请选择“允许”。
 
 项目主页：
-https://github.com/Good-Way-ZJU/CCFCal/releases/tag/v1.0.2
+https://github.com/Good-Way-ZJU/CCFCal/releases/tag/v1.0.3
