@@ -6,6 +6,7 @@
 #import "DDLSubscriptionManager.h"
 
 NSNotificationName const DDLCalendarEventsDidSyncNotification = @"DDLCalendarEventsDidSyncNotification";
+NSString * const DDLCalendarSyncErrorUserInfoKey = @"DDLCalendarSyncError";
 
 NSString * const DDLManagedCalendarTitle = @"DDLCal Subscriptions";
 NSString * const DDLCountdownSnapshotFileName = @"DDLCountdownSnapshot.json";
@@ -227,17 +228,35 @@ static NSString * const kDDLManagedMarker = @"managed_by:DDLCal";
     }
 }
 
+- (NSError *)syncErrorWithDescription:(NSString *)description code:(NSInteger)code
+{
+    return [NSError errorWithDomain:@"CCFCalCalendarSync" code:code userInfo:@{NSLocalizedDescriptionKey: description ?: @"Unable to sync tracked deadlines."}];
+}
+
+- (void)finishSyncWithError:(NSError *)error
+{
+    if (error) {
+        NSLog(@"CCFCal deadline calendar sync failed: %@", error.localizedDescription);
+    }
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSDictionary *userInfo = error ? @{DDLCalendarSyncErrorUserInfoKey: error} : nil;
+        [[NSNotificationCenter defaultCenter] postNotificationName:DDLCalendarEventsDidSyncNotification object:self userInfo:userInfo];
+    });
+}
+
 - (void)syncSubscribedDeadlines
 {
     [self writeCountdownSnapshot];
 
     if (![self calendarAccessGranted]) {
+        [self finishSyncWithError:[self syncErrorWithDescription:@"Calendar access is not granted." code:1]];
         return;
     }
 
     NSError *error = nil;
     EKCalendar *calendar = [self managedCalendarCreatingIfNeeded:&error];
     if (!calendar) {
+        [self finishSyncWithError:error ?: [self syncErrorWithDescription:@"No writable calendar source is available." code:2]];
         return;
     }
 
@@ -252,26 +271,38 @@ static NSString * const kDDLManagedMarker = @"managed_by:DDLCal";
 
     for (NSString *identifier in existingByIdentifier) {
         if (desired[identifier] == nil) {
-            [self.store removeEvent:existingByIdentifier[identifier] span:EKSpanThisEvent commit:NO error:nil];
+            NSError *operationError = nil;
+            if (![self.store removeEvent:existingByIdentifier[identifier] span:EKSpanThisEvent commit:NO error:&operationError]) {
+                error = operationError ?: [self syncErrorWithDescription:@"A stale deadline event could not be removed." code:3];
+                break;
+            }
         }
     }
 
     for (NSString *identifier in desired) {
+        if (error) break;
         NSDictionary *payload = desired[identifier];
         EKEvent *event = existingByIdentifier[identifier] ?: [EKEvent eventWithEventStore:self.store];
         event.calendar = calendar;
         event.title = payload[@"title"];
         event.notes = payload[@"notes"];
         event.startDate = payload[@"date"];
-        event.endDate = payload[@"date"];
+        event.endDate = [payload[@"date"] dateByAddingTimeInterval:60.0];
         event.allDay = NO;
-        [self.store saveEvent:event span:EKSpanThisEvent commit:NO error:nil];
+        NSError *operationError = nil;
+        if (![self.store saveEvent:event span:EKSpanThisEvent commit:NO error:&operationError]) {
+            error = operationError ?: [self syncErrorWithDescription:@"A tracked deadline event could not be saved." code:4];
+            break;
+        }
     }
 
-    [self.store commit:nil];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        [[NSNotificationCenter defaultCenter] postNotificationName:DDLCalendarEventsDidSyncNotification object:self];
-    });
+    if (!error && ![self.store commit:&error]) {
+        error = error ?: [self syncErrorWithDescription:@"Calendar changes could not be committed." code:5];
+    }
+    if (error) {
+        [self.store reset];
+    }
+    [self finishSyncWithError:error];
 }
 
 @end

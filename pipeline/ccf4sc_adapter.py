@@ -6,11 +6,12 @@ import argparse
 import json
 from copy import deepcopy
 from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta, timezone, tzinfo
 from pathlib import Path
 from typing import Any
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
-from ccfddl_transform import CandidateItem, Deadline, export_ics
+from ccfddl_transform import CandidateItem, Deadline, export_ics, normalize_ccf_rank
 
 try:
     import requests
@@ -59,7 +60,7 @@ class FilterConfig:
         payload = payload or {}
         return FilterConfig(
             conf=[entry.lower() for entry in payload.get("conf", [])],
-            rank=str(payload.get("rank", "ABC")),
+            rank=str(payload.get("rank", "ABCN")),
             sub=str(payload.get("sub", "")),
             remove={str(key): str(value) for key, value in payload.get("remove", {}).items()},
         )
@@ -69,14 +70,31 @@ def alpha_id(value: str) -> str:
     return "".join(ch for ch in value.lower() if ch.isalpha())
 
 
-def parse_tz(value: str) -> timezone:
-    if value == "AoE":
+def parse_tz(value: str) -> tzinfo:
+    normalized = str(value or "UTC").strip()
+    if normalized == "AoE":
         return timezone(timedelta(hours=-12))
-    if value.startswith("UTC-"):
-        return timezone(-timedelta(hours=int(value[4:])))
-    if value.startswith("UTC+"):
-        return timezone(timedelta(hours=int(value[4:])))
+    if normalized.upper() in {"PT", "PST", "PDT"}:
+        return ZoneInfo("America/Los_Angeles")
+    if normalized.startswith("UTC-"):
+        return timezone(-timedelta(hours=float(normalized[4:])))
+    if normalized.startswith("UTC+"):
+        return timezone(timedelta(hours=float(normalized[4:])))
+    try:
+        return ZoneInfo(normalized)
+    except ZoneInfoNotFoundError:
+        pass
     return timezone.utc
+
+
+def parse_deadline(value: Any, source_timezone: str) -> datetime | None:
+    if not isinstance(value, str) or not value.strip():
+        return None
+    try:
+        local_deadline = datetime.strptime(value.strip(), "%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        return None
+    return local_deadline.replace(tzinfo=parse_tz(source_timezone)).astimezone(timezone.utc)
 
 
 def load_source_records(path: Path | None, source_url: str = DEFAULT_SOURCE_URL) -> list[dict[str, Any]]:
@@ -125,28 +143,39 @@ def expand_records(records: list[dict[str, Any]], now: datetime | None = None) -
             entry.update(conf)
 
             deadlines: list[dict[str, Any]] = []
+            source_timezone = str(conf.get("timezone", "UTC+0"))
             for timeline in conf.get("timeline", []):
-                deadline_text = timeline.get("deadline")
-                if not deadline_text:
+                if not isinstance(timeline, dict):
                     continue
-                try:
-                    deadline_dt = datetime.strptime(deadline_text, "%Y-%m-%d %H:%M:%S")
-                except ValueError:
-                    continue
-                deadline_dt = deadline_dt.replace(tzinfo=parse_tz(conf.get("timezone", "UTC+0"))).astimezone(timezone.utc)
-                if deadline_dt < now:
-                    continue
-                stage = timeline.get("abstract", "") or timeline.get("comment", "") or "Deadline"
-                deadlines.append(
-                    {
-                        "stage": stage.strip() or "Deadline",
-                        "timestamp": deadline_dt,
-                        "timezone": conf.get("timezone", "UTC+0"),
-                    }
-                )
+
+                abstract_text = timeline.get("abstract_deadline") or timeline.get("abstract deadline")
+                timeline_deadlines = []
+                if abstract_text:
+                    timeline_deadlines.append(("Abstract", abstract_text))
+
+                paper_stage = timeline.get("abstract", "") or timeline.get("comment", "")
+                if not isinstance(paper_stage, str) or not paper_stage.strip():
+                    paper_stage = "Full Paper" if abstract_text else "Deadline"
+                timeline_deadlines.append((paper_stage.strip(), timeline.get("deadline")))
+
+                for stage, deadline_text in timeline_deadlines:
+                    deadline_dt = parse_deadline(deadline_text, source_timezone)
+                    if deadline_dt is None or deadline_dt < now:
+                        continue
+                    deadlines.append(
+                        {
+                            "stage": stage,
+                            "timestamp": deadline_dt,
+                            "timezone": source_timezone,
+                        }
+                    )
 
             if deadlines:
-                entry["deadlines"] = sorted(deadlines, key=lambda item: item["timestamp"])
+                unique_deadlines = {
+                    (deadline["stage"], deadline["timestamp"]): deadline
+                    for deadline in deadlines
+                }
+                entry["deadlines"] = sorted(unique_deadlines.values(), key=lambda item: item["timestamp"])
                 entry["time_obj"] = entry["deadlines"][0]["timestamp"]
                 expanded.append(entry)
     return sorted(expanded, key=lambda item: item["time_obj"])
@@ -154,7 +183,7 @@ def expand_records(records: list[dict[str, Any]], now: datetime | None = None) -
 
 def matches_filter(entry: dict[str, Any], filter_config: FilterConfig) -> bool:
     confs = filter_config.conf
-    ccf_rank = str(entry.get("rank", {}).get("ccf", ""))
+    ccf_rank = normalize_ccf_rank(entry.get("rank", {}).get("ccf", ""))
     subject = str(entry.get("sub", ""))
 
     matched = False
@@ -196,7 +225,7 @@ def to_candidate_item(entry: dict[str, Any]) -> CandidateItem:
             "title": entry["title"],
             "short_name": entry.get("title", ""),
             "kind": "conference",
-            "ccf_rank": entry.get("rank", {}).get("ccf", "C"),
+            "ccf_rank": normalize_ccf_rank(entry.get("rank", {}).get("ccf", "C")),
             "domains": [primary_domain],
             "url": entry.get("link", ""),
             "deadlines": [

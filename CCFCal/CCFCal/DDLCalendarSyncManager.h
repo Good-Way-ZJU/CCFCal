@@ -3,6 +3,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 extern NSNotificationName const DDLCalendarEventsDidSyncNotification;
+extern NSString * const DDLCalendarSyncErrorUserInfoKey;
 
 extern NSString * const DDLManagedCalendarTitle;
 extern NSString * const DDLCountdownSnapshotFileName;

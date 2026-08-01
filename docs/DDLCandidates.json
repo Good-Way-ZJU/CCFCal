@@ -1,80 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-01T13:32:08+08:00",
+  "generated_at": "2026-08-01T23:45:46+08:00",
   "items": [
-    {
-      "id": "adma2026-3f801e6c5a40",
-      "title": "ADMA2026",
-      "short_name": "ADMA2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://adma2026.github.io/",
-      "deadlines": [
-        {
-          "stage": "Industry Track",
-          "timestamp": "2026-08-01T11:59:59Z"
-        },
-        {
-          "stage": "Special Session Paper",
-          "timestamp": "2026-08-01T11:59:59Z"
-        },
-        {
-          "stage": "Short Paper",
-          "timestamp": "2026-08-08T11:59:59Z"
-        },
-        {
-          "stage": "Poster Paper",
-          "timestamp": "2026-09-12T11:59:59Z"
-        },
-        {
-          "stage": "Encore Paper",
-          "timestamp": "2026-09-12T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-01T11:59:59Z",
-      "next_deadline_display": "2026-08-01 19:59"
-    },
-    {
-      "id": "hpca2027-d6113bf03b26",
-      "title": "HPCA2027",
-      "short_name": "HPCA2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://conf.researchr.org/home/hpca-2027",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-01T11:59:59Z",
-      "next_deadline_display": "2026-08-01 19:59"
-    },
-    {
-      "id": "infocom2027-a219264d2825",
-      "title": "INFOCOM2027",
-      "short_name": "INFOCOM2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://infocom2027.ieee-infocom.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-01T11:59:59Z",
-      "next_deadline_display": "2026-08-01 19:59"
-    },
     {
       "id": "vldb2027-2a32785e2024",
       "title": "VLDB2027",
@@ -87,40 +14,67 @@
       "url": "https://www.vldb.org/2027/",
       "deadlines": [
         {
-          "stage": "Deadline",
-          "timestamp": "2026-08-01T17:00:00Z"
+          "stage": "Full Paper",
+          "timestamp": "2026-08-02T00:00:00Z"
         },
         {
-          "stage": "Deadline",
-          "timestamp": "2026-09-01T17:00:00Z"
+          "stage": "Abstract",
+          "timestamp": "2026-08-26T00:00:00Z"
         },
         {
-          "stage": "Deadline",
-          "timestamp": "2026-10-01T17:00:00Z"
+          "stage": "Full Paper",
+          "timestamp": "2026-09-02T00:00:00Z"
         },
         {
-          "stage": "Deadline",
-          "timestamp": "2026-11-01T17:00:00Z"
+          "stage": "Abstract",
+          "timestamp": "2026-09-26T00:00:00Z"
         },
         {
-          "stage": "Deadline",
-          "timestamp": "2026-12-01T17:00:00Z"
+          "stage": "Full Paper",
+          "timestamp": "2026-10-02T00:00:00Z"
         },
         {
-          "stage": "Deadline",
-          "timestamp": "2027-01-01T17:00:00Z"
+          "stage": "Abstract",
+          "timestamp": "2026-10-26T00:00:00Z"
         },
         {
-          "stage": "Deadline",
-          "timestamp": "2027-02-01T17:00:00Z"
+          "stage": "Full Paper",
+          "timestamp": "2026-11-02T01:00:00Z"
         },
         {
-          "stage": "Deadline",
-          "timestamp": "2027-03-01T17:00:00Z"
+          "stage": "Abstract",
+          "timestamp": "2026-11-26T01:00:00Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-12-02T01:00:00Z"
+        },
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-12-26T01:00:00Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2027-01-02T01:00:00Z"
+        },
+        {
+          "stage": "Abstract",
+          "timestamp": "2027-01-26T01:00:00Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2027-02-02T01:00:00Z"
+        },
+        {
+          "stage": "Abstract",
+          "timestamp": "2027-02-26T01:00:00Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2027-03-02T01:00:00Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-01T17:00:00Z",
-      "next_deadline_display": "2026-08-02 01:00"
+      "next_deadline_timestamp": "2026-08-02T00:00:00Z"
     },
     {
       "id": "ubicomp-iswc2026-37c2f0800f04",
@@ -142,8 +96,7 @@
           "timestamp": "2026-11-02T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-02T11:59:59Z",
-      "next_deadline_display": "2026-08-02 19:59"
+      "next_deadline_timestamp": "2026-08-02T11:59:59Z"
     },
     {
       "id": "cscloud2026-a8224addf739",
@@ -161,8 +114,25 @@
           "timestamp": "2026-08-02T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-02T11:59:59Z",
-      "next_deadline_display": "2026-08-02 19:59"
+      "next_deadline_timestamp": "2026-08-02T11:59:59Z"
+    },
+    {
+      "id": "icaif2026-473de181deb3",
+      "title": "ICAIF2026",
+      "short_name": "ICAIF2026",
+      "kind": "conference",
+      "ccf_rank": "N",
+      "domains": [
+        "SYS"
+      ],
+      "url": "https://icaif2026.org/index.html",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-03T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-03T11:59:59Z"
     },
     {
       "id": "dai2026-d2eeaad89fac",
@@ -184,8 +154,25 @@
           "timestamp": "2026-08-11T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z",
-      "next_deadline_display": "2026-08-04 19:59"
+      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
+    },
+    {
+      "id": "eacl2027-b62ad371024a",
+      "title": "EACL2027",
+      "short_name": "EACL2027",
+      "kind": "conference",
+      "ccf_rank": "N",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://2027.eacl.org/",
+      "deadlines": [
+        {
+          "stage": "ARR Submission; commitment deadline: 2026-10-11",
+          "timestamp": "2026-08-04T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
     },
     {
       "id": "mmasia2026-483fcad042e0",
@@ -203,8 +190,7 @@
           "timestamp": "2026-08-04T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z",
-      "next_deadline_display": "2026-08-04 19:59"
+      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
     },
     {
       "id": "ppopp2027-57d6e92a6cbe",
@@ -222,8 +208,7 @@
           "timestamp": "2026-08-04T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z",
-      "next_deadline_display": "2026-08-04 19:59"
+      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
     },
     {
       "id": "csfw2027-e6c90f299782",
@@ -249,8 +234,7 @@
           "timestamp": "2027-01-29T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z",
-      "next_deadline_display": "2026-08-04 19:59"
+      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
     },
     {
       "id": "cidr2027-70c24c1d92ee",
@@ -268,8 +252,55 @@
           "timestamp": "2026-08-05T06:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-05T06:59:59Z",
-      "next_deadline_display": "2026-08-05 14:59"
+      "next_deadline_timestamp": "2026-08-05T06:59:59Z"
+    },
+    {
+      "id": "adma2026-3f801e6c5a40",
+      "title": "ADMA2026",
+      "short_name": "ADMA2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://adma2026.github.io/",
+      "deadlines": [
+        {
+          "stage": "Short Paper",
+          "timestamp": "2026-08-08T11:59:59Z"
+        },
+        {
+          "stage": "Poster Paper",
+          "timestamp": "2026-09-12T11:59:59Z"
+        },
+        {
+          "stage": "Encore Paper",
+          "timestamp": "2026-09-12T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-08T11:59:59Z"
+    },
+    {
+      "id": "iui2027-42eacda301dd",
+      "title": "IUI2027",
+      "short_name": "IUI2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "HCI"
+      ],
+      "url": "https://iui.hosting.acm.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-08-14T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-08-21T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-14T11:59:59Z"
     },
     {
       "id": "mmm2027-0d71bebc726e",
@@ -287,8 +318,7 @@
           "timestamp": "2026-08-17T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-17T11:59:59Z",
-      "next_deadline_display": "2026-08-17 19:59"
+      "next_deadline_timestamp": "2026-08-17T11:59:59Z"
     },
     {
       "id": "pkc2027-7d9a57b0210e",
@@ -306,8 +336,63 @@
           "timestamp": "2026-08-17T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-17T11:59:59Z",
-      "next_deadline_display": "2026-08-17 19:59"
+      "next_deadline_timestamp": "2026-08-17T11:59:59Z"
+    },
+    {
+      "id": "wsdm2027-8f2bc00a51b2",
+      "title": "WSDM2027",
+      "short_name": "WSDM2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://wsdm-conference.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-08-18T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-08-25T11:59:59Z"
+        },
+        {
+          "stage": "Short Paper",
+          "timestamp": "2026-11-18T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-18T11:59:59Z"
+    },
+    {
+      "id": "usenix-security2027-8f1babae6b59",
+      "title": "USENIX Security2027",
+      "short_name": "USENIX Security2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.usenix.org/conference/usenixsecurity27",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-08-19T11:59:59Z"
+        },
+        {
+          "stage": "Cycle 1 Deadline",
+          "timestamp": "2026-08-26T11:59:59Z"
+        },
+        {
+          "stage": "Abstract",
+          "timestamp": "2027-01-20T11:59:59Z"
+        },
+        {
+          "stage": "Cycle 2 Deadline",
+          "timestamp": "2027-01-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-19T11:59:59Z"
     },
     {
       "id": "ndss2027-d254df7a501d",
@@ -325,27 +410,7 @@
           "timestamp": "2026-08-20T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-20T11:59:59Z",
-      "next_deadline_display": "2026-08-20 19:59"
-    },
-    {
-      "id": "iui2027-42eacda301dd",
-      "title": "IUI2027",
-      "short_name": "IUI2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "HCI"
-      ],
-      "url": "https://iui.hosting.acm.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-21T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-21T11:59:59Z",
-      "next_deadline_display": "2026-08-21 19:59"
+      "next_deadline_timestamp": "2026-08-20T11:59:59Z"
     },
     {
       "id": "msn2026-2147f69f2d8a",
@@ -363,8 +428,29 @@
           "timestamp": "2026-08-21T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-21T11:59:59Z",
-      "next_deadline_display": "2026-08-21 19:59"
+      "next_deadline_timestamp": "2026-08-21T11:59:59Z"
+    },
+    {
+      "id": "wacv2027-f1e752e7ad09",
+      "title": "WACV2027",
+      "short_name": "WACV2027",
+      "kind": "conference",
+      "ccf_rank": "N",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://wacv.thecvf.com/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-08-22T11:59:00Z"
+        },
+        {
+          "stage": "Second round",
+          "timestamp": "2026-08-29T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-22T11:59:00Z"
     },
     {
       "id": "bigdata2026-bec88d2dbfd0",
@@ -382,8 +468,7 @@
           "timestamp": "2026-08-22T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-22T11:59:59Z",
-      "next_deadline_display": "2026-08-22 19:59"
+      "next_deadline_timestamp": "2026-08-22T11:59:59Z"
     },
     {
       "id": "asiaccs2027-0ffc23142fee",
@@ -405,54 +490,51 @@
           "timestamp": "2026-12-12T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-22T11:59:59Z",
-      "next_deadline_display": "2026-08-22 19:59"
+      "next_deadline_timestamp": "2026-08-22T11:59:59Z"
     },
     {
-      "id": "wsdm2027-8f2bc00a51b2",
-      "title": "WSDM2027",
-      "short_name": "WSDM2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://wsdm-conference.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Full Paper",
-          "timestamp": "2026-08-25T11:59:59Z"
-        },
-        {
-          "stage": "Short Paper",
-          "timestamp": "2026-11-18T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-25T11:59:59Z",
-      "next_deadline_display": "2026-08-25 19:59"
-    },
-    {
-      "id": "usenix-security2027-8f1babae6b59",
-      "title": "USENIX Security2027",
-      "short_name": "USENIX Security2027",
+      "id": "ieee-vr2027-fe2989fe6a02",
+      "title": "IEEE VR2027",
+      "short_name": "IEEE VR2027",
       "kind": "conference",
       "ccf_rank": "A",
       "domains": [
-        "SEC"
+        "CG"
       ],
-      "url": "https://www.usenix.org/conference/usenixsecurity27",
+      "url": "https://ieeevr.org/2027/",
       "deadlines": [
         {
-          "stage": "Cycle 1 Deadline",
-          "timestamp": "2026-08-26T11:59:59Z"
+          "stage": "Abstract",
+          "timestamp": "2026-08-25T11:59:59Z"
         },
         {
-          "stage": "Cycle 2 Deadline",
-          "timestamp": "2027-01-27T11:59:59Z"
+          "stage": "Full Paper",
+          "timestamp": "2026-09-01T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-26T11:59:59Z",
-      "next_deadline_display": "2026-08-26 19:59"
+      "next_deadline_timestamp": "2026-08-25T11:59:59Z"
+    },
+    {
+      "id": "mobicom2027-b0e0a0e25023",
+      "title": "MobiCom2027",
+      "short_name": "MobiCom2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://www.sigmobile.org/mobicom/2027/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-08-27T11:59:59Z"
+        },
+        {
+          "stage": "Summer Deadlines",
+          "timestamp": "2026-09-03T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-27T11:59:59Z"
     },
     {
       "id": "3dv2027-83f681fd4005",
@@ -470,27 +552,7 @@
           "timestamp": "2026-08-28T18:00:00Z"
         }
       ],
-      "next_deadline_timestamp": "2026-08-28T18:00:00Z",
-      "next_deadline_display": "2026-08-29 02:00"
-    },
-    {
-      "id": "ieee-vr2027-fe2989fe6a02",
-      "title": "IEEE VR2027",
-      "short_name": "IEEE VR2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://ieeevr.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-01T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-01T11:59:59Z",
-      "next_deadline_display": "2026-09-01 19:59"
+      "next_deadline_timestamp": "2026-08-28T18:00:00Z"
     },
     {
       "id": "pets2027-ac58aa8d5178",
@@ -516,27 +578,29 @@
           "timestamp": "2027-03-01T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-01T11:59:59Z",
-      "next_deadline_display": "2026-09-01 19:59"
+      "next_deadline_timestamp": "2026-09-01T11:59:59Z"
     },
     {
-      "id": "mobicom2027-b0e0a0e25023",
-      "title": "MobiCom2027",
-      "short_name": "MobiCom2027",
+      "id": "icdt2027-8a3e52b46353",
+      "title": "ICDT2027",
+      "short_name": "ICDT2027",
       "kind": "conference",
-      "ccf_rank": "A",
+      "ccf_rank": "B",
       "domains": [
-        "NET"
+        "DB"
       ],
-      "url": "https://www.sigmobile.org/mobicom/2027/",
+      "url": "https://edbticdt2027.github.io/",
       "deadlines": [
         {
-          "stage": "Summer Deadlines",
-          "timestamp": "2026-09-03T11:59:59Z"
+          "stage": "Abstract",
+          "timestamp": "2026-09-04T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-09-11T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-03T11:59:59Z",
-      "next_deadline_display": "2026-09-03 19:59"
+      "next_deadline_timestamp": "2026-09-04T11:59:59Z"
     },
     {
       "id": "asplos2027-e48cd018d065",
@@ -554,27 +618,29 @@
           "timestamp": "2026-09-10T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-10T11:59:59Z",
-      "next_deadline_display": "2026-09-10 19:59"
+      "next_deadline_timestamp": "2026-09-10T11:59:59Z"
     },
     {
-      "id": "icdt2027-8a3e52b46353",
-      "title": "ICDT2027",
-      "short_name": "ICDT2027",
+      "id": "nsdi2027-bdc8ebd908f5",
+      "title": "NSDI2027",
+      "short_name": "NSDI2027",
       "kind": "conference",
-      "ccf_rank": "B",
+      "ccf_rank": "A",
       "domains": [
-        "DB"
+        "NET"
       ],
-      "url": "https://edbticdt2027.github.io/",
+      "url": "https://www.usenix.org/conference/nsdi27",
       "deadlines": [
         {
-          "stage": "Deadline",
-          "timestamp": "2026-09-11T11:59:59Z"
+          "stage": "Abstract",
+          "timestamp": "2026-09-11T03:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-09-18T03:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-11T11:59:59Z",
-      "next_deadline_display": "2026-09-11 19:59"
+      "next_deadline_timestamp": "2026-09-11T03:59:59Z"
     },
     {
       "id": "ieee-acm-cgo2027-974747322277",
@@ -592,8 +658,7 @@
           "timestamp": "2026-09-11T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-11T11:59:59Z",
-      "next_deadline_display": "2026-09-11 19:59"
+      "next_deadline_timestamp": "2026-09-11T11:59:59Z"
     },
     {
       "id": "chi2027-d2279900eb68",
@@ -611,8 +676,51 @@
           "timestamp": "2026-09-11T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-11T11:59:59Z",
-      "next_deadline_display": "2026-09-11 19:59"
+      "next_deadline_timestamp": "2026-09-11T11:59:59Z"
+    },
+    {
+      "id": "mmsys2027-1b4e920deeeb",
+      "title": "MMSys2027",
+      "short_name": "MMSys2027",
+      "kind": "conference",
+      "ccf_rank": "N",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://2027.acmmmsys.org",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-09-11T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-09-18T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-11T11:59:59Z"
+    },
+    {
+      "id": "date2027-f2c1c1771332",
+      "title": "DATE2027",
+      "short_name": "DATE2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.date-conference.com/date-2027-call-papers",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-09-14T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-09-21T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-14T11:59:59Z"
     },
     {
       "id": "icra2027-d35047b60dd1",
@@ -630,8 +738,7 @@
           "timestamp": "2026-09-16T06:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-16T06:59:59Z",
-      "next_deadline_display": "2026-09-16 14:59"
+      "next_deadline_timestamp": "2026-09-16T06:59:59Z"
     },
     {
       "id": "fast2027-2320939fe861",
@@ -649,8 +756,7 @@
           "timestamp": "2026-09-16T11:59:00Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-16T11:59:00Z",
-      "next_deadline_display": "2026-09-16 19:59"
+      "next_deadline_timestamp": "2026-09-16T11:59:00Z"
     },
     {
       "id": "wcnc2027-153077a2c490",
@@ -668,8 +774,7 @@
           "timestamp": "2026-09-16T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-16T11:59:59Z",
-      "next_deadline_display": "2026-09-16 19:59"
+      "next_deadline_timestamp": "2026-09-16T11:59:59Z"
     },
     {
       "id": "icassp2027-14d416dd10e7",
@@ -687,27 +792,29 @@
           "timestamp": "2026-09-17T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-17T11:59:59Z",
-      "next_deadline_display": "2026-09-17 19:59"
+      "next_deadline_timestamp": "2026-09-17T11:59:59Z"
     },
     {
-      "id": "nsdi2027-bdc8ebd908f5",
-      "title": "NSDI2027",
-      "short_name": "NSDI2027",
+      "id": "eurosys2027-dfce2bbb94bb",
+      "title": "EuroSys2027",
+      "short_name": "EuroSys2027",
       "kind": "conference",
       "ccf_rank": "A",
       "domains": [
-        "NET"
+        "ARCH"
       ],
-      "url": "https://www.usenix.org/conference/nsdi27",
+      "url": "https://2027.eurosys.org/",
       "deadlines": [
         {
-          "stage": "Deadline",
-          "timestamp": "2026-09-18T03:59:59Z"
+          "stage": "Abstract",
+          "timestamp": "2026-09-18T11:59:59Z"
+        },
+        {
+          "stage": "Fall Submission Deadline",
+          "timestamp": "2026-09-25T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-18T03:59:59Z",
-      "next_deadline_display": "2026-09-18 11:59"
+      "next_deadline_timestamp": "2026-09-18T11:59:59Z"
     },
     {
       "id": "eurocrypt2027-1e2ba92cde33",
@@ -725,8 +832,7 @@
           "timestamp": "2026-09-18T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-18T11:59:59Z",
-      "next_deadline_display": "2026-09-18 19:59"
+      "next_deadline_timestamp": "2026-09-18T11:59:59Z"
     },
     {
       "id": "fc2027-7ba6344782b8",
@@ -744,46 +850,7 @@
           "timestamp": "2026-09-18T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-18T11:59:59Z",
-      "next_deadline_display": "2026-09-18 19:59"
-    },
-    {
-      "id": "date2027-f2c1c1771332",
-      "title": "DATE2027",
-      "short_name": "DATE2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.date-conference.com/date-2027-call-papers",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-21T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-21T11:59:59Z",
-      "next_deadline_display": "2026-09-21 19:59"
-    },
-    {
-      "id": "eurosys2027-dfce2bbb94bb",
-      "title": "EuroSys2027",
-      "short_name": "EuroSys2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://2027.eurosys.org/",
-      "deadlines": [
-        {
-          "stage": "Fall Submission Deadline",
-          "timestamp": "2026-09-25T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-25T11:59:59Z",
-      "next_deadline_display": "2026-09-25 19:59"
+      "next_deadline_timestamp": "2026-09-18T11:59:59Z"
     },
     {
       "id": "iclr2027-69b9075de04e",
@@ -797,12 +864,15 @@
       "url": "https://iclr.cc/Conferences/2027",
       "deadlines": [
         {
-          "stage": "Deadline",
+          "stage": "Abstract",
+          "timestamp": "2026-09-19T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
           "timestamp": "2026-09-26T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-26T11:59:59Z",
-      "next_deadline_display": "2026-09-26 19:59"
+      "next_deadline_timestamp": "2026-09-19T11:59:59Z"
     },
     {
       "id": "saner2027-cdde0de53bba",
@@ -816,31 +886,15 @@
       "url": "https://conf.researchr.org/home/saner-2027",
       "deadlines": [
         {
+          "stage": "Abstract",
+          "timestamp": "2026-09-22T11:59:59Z"
+        },
+        {
           "stage": "Research Track Paper submission deadline",
           "timestamp": "2026-09-26T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-09-26T11:59:59Z",
-      "next_deadline_display": "2026-09-26 19:59"
-    },
-    {
-      "id": "dcc2027-964db4610068",
-      "title": "DCC2027",
-      "short_name": "DCC2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://datacompressionconference.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-10-02T23:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-10-02T23:59:59Z",
-      "next_deadline_display": "2026-10-03 07:59"
+      "next_deadline_timestamp": "2026-09-22T11:59:59Z"
     },
     {
       "id": "ecir2027-3526900eb939",
@@ -854,12 +908,59 @@
       "url": "https://ecir2027.co.uk/",
       "deadlines": [
         {
-          "stage": "Deadline",
+          "stage": "Abstract",
+          "timestamp": "2026-09-25T23:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
           "timestamp": "2026-10-02T23:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-02T23:59:59Z",
-      "next_deadline_display": "2026-10-03 07:59"
+      "next_deadline_timestamp": "2026-09-25T23:59:59Z"
+    },
+    {
+      "id": "aamas2027-6ff341e55b00",
+      "title": "AAMAS2027",
+      "short_name": "AAMAS2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-10-02T11:59:00Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-10-09T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-02T11:59:00Z"
+    },
+    {
+      "id": "ipdps2027-87558d4f9313",
+      "title": "IPDPS2027",
+      "short_name": "IPDPS2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.ipdps.org/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-10-02T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-10-09T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-02T11:59:59Z"
     },
     {
       "id": "icc2027-91800f5de342",
@@ -877,8 +978,55 @@
           "timestamp": "2026-10-03T03:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-03T03:59:59Z",
-      "next_deadline_display": "2026-10-03 11:59"
+      "next_deadline_timestamp": "2026-10-03T03:59:59Z"
+    },
+    {
+      "id": "dcc2027-964db4610068",
+      "title": "DCC2027",
+      "short_name": "DCC2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://datacompressionconference.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-03T06:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-03T06:59:59Z"
+    },
+    {
+      "id": "sigmetrics2027-57095695c812",
+      "title": "SIGMETRICS2027",
+      "short_name": "SIGMETRICS2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.sigmetrics.org/sigmetrics2027/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-10-03T11:59:00Z"
+        },
+        {
+          "stage": "fall round",
+          "timestamp": "2026-10-10T11:59:00Z"
+        },
+        {
+          "stage": "Abstract",
+          "timestamp": "2027-01-05T11:59:00Z"
+        },
+        {
+          "stage": "winter round",
+          "timestamp": "2027-01-12T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-03T11:59:00Z"
     },
     {
       "id": "fse2027-1592ee1504f6",
@@ -896,8 +1044,7 @@
           "timestamp": "2026-10-03T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-03T11:59:59Z",
-      "next_deadline_display": "2026-10-03 19:59"
+      "next_deadline_timestamp": "2026-10-03T11:59:59Z"
     },
     {
       "id": "edbt2027-07bcd7fbe605",
@@ -915,69 +1062,51 @@
           "timestamp": "2026-10-08T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-08T11:59:59Z",
-      "next_deadline_display": "2026-10-08 19:59"
+      "next_deadline_timestamp": "2026-10-08T11:59:59Z"
     },
     {
-      "id": "aamas2027-6ff341e55b00",
-      "title": "AAMAS2027",
-      "short_name": "AAMAS2027",
+      "id": "sigmod2027-0beb843bcdb9",
+      "title": "SIGMOD2027",
+      "short_name": "SIGMOD2027",
       "kind": "conference",
-      "ccf_rank": "B",
+      "ccf_rank": "A",
       "domains": [
-        "AI"
+        "DB"
       ],
-      "url": "https://openreview.net/group?id=ifaamas.org/AAMAS/2027/Conference",
+      "url": "https://2027.sigmod.org/",
       "deadlines": [
         {
-          "stage": "Deadline",
-          "timestamp": "2026-10-09T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-10-09T11:59:00Z",
-      "next_deadline_display": "2026-10-09 19:59"
-    },
-    {
-      "id": "ipdps2027-87558d4f9313",
-      "title": "IPDPS2027",
-      "short_name": "IPDPS2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.ipdps.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-10-09T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-10-09T11:59:59Z",
-      "next_deadline_display": "2026-10-09 19:59"
-    },
-    {
-      "id": "sigmetrics2027-57095695c812",
-      "title": "SIGMETRICS2027",
-      "short_name": "SIGMETRICS2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.sigmetrics.org/sigmetrics2027/",
-      "deadlines": [
-        {
-          "stage": "fall round",
-          "timestamp": "2026-10-10T11:59:00Z"
+          "stage": "Abstract",
+          "timestamp": "2026-10-11T11:59:00Z"
         },
         {
-          "stage": "winter round",
-          "timestamp": "2027-01-12T11:59:00Z"
+          "stage": "round 4",
+          "timestamp": "2026-10-18T11:59:00Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-10T11:59:00Z",
-      "next_deadline_display": "2026-10-10 19:59"
+      "next_deadline_timestamp": "2026-10-11T11:59:00Z"
+    },
+    {
+      "id": "www2027-8bcfb6790f9c",
+      "title": "WWW2027",
+      "short_name": "WWW2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SYS"
+      ],
+      "url": "https://acmweb2027.org/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-10-12T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-10-19T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-12T11:59:59Z"
     },
     {
       "id": "naacl2027-83b41439d4f4",
@@ -995,8 +1124,7 @@
           "timestamp": "2026-10-13T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-13T11:59:59Z",
-      "next_deadline_display": "2026-10-13 19:59"
+      "next_deadline_timestamp": "2026-10-13T11:59:59Z"
     },
     {
       "id": "iscas2027-91149ac3d1a7",
@@ -1014,8 +1142,7 @@
           "timestamp": "2026-10-14T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-14T11:59:59Z",
-      "next_deadline_display": "2026-10-14 19:59"
+      "next_deadline_timestamp": "2026-10-14T11:59:59Z"
     },
     {
       "id": "ches2027-c64bda20b6fb",
@@ -1041,46 +1168,51 @@
           "timestamp": "2027-04-16T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-16T11:59:59Z",
-      "next_deadline_display": "2026-10-16 19:59"
+      "next_deadline_timestamp": "2026-10-16T11:59:59Z"
     },
     {
-      "id": "sigmod2027-0beb843bcdb9",
-      "title": "SIGMOD2027",
-      "short_name": "SIGMOD2027",
+      "id": "refsq2027-41325ed9666c",
+      "title": "REFSQ2027",
+      "short_name": "REFSQ2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SE"
+      ],
+      "url": "https://2027.refsq.org/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-11-06T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-11-13T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-06T11:59:59Z"
+    },
+    {
+      "id": "s-p2027-faa47003dafe",
+      "title": "S&P2027",
+      "short_name": "S&P2027",
       "kind": "conference",
       "ccf_rank": "A",
       "domains": [
-        "DB"
+        "SEC"
       ],
-      "url": "https://2027.sigmod.org/",
+      "url": "https://sp2027.ieee-security.org/index.html",
       "deadlines": [
         {
-          "stage": "round 4",
-          "timestamp": "2026-10-18T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-10-18T11:59:00Z",
-      "next_deadline_display": "2026-10-18 19:59"
-    },
-    {
-      "id": "www2027-8bcfb6790f9c",
-      "title": "WWW2027",
-      "short_name": "WWW2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://acmweb2027.org/",
-      "deadlines": [
+          "stage": "Abstract",
+          "timestamp": "2026-11-11T11:59:59Z"
+        },
         {
-          "stage": "Deadline",
-          "timestamp": "2026-10-19T11:59:59Z"
+          "stage": "Second Paper submission deadline",
+          "timestamp": "2026-11-18T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-10-19T11:59:59Z",
-      "next_deadline_display": "2026-10-19 19:59"
+      "next_deadline_timestamp": "2026-11-11T11:59:59Z"
     },
     {
       "id": "icde2027-40f881678ad5",
@@ -1098,46 +1230,29 @@
           "timestamp": "2026-11-12T00:00:00Z"
         }
       ],
-      "next_deadline_timestamp": "2026-11-12T00:00:00Z",
-      "next_deadline_display": "2026-11-12 08:00"
+      "next_deadline_timestamp": "2026-11-12T00:00:00Z"
     },
     {
-      "id": "refsq2027-41325ed9666c",
-      "title": "REFSQ2027",
-      "short_name": "REFSQ2027",
+      "id": "dsn2027-91cf1dac2c62",
+      "title": "DSN2027",
+      "short_name": "DSN2027",
       "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://2027.refsq.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-11-13T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-11-13T11:59:59Z",
-      "next_deadline_display": "2026-11-13 19:59"
-    },
-    {
-      "id": "s-p2027-faa47003dafe",
-      "title": "S&P2027",
-      "short_name": "S&P2027",
-      "kind": "conference",
-      "ccf_rank": "A",
+      "ccf_rank": "B",
       "domains": [
         "SEC"
       ],
-      "url": "https://sp2027.ieee-security.org/index.html",
+      "url": "https://dsn2027-berlin.github.io/",
       "deadlines": [
         {
-          "stage": "Second Paper submission deadline",
-          "timestamp": "2026-11-18T11:59:59Z"
+          "stage": "Abstract",
+          "timestamp": "2026-11-26T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-12-03T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-11-18T11:59:59Z",
-      "next_deadline_display": "2026-11-18 19:59"
+      "next_deadline_timestamp": "2026-11-26T11:59:59Z"
     },
     {
       "id": "secon2027-b62856bd067d",
@@ -1155,27 +1270,7 @@
           "timestamp": "2026-12-01T04:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-12-01T04:59:59Z",
-      "next_deadline_display": "2026-12-01 12:59"
-    },
-    {
-      "id": "dsn2027-91cf1dac2c62",
-      "title": "DSN2027",
-      "short_name": "DSN2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://dsn2027-berlin.github.io/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-12-03T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-12-03T11:59:59Z",
-      "next_deadline_display": "2026-12-03 19:59"
+      "next_deadline_timestamp": "2026-12-01T04:59:59Z"
     },
     {
       "id": "osdi2027-de7a125ae2fa",
@@ -1189,12 +1284,15 @@
       "url": "https://www.usenix.org/conference/osdi27",
       "deadlines": [
         {
-          "stage": "Deadline",
+          "stage": "Abstract",
+          "timestamp": "2026-12-01T22:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
           "timestamp": "2026-12-08T22:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2026-12-08T22:59:59Z",
-      "next_deadline_display": "2026-12-09 06:59"
+      "next_deadline_timestamp": "2026-12-01T22:59:59Z"
     },
     {
       "id": "ijcnn2027-255929db4f7b",
@@ -1212,8 +1310,7 @@
           "timestamp": "2027-02-01T11:59:59Z"
         }
       ],
-      "next_deadline_timestamp": "2027-02-01T11:59:59Z",
-      "next_deadline_display": "2027-02-01 19:59"
+      "next_deadline_timestamp": "2027-02-01T11:59:59Z"
     }
   ]
 }

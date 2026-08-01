@@ -12,7 +12,7 @@ from ccf4sc_adapter import FilterConfig, build_candidates, load_source_records
 from ccfddl_transform import CandidateItem, Deadline, export_ics
 
 
-SUMMARY_RE = re.compile(r"^(?P<name>.+?) \((?P<domain>.+) CCF-(?P<rank>[ABC])\)$")
+SUMMARY_RE = re.compile(r"^(?P<name>.+?) \((?P<domain>.+) CCF-(?P<rank>A|B|C|N|NONE)\)$", re.IGNORECASE)
 
 
 def slugify(value: str) -> str:
@@ -81,7 +81,9 @@ def candidates_from_ccf4sc_ics(path: Path) -> list[CandidateItem]:
             continue
         name = match.group("name").strip()
         domain = match.group("domain").strip()
-        rank = match.group("rank").strip()
+        rank = match.group("rank").strip().upper()
+        if rank == "NONE":
+            rank = "N"
         deadline_dt = parse_ics_datetime(next((key for key in event.keys() if key.startswith("DTEND")), "DTEND"), next((value for key, value in event.items() if key.startswith("DTEND")), ""))
         deadline = Deadline(stage="Deadline", timestamp=deadline_dt.isoformat().replace("+00:00", "Z"), timezone_name="UTC+8")
         candidates.append(
@@ -127,17 +129,24 @@ def build_app_payload(candidates: list[CandidateItem], source: str, generated_at
                     for deadline in (candidate.deadlines if isinstance(candidate.deadlines, list) else [])
                 ],
                 "next_deadline_timestamp": candidate.deadlines[0]["timestamp"] if isinstance(candidate.deadlines[0], dict) else candidate.deadlines[0].timestamp,
-                "next_deadline_display": (
-                    datetime.fromisoformat(
-                        (candidate.deadlines[0]["timestamp"] if isinstance(candidate.deadlines[0], dict) else candidate.deadlines[0].timestamp).replace("Z", "+00:00")
-                    )
-                    .astimezone(timezone(timedelta(hours=8)))
-                    .strftime("%Y-%m-%d %H:%M")
-                ),
             }
             for candidate in candidates
         ],
     }
+
+
+def preserve_generation_time_for_unchanged_snapshot(payload: dict, output_path: Path) -> dict:
+    if not output_path.exists():
+        return payload
+    try:
+        existing = json.loads(output_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return payload
+    if existing.get("source") == payload.get("source") and existing.get("items") == payload.get("items"):
+        existing_generated_at = existing.get("generated_at")
+        if isinstance(existing_generated_at, str) and existing_generated_at:
+            payload["generated_at"] = existing_generated_at
+    return payload
 
 
 def main() -> None:
@@ -177,9 +186,10 @@ def main() -> None:
         payload = build_app_payload(candidates, "local ccf4sc ccf.ics snapshot", generated_at)
     else:
         records = load_source_records(args.source, source_url=args.source_url)
-        candidates = build_candidates(records, FilterConfig.from_payload({"rank": "ABC", "sub": "", "conf": [], "remove": {}}))
+        candidates = build_candidates(records, FilterConfig.from_payload({"rank": "ABCN", "sub": "", "conf": [], "remove": {}}))
         payload = build_app_payload(candidates, "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter", generated_at)
 
+    payload = preserve_generation_time_for_unchanged_snapshot(payload, args.output)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.ics_output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(payload, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
