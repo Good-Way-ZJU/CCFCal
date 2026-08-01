@@ -6,6 +6,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 extern NSNotificationName const DDLSubscriptionsDidChangeNotification;
 extern NSNotificationName const DDLCandidatesDidChangeNotification;
+extern NSString *DDLRankDisplayName(NSString *rank);
 
 @interface DDLDeadlineEntry : NSObject
 

@@ -37,7 +37,7 @@ static NSString *AgendaDDLMetadataValue(NSString *key, EKEvent *event) {
 
 static NSString *AgendaDDLRankLabel(EKEvent *event) {
     NSString *rank = AgendaDDLMetadataValue(@"ccf_rank", event);
-    return rank.length > 0 ? [NSString stringWithFormat:@"CCF-%@", rank] : @"";
+    return DDLRankDisplayName(rank);
 }
 
 static NSString *AgendaDDLKindLabel(EKEvent *event) {

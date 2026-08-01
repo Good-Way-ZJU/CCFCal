@@ -65,5 +65,26 @@
         ]
       }
     ]
+  },
+  {
+    "id": "colm",
+    "title": "COLM",
+    "sub": "MX",
+    "rank": {
+      "ccf": "N"
+    },
+    "link": "https://colmweb.org/",
+    "confs": [
+      {
+        "year": 2027,
+        "timezone": "AoE",
+        "timeline": [
+          {
+            "abstract": "Full Paper",
+            "deadline": "2026-09-01 23:59:00"
+          }
+        ]
+      }
+    ]
   }
 ]

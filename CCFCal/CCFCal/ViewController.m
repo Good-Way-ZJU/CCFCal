@@ -44,12 +44,27 @@ static NSString *DDLMenuBarCountdownString(NSDate *date)
     NSInteger minutes = (seconds % 3600) / 60;
 
     if (days > 0) {
-        return [NSString stringWithFormat:@"%ld d", (long)days];
+        return [NSString stringWithFormat:@"%ldd", (long)days];
     }
     if (hours > 0) {
-        return [NSString stringWithFormat:@"%ld h", (long)hours];
+        return [NSString stringWithFormat:@"%ldh", (long)hours];
     }
-    return [NSString stringWithFormat:@"%ld m", (long)minutes];
+    return [NSString stringWithFormat:@"%ldm", (long)minutes];
+}
+
+static NSString *DDLMenuBarVenueName(NSString *name)
+{
+    NSString *venueName = [name stringByTrimmingCharactersInSet:NSCharacterSet.whitespaceAndNewlineCharacterSet];
+    if (venueName.length < 4) return venueName ?: @"";
+
+    NSString *suffix = [venueName substringFromIndex:venueName.length - 4];
+    NSCharacterSet *nonDigits = NSCharacterSet.decimalDigitCharacterSet.invertedSet;
+    BOOL hasTrailingYear = [suffix hasPrefix:@"20"] && [suffix rangeOfCharacterFromSet:nonDigits].location == NSNotFound;
+    if (!hasTrailingYear) return venueName;
+
+    venueName = [venueName substringToIndex:venueName.length - 4];
+    NSCharacterSet *separators = [NSCharacterSet characterSetWithCharactersInString:@" \t-_–—"];
+    return [venueName stringByTrimmingCharactersInSet:separators];
 }
 
 @implementation ViewController
@@ -731,7 +746,7 @@ static NSString *DDLMenuBarCountdownString(NSDate *date)
         [parts addObject:title];
     }
     if (rank.length > 0) {
-        [parts addObject:[NSString stringWithFormat:@"CCF-%@", rank]];
+        [parts addObject:DDLRankDisplayName(rank)];
     }
     if (display.length > 0) {
         [parts addObject:display];
@@ -751,6 +766,8 @@ static NSString *DDLMenuBarCountdownString(NSDate *date)
     BOOL hideCountdown = [defaults boolForKey:kHideMenuBarCountdown];
     NSDictionary *nextDDL = [self nextSubscribedDeadlinePayload];
     NSString *deadlineCountdown = hideCountdown ? @"" : [self menuBarCountdownTextForPayload:nextDDL];
+    NSString *deadlineTitle = hideCountdown ? @"" : DDLMenuBarVenueName(nextDDL[@"title"]);
+    BOOL hasTargetLabel = deadlineTitle.length > 0 && deadlineCountdown.length > 0;
     NSString *deadlineTooltip = [self menuBarTooltipTextForPayload:nextDDL];
     if (hideIcon) {
         if ([defaults boolForKey:kShowMeetingIndicator] && _shouldShowMeetingIndicator) {
@@ -768,17 +785,17 @@ static NSString *DDLMenuBarCountdownString(NSDate *date)
         NSString *iconText = [self iconText];
         accessibilityTitle = [accessibilityTitle stringByAppendingFormat:@", %@", iconText];
         _statusItem.button.image = [self iconImageForText:iconText];
-        _statusItem.button.imagePosition = (_clockFormat || deadlineCountdown.length > 0) ? NSImageLeft : NSImageOnly;
+        _statusItem.button.imagePosition = (_clockFormat || hasTargetLabel) ? NSImageLeft : NSImageOnly;
     }
     NSString *buttonText = @"";
-    if (_clockFormat) {
+    if (hasTargetLabel) {
+        buttonText = [NSString stringWithFormat:@"%@ %@", deadlineTitle, deadlineCountdown];
+        accessibilityTitle = [accessibilityTitle stringByAppendingFormat:@", %@, next deadline in %@", deadlineTitle, deadlineCountdown];
+    }
+    else if (_clockFormat) {
         [_iconDateFormatter setDateFormat:_clockFormat];
         buttonText = [_iconDateFormatter stringFromDate:[NSDate new]];
         accessibilityTitle = [accessibilityTitle stringByAppendingFormat:@", %@", buttonText];
-    }
-    if (deadlineCountdown.length > 0) {
-        buttonText = buttonText.length > 0 ? [buttonText stringByAppendingFormat:@"  %@", deadlineCountdown] : deadlineCountdown;
-        accessibilityTitle = [accessibilityTitle stringByAppendingFormat:@", next deadline in %@", deadlineCountdown];
     }
     // After updating the Xcode Deployment Target to macOS 10.14 from
     // macOS 10.12, the button title renders slightly higher than it should
@@ -816,7 +833,7 @@ static NSString *DDLMenuBarCountdownString(NSDate *date)
     static NSStatusBarButton *dummyButton = nil;
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSDictionary *nextDDL = [defaults boolForKey:kHideMenuBarCountdown] ? nil : [self nextSubscribedDeadlinePayload];
-    BOOL hasStableDeadlineLabel = ([self menuBarCountdownTextForPayload:nextDDL].length > 0);
+    BOOL hasStableDeadlineLabel = (DDLMenuBarVenueName(nextDDL[@"title"]).length > 0 && [self menuBarCountdownTextForPayload:nextDDL].length > 0);
     if ((_clockFormat && !_clockUsesSeconds) || hasStableDeadlineLabel) {
         if (!dummyButton) {
             NSFontDescriptor *monoFontDesc = [[_statusItem.button.font fontDescriptor] fontDescriptorByAddingAttributes:@{NSFontFeatureSettingsAttribute: @[@{NSFontFeatureTypeIdentifierKey: @(kNumberSpacingType), NSFontFeatureSelectorIdentifierKey: @(kMonospacedNumbersSelector)}]}];

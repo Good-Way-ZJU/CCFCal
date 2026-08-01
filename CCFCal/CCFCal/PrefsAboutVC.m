@@ -52,7 +52,7 @@ static NSString * const CCFCalGitHubURLString = @"https://github.com/Good-Way-ZJ
     version.font = [NSFont systemFontOfSize:11 weight:NSFontWeightMedium];
     version.textColor = [NSColor secondaryLabelColor];
 
-    NSTextField *tagline = label(NSLocalizedString(@"A macOS menu bar calendar for tracking the CCF deadlines you subscribe to.", nil), NO);
+    NSTextField *tagline = label(NSLocalizedString(@"A macOS menu bar tracker for your target CCF venues and deadlines.", nil), NO);
     tagline.font = [NSFont systemFontOfSize:12 weight:NSFontWeightMedium];
     tagline.textColor = [NSColor secondaryLabelColor];
     tagline.lineBreakMode = NSLineBreakByWordWrapping;

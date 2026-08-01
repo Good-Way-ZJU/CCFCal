@@ -5,19 +5,45 @@ NSNotificationName const DDLCandidatesDidChangeNotification = @"DDLCandidatesDid
 
 static NSString * const kDDLSubscribedItemIDs = @"DDLSubscribedItemIDs";
 static NSString * const kDDLHighlightColorsByItemID = @"DDLHighlightColorsByItemID";
-static NSString * const kDDLPresetColorMigrationKey = @"DDLPresetColorMigrationKey";
+static NSString * const kDDLPresetColorMigrationKey = @"DDLPresetColorMigrationKeyV2";
 static NSString * const kDDLDefaultHighlightColorHex = @"#D62F2B";
+static NSString * const kDDLLegacyNoneHighlightColorHex = @"#8E8E93";
 static NSString * const kDDLRemoteCandidateFeedURL = @"CCFCalRemoteCandidateFeedURL";
 static NSString * const kDDLLastRemoteCandidateRefreshDate = @"DDLLastRemoteCandidateRefreshDate";
 static NSTimeInterval const kDDLRemoteCandidateRefreshInterval = 24 * 60 * 60;
 
+static NSString *DDLNormalizedRank(NSString *rank)
+{
+    NSString *normalized = [[rank ?: @"" stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
+    if ([normalized isEqualToString:@"NONE"] || [normalized isEqualToString:@"UNRANKED"]) {
+        return @"N";
+    }
+    return normalized;
+}
+
+NSString *DDLRankDisplayName(NSString *rank)
+{
+    NSString *normalized = DDLNormalizedRank(rank);
+    if (normalized.length == 0) {
+        return @"";
+    }
+    if ([normalized isEqualToString:@"N"]) {
+        return @"CCF-NONE";
+    }
+    return [NSString stringWithFormat:@"CCF-%@", normalized];
+}
+
 static NSString *DDLDefaultColorHexForRank(NSString *rank)
 {
+    rank = DDLNormalizedRank(rank);
     if ([rank isEqualToString:@"B"]) {
         return @"#E0B100";
     }
     if ([rank isEqualToString:@"C"]) {
         return @"#2F6FEB";
+    }
+    if ([rank isEqualToString:@"N"]) {
+        return @"#248A3D";
     }
     return kDDLDefaultHighlightColorHex;
 }
@@ -70,7 +96,10 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
         if (!candidate) continue;
         NSString *stored = mutable[candidateID];
         NSString *recommended = DDLDefaultColorHexForRank(candidate.ccfRank);
-        if (stored.length == 0 || ([stored caseInsensitiveCompare:kDDLDefaultHighlightColorHex] == NSOrderedSame && ![candidate.ccfRank isEqualToString:@"A"])) {
+        BOOL usesLegacyNoneColor = [candidate.ccfRank isEqualToString:@"N"] &&
+            [stored caseInsensitiveCompare:kDDLLegacyNoneHighlightColorHex] == NSOrderedSame;
+        if (stored.length == 0 || usesLegacyNoneColor ||
+            ([stored caseInsensitiveCompare:kDDLDefaultHighlightColorHex] == NSOrderedSame && ![candidate.ccfRank isEqualToString:@"A"])) {
             mutable[candidateID] = recommended;
             didChange = YES;
         }
@@ -84,11 +113,8 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
 
 - (NSString *)displayStringForTimestamp:(NSString *)timestamp fallback:(NSString *)fallback
 {
-    if (fallback.length > 0) {
-        return fallback;
-    }
     if (timestamp.length == 0) {
-        return @"";
+        return fallback ?: @"";
     }
 
     NSDateFormatter *parser = [NSDateFormatter new];
@@ -96,7 +122,7 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
     parser.dateFormat = @"yyyy-MM-dd'T'HH:mm:ssXXXXX";
     NSDate *date = [parser dateFromString:[timestamp stringByReplacingOccurrencesOfString:@"Z" withString:@"+00:00"]];
     if (!date) {
-        return @"";
+        return fallback ?: @"";
     }
 
     NSDateFormatter *formatter = [NSDateFormatter new];
@@ -208,7 +234,7 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
         candidate.title = title;
         candidate.shortName = shortName;
         candidate.kind = kind;
-        candidate.ccfRank = ccfRank;
+        candidate.ccfRank = DDLNormalizedRank(ccfRank);
         candidate.domains = [domains filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id evaluatedObject, NSDictionary *bindings) {
             return [evaluatedObject isKindOfClass:[NSString class]];
         }]];
@@ -288,8 +314,49 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
     if (![payload isKindOfClass:[NSDictionary class]]) {
         return NO;
     }
-    id items = payload[@"items"];
-    return [items isKindOfClass:[NSArray class]] && [items count] > 0;
+    NSDictionary *dictionary = payload;
+    NSString *generatedAt = [dictionary[@"generated_at"] isKindOfClass:[NSString class]] ? dictionary[@"generated_at"] : @"";
+    if (generatedAt.length == 0 || ![self dateForTimestamp:generatedAt]) {
+        return NO;
+    }
+
+    NSArray *items = [dictionary[@"items"] isKindOfClass:[NSArray class]] ? dictionary[@"items"] : nil;
+    NSUInteger minimumItemCount = MAX((NSUInteger)20, self.candidates.count / 2);
+    if (items.count < minimumItemCount) {
+        return NO;
+    }
+
+    NSMutableSet<NSString *> *identifiers = [NSMutableSet new];
+    NSMutableSet<NSString *> *ranks = [NSMutableSet new];
+    for (id rawItem in items) {
+        if (![rawItem isKindOfClass:[NSDictionary class]]) return NO;
+        NSDictionary *item = rawItem;
+        NSString *itemID = [item[@"id"] isKindOfClass:[NSString class]] ? item[@"id"] : @"";
+        NSString *title = [item[@"title"] isKindOfClass:[NSString class]] ? item[@"title"] : @"";
+        NSString *shortName = [item[@"short_name"] isKindOfClass:[NSString class]] ? item[@"short_name"] : @"";
+        NSString *kind = [item[@"kind"] isKindOfClass:[NSString class]] ? item[@"kind"] : @"";
+        NSString *rank = DDLNormalizedRank([item[@"ccf_rank"] isKindOfClass:[NSString class]] ? item[@"ccf_rank"] : @"");
+        NSArray *domains = [item[@"domains"] isKindOfClass:[NSArray class]] ? item[@"domains"] : nil;
+        NSArray *deadlines = [item[@"deadlines"] isKindOfClass:[NSArray class]] ? item[@"deadlines"] : nil;
+        NSString *nextTimestamp = [item[@"next_deadline_timestamp"] isKindOfClass:[NSString class]] ? item[@"next_deadline_timestamp"] : @"";
+        if (itemID.length == 0 || title.length == 0 || shortName.length == 0 || kind.length == 0 ||
+            ![@[@"A", @"B", @"C", @"N"] containsObject:rank] || domains.count == 0 || deadlines.count == 0 ||
+            [identifiers containsObject:itemID] || ![self dateForTimestamp:nextTimestamp]) {
+            return NO;
+        }
+        for (id domain in domains) {
+            if (![domain isKindOfClass:[NSString class]] || [domain length] == 0) return NO;
+        }
+        for (id rawDeadline in deadlines) {
+            if (![rawDeadline isKindOfClass:[NSDictionary class]]) return NO;
+            NSString *stage = [rawDeadline[@"stage"] isKindOfClass:[NSString class]] ? rawDeadline[@"stage"] : @"";
+            NSString *timestamp = [rawDeadline[@"timestamp"] isKindOfClass:[NSString class]] ? rawDeadline[@"timestamp"] : @"";
+            if (stage.length == 0 || ![self dateForTimestamp:timestamp]) return NO;
+        }
+        [identifiers addObject:itemID];
+        [ranks addObject:rank];
+    }
+    return [ranks containsObject:@"A"] && [ranks containsObject:@"B"] && [ranks containsObject:@"C"];
 }
 
 - (NSError *)remoteCandidateErrorWithDescription:(NSString *)description code:(NSInteger)code
@@ -430,10 +497,29 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
 - (NSURL *)candidateDataURL
 {
     NSURL *dynamicURL = [self candidateOverrideDataURLCreatingDirectory:NO];
-    if (dynamicURL && [[NSFileManager defaultManager] fileExistsAtPath:dynamicURL.path]) {
+    NSURL *bundledURL = [[NSBundle mainBundle] URLForResource:@"DDLCandidates" withExtension:@"json"];
+    if (!dynamicURL || ![[NSFileManager defaultManager] fileExistsAtPath:dynamicURL.path]) {
+        return bundledURL;
+    }
+    if (!bundledURL) {
         return dynamicURL;
     }
-    return [[NSBundle mainBundle] URLForResource:@"DDLCandidates" withExtension:@"json"];
+
+    NSDate *(^generatedDate)(NSURL *) = ^NSDate *(NSURL *url) {
+        NSData *data = [NSData dataWithContentsOfURL:url];
+        if (!data) return nil;
+        NSDictionary *payload = [NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+        if (![self candidatePayloadIsValid:payload]) return nil;
+        NSString *timestamp = [payload[@"generated_at"] isKindOfClass:[NSString class]] ? payload[@"generated_at"] : @"";
+        return [self dateForTimestamp:timestamp];
+    };
+
+    NSDate *dynamicGeneratedAt = generatedDate(dynamicURL);
+    NSDate *bundledGeneratedAt = generatedDate(bundledURL);
+    if (bundledGeneratedAt && (!dynamicGeneratedAt || [bundledGeneratedAt compare:dynamicGeneratedAt] == NSOrderedDescending)) {
+        return bundledURL;
+    }
+    return dynamicURL;
 }
 
 - (NSArray<NSString *> *)availableDomains

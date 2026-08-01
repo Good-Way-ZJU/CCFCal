@@ -64,6 +64,13 @@
 
 - (void)applicationWillFinishLaunching:(NSNotification *)aNotification
 {
+    // CCFCal is a persistent menu bar utility, even when it has no visible
+    // windows. Without this, AppKit marks the process as automatically
+    // terminable and macOS may reclaim it during container cache cleanup.
+    // NSSupportsAutomaticTermination in Info.plist makes this opt-out effective.
+    NSProcessInfo *processInfo = NSProcessInfo.processInfo;
+    [processInfo disableAutomaticTermination:@"CCFCal provides a persistent menu bar calendar"];
+
     // macOS 26 Tahoe pollutes menus with superflous icons. Disable them
     // unless the user explicitly opts-in.
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];

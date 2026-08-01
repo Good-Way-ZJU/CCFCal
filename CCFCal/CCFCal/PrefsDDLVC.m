@@ -60,6 +60,7 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
     NSButton *_rankA;
     NSButton *_rankB;
     NSButton *_rankC;
+    NSButton *_rankNone;
     NSPopUpButton *_domainPopup;
     NSSearchField *_searchField;
     NSTableView *_tableView;
@@ -129,15 +130,19 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
     _rankA = [NSButton checkboxWithTitle:@"A" target:self action:@selector(filtersChanged:)];
     _rankB = [NSButton checkboxWithTitle:@"B" target:self action:@selector(filtersChanged:)];
     _rankC = [NSButton checkboxWithTitle:@"C" target:self action:@selector(filtersChanged:)];
+    _rankNone = [NSButton checkboxWithTitle:@"NONE" target:self action:@selector(filtersChanged:)];
     _rankA.translatesAutoresizingMaskIntoConstraints = NO;
     _rankB.translatesAutoresizingMaskIntoConstraints = NO;
     _rankC.translatesAutoresizingMaskIntoConstraints = NO;
+    _rankNone.translatesAutoresizingMaskIntoConstraints = NO;
     _rankA.state = NSControlStateValueOn;
     _rankB.state = NSControlStateValueOn;
     _rankC.state = NSControlStateValueOn;
+    _rankNone.state = NSControlStateValueOn;
     [filtersBox addSubview:_rankA];
     [filtersBox addSubview:_rankB];
     [filtersBox addSubview:_rankC];
+    [filtersBox addSubview:_rankNone];
 
     NSTextField *domainLabel = [NSTextField labelWithString:NSLocalizedString(@"Domain:", @"")];
     domainLabel.translatesAutoresizingMaskIntoConstraints = NO;
@@ -187,9 +192,9 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
     NSTableColumn *rankColumn = [[NSTableColumn alloc] initWithIdentifier:@"rank"];
     rankColumn.title = NSLocalizedString(@"Rank", @"");
     rankColumn.headerCell.alignment = NSTextAlignmentCenter;
-    rankColumn.minWidth = 70;
-    rankColumn.maxWidth = 70;
-    rankColumn.width = 70;
+    rankColumn.minWidth = 82;
+    rankColumn.maxWidth = 82;
+    rankColumn.width = 82;
     [_tableView addTableColumn:rankColumn];
     NSTableColumn *domainColumn = [[NSTableColumn alloc] initWithIdentifier:@"domain"];
     domainColumn.title = NSLocalizedString(@"Domain", @"");
@@ -238,9 +243,9 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
     [heroVFL :@"H:|-m-[_sourceLabel]-m-|"];
     [heroVFL :@"V:|-m-[_titleLabel]-6-[intro]-10-[_sourceLabel]-m-|"];
 
-    NSDictionary *filterViews = NSDictionaryOfVariableBindings(_subscribedOnly, rankLabel, _rankA, _rankB, _rankC, domainLabel, _domainPopup, _searchField);
+    NSDictionary *filterViews = NSDictionaryOfVariableBindings(_subscribedOnly, rankLabel, _rankA, _rankB, _rankC, _rankNone, domainLabel, _domainPopup, _searchField);
     MoVFLHelper *filterVFL = [[MoVFLHelper alloc] initWithSuperview:filtersBox metrics:@{@"m": @14} views:filterViews];
-    [filterVFL :@"H:|-m-[_subscribedOnly]-14-[rankLabel]-8-[_rankA]-8-[_rankB]-8-[_rankC]-16-[domainLabel]-[_domainPopup(>=100)]-10-[_searchField(>=80)]-m-|" :NSLayoutFormatAlignAllCenterY];
+    [filterVFL :@"H:|-m-[_subscribedOnly]-14-[rankLabel]-8-[_rankA]-8-[_rankB]-8-[_rankC]-8-[_rankNone]-16-[domainLabel]-[_domainPopup(>=100)]-10-[_searchField(>=80)]-m-|" :NSLayoutFormatAlignAllCenterY];
     [filterVFL :@"V:|-m-[_subscribedOnly]-m-|"];
 
     NSDictionary *views = NSDictionaryOfVariableBindings(hero, filtersBox, _summaryLabel, tableBox, _emptyLabel);
@@ -260,6 +265,8 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
     [tableVFL :@"V:|[scrollView]|"];
 
     self.view = v;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(subscriptionsChanged:) name:DDLSubscriptionsDidChangeNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(candidatesChanged:) name:DDLCandidatesDidChangeNotification object:nil];
 }
 
 - (void)viewDidLayout
@@ -274,7 +281,7 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
         deadlineColumn.width = deadlineWidth;
         CGFloat domainWidth = MIN(MAX(126.0, totalWidth * 0.18), 170.0);
         domainColumn.width = domainWidth;
-        CGFloat reservedWidth = 36.0 + 70.0 + domainWidth + deadlineWidth + 12.0;
+        CGFloat reservedWidth = 36.0 + 82.0 + domainWidth + deadlineWidth + 12.0;
         candidateColumn.width = MAX(132.0, totalWidth - reservedWidth);
     }
 }
@@ -288,8 +295,6 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
     }
     [self reloadDomainPopup];
     [self applyFilters];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(subscriptionsChanged:) name:DDLSubscriptionsDidChangeNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(candidatesChanged:) name:DDLCandidatesDidChangeNotification object:nil];
 }
 
 - (void)viewDidAppear
@@ -351,8 +356,9 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
     if (_rankA.state == NSControlStateValueOn) [ranks addObject:@"A"];
     if (_rankB.state == NSControlStateValueOn) [ranks addObject:@"B"];
     if (_rankC.state == NSControlStateValueOn) [ranks addObject:@"C"];
+    if (_rankNone.state == NSControlStateValueOn) [ranks addObject:@"N"];
     if (ranks.count == 0) {
-        [ranks addObjectsFromArray:@[@"A", @"B", @"C"]];
+        [ranks addObjectsFromArray:@[@"A", @"B", @"C", @"N"]];
     }
     return ranks;
 }
@@ -432,7 +438,7 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
     if ([tableColumn.identifier isEqualToString:@"rank"]) {
         NSTableCellView *rankCell = [tableView makeViewWithIdentifier:@"rank-cell" owner:self];
         if (!rankCell) {
-            rankCell = [[NSTableCellView alloc] initWithFrame:NSMakeRect(0, 0, 70, 52)];
+            rankCell = [[NSTableCellView alloc] initWithFrame:NSMakeRect(0, 0, 82, 52)];
             rankCell.identifier = @"rank-cell";
 
             NSTextField *label = [NSTextField labelWithString:@""];
@@ -452,11 +458,13 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
         }
 
         NSTextField *label = [rankCell viewWithTag:3001];
-        label.stringValue = [NSString stringWithFormat:@"CCF-%@", candidate.ccfRank];
+        label.stringValue = DDLRankDisplayName(candidate.ccfRank);
         if ([candidate.ccfRank isEqualToString:@"A"]) {
             label.textColor = [NSColor systemRedColor];
         } else if ([candidate.ccfRank isEqualToString:@"B"]) {
             label.textColor = [NSColor systemOrangeColor];
+        } else if ([candidate.ccfRank isEqualToString:@"N"]) {
+            label.textColor = [NSColor systemGreenColor];
         } else {
             label.textColor = [NSColor systemBlueColor];
         }

@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install pipeline dependencies
+        run: python -m pip install -r pipeline/requirements.txt
+
+      - name: Test data pipeline and bundled snapshot
+        run: python -m unittest discover -s pipeline/tests
+
+      - name: Prepare local build configuration
+        run: cp CCFCal/Local.xcconfig.example CCFCal/Local.xcconfig
+
+      - name: Build macOS app
+        run: >-
+          xcodebuild -project CCFCal/CCFCal.xcodeproj
+          -scheme CCFCal
+          -configuration Release
+          -derivedDataPath "$RUNNER_TEMP/CCFCalDerivedData"
+          CODE_SIGNING_ALLOWED=NO
+          build

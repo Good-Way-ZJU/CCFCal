@@ -6,7 +6,7 @@ import argparse
 import json
 import hashlib
 from dataclasses import dataclass
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -21,6 +21,16 @@ def parse_datetime(value: str) -> datetime:
 
 def slugify(value: str) -> str:
     return "".join(ch.lower() if ch.isalnum() else "-" for ch in value).strip("-")
+
+
+def normalize_ccf_rank(value: Any) -> str:
+    normalized = str(value or "").strip().upper()
+    return "N" if normalized in {"NONE", "UNRANKED"} else normalized
+
+
+def display_ccf_rank(value: Any) -> str:
+    normalized = normalize_ccf_rank(value)
+    return "NONE" if normalized == "N" else normalized
 
 
 @dataclass(frozen=True)
@@ -46,11 +56,12 @@ class CandidateItem:
 
     @staticmethod
     def from_payload(payload: dict[str, Any]) -> "CandidateItem":
+        ccf_rank = normalize_ccf_rank(payload["ccf_rank"])
         digest_source = "|".join(
             [
                 payload["short_name"],
                 payload["kind"],
-                payload["ccf_rank"],
+                ccf_rank,
                 ",".join(sorted(payload["domains"])),
             ]
         )
@@ -69,7 +80,7 @@ class CandidateItem:
             title=payload["title"],
             short_name=payload["short_name"],
             kind=payload["kind"],
-            ccf_rank=payload["ccf_rank"],
+            ccf_rank=ccf_rank,
             domains=sorted(payload["domains"]),
             url=payload["url"],
             deadlines=deadlines,
@@ -104,9 +115,36 @@ def format_ics_datetime(value: datetime) -> str:
     return value.strftime("%Y%m%dT%H%M%SZ")
 
 
+def escape_ics_text(value: str) -> str:
+    return (
+        str(value or "")
+        .replace("\\", "\\\\")
+        .replace("\r\n", "\\n")
+        .replace("\n", "\\n")
+        .replace("\r", "\\n")
+        .replace(";", "\\;")
+        .replace(",", "\\,")
+    )
+
+
+def fold_ics_line(line: str) -> list[str]:
+    folded: list[str] = []
+    current = ""
+    byte_limit = 75
+    for character in line:
+        if current and len((current + character).encode("utf-8")) > byte_limit:
+            folded.append(current)
+            current = " " + character
+            byte_limit = 75
+        else:
+            current += character
+    folded.append(current)
+    return folded
+
+
 def build_event_title(candidate: CandidateItem, deadline: Deadline) -> str:
     primary_domain = candidate.domains[0] if candidate.domains else "GEN"
-    return f"[DDL][CCF-{candidate.ccf_rank}][{primary_domain}] {candidate.short_name} {deadline.stage}"
+    return f"[DDL][CCF-{display_ccf_rank(candidate.ccf_rank)}][{primary_domain}] {candidate.short_name} {deadline.stage}"
 
 
 def build_event_description(candidate: CandidateItem, deadline: Deadline) -> str:
@@ -119,7 +157,7 @@ def build_event_description(candidate: CandidateItem, deadline: Deadline) -> str
         "url": candidate.url,
         "source_timezone": deadline.timezone_name,
     }
-    return "\\n".join(f"{key}:{value}" for key, value in parts.items())
+    return "\n".join(f"{key}:{value}" for key, value in parts.items())
 
 
 def export_ics(candidates: list[CandidateItem]) -> str:
@@ -134,22 +172,24 @@ def export_ics(candidates: list[CandidateItem]) -> str:
     for candidate in candidates:
         for deadline in sorted(candidate.deadlines, key=lambda item: item.as_datetime()):
             dtstart = deadline.as_datetime()
-            dtend = dtstart
+            dtend = dtstart + timedelta(minutes=1)
+            timestamp_slug = dtstart.strftime("%Y%m%dT%H%M%SZ").lower()
             lines.extend(
                 [
                     "BEGIN:VEVENT",
-                    f"UID:{candidate.id}-{slugify(deadline.stage)}@ddlcal",
+                    f"UID:{candidate.id}-{slugify(deadline.stage)}-{timestamp_slug}@ddlcal",
                     f"DTSTAMP:{generated_at}",
                     f"DTSTART:{format_ics_datetime(dtstart)}",
                     f"DTEND:{format_ics_datetime(dtend)}",
-                    f"SUMMARY:{build_event_title(candidate, deadline)}",
-                    f"DESCRIPTION:{build_event_description(candidate, deadline)}",
-                    f"URL:{candidate.url}",
+                    f"SUMMARY:{escape_ics_text(build_event_title(candidate, deadline))}",
+                    f"DESCRIPTION:{escape_ics_text(build_event_description(candidate, deadline))}",
+                    f"URL:{str(candidate.url or '').replace(chr(13), '').replace(chr(10), '')}",
                     "END:VEVENT",
                 ]
             )
     lines.append("END:VCALENDAR")
-    return "\r\n".join(lines) + "\r\n"
+    folded_lines = [folded for line in lines for folded in fold_ics_line(line)]
+    return "\r\n".join(folded_lines) + "\r\n"
 
 
 def main() -> None:
