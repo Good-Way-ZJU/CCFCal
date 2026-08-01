@@ -5,8 +5,9 @@ NSNotificationName const DDLCandidatesDidChangeNotification = @"DDLCandidatesDid
 
 static NSString * const kDDLSubscribedItemIDs = @"DDLSubscribedItemIDs";
 static NSString * const kDDLHighlightColorsByItemID = @"DDLHighlightColorsByItemID";
-static NSString * const kDDLPresetColorMigrationKey = @"DDLPresetColorMigrationKey";
+static NSString * const kDDLPresetColorMigrationKey = @"DDLPresetColorMigrationKeyV2";
 static NSString * const kDDLDefaultHighlightColorHex = @"#D62F2B";
+static NSString * const kDDLLegacyNoneHighlightColorHex = @"#8E8E93";
 static NSString * const kDDLRemoteCandidateFeedURL = @"CCFCalRemoteCandidateFeedURL";
 static NSString * const kDDLLastRemoteCandidateRefreshDate = @"DDLLastRemoteCandidateRefreshDate";
 static NSTimeInterval const kDDLRemoteCandidateRefreshInterval = 24 * 60 * 60;
@@ -42,7 +43,7 @@ static NSString *DDLDefaultColorHexForRank(NSString *rank)
         return @"#2F6FEB";
     }
     if ([rank isEqualToString:@"N"]) {
-        return @"#8E8E93";
+        return @"#248A3D";
     }
     return kDDLDefaultHighlightColorHex;
 }
@@ -95,7 +96,10 @@ static NSColor *DDLColorFromHexString(NSString *hexString)
         if (!candidate) continue;
         NSString *stored = mutable[candidateID];
         NSString *recommended = DDLDefaultColorHexForRank(candidate.ccfRank);
-        if (stored.length == 0 || ([stored caseInsensitiveCompare:kDDLDefaultHighlightColorHex] == NSOrderedSame && ![candidate.ccfRank isEqualToString:@"A"])) {
+        BOOL usesLegacyNoneColor = [candidate.ccfRank isEqualToString:@"N"] &&
+            [stored caseInsensitiveCompare:kDDLLegacyNoneHighlightColorHex] == NSOrderedSame;
+        if (stored.length == 0 || usesLegacyNoneColor ||
+            ([stored caseInsensitiveCompare:kDDLDefaultHighlightColorHex] == NSOrderedSame && ![candidate.ccfRank isEqualToString:@"A"])) {
             mutable[candidateID] = recommended;
             didChange = YES;
         }

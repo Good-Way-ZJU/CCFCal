@@ -464,7 +464,7 @@ static NSString *DDLDomainDisplay(NSArray<NSString *> *domains)
         } else if ([candidate.ccfRank isEqualToString:@"B"]) {
             label.textColor = [NSColor systemOrangeColor];
         } else if ([candidate.ccfRank isEqualToString:@"N"]) {
-            label.textColor = [NSColor secondaryLabelColor];
+            label.textColor = [NSColor systemGreenColor];
         } else {
             label.textColor = [NSColor systemBlueColor];
         }

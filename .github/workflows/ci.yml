@@ -26,6 +26,9 @@ jobs:
       - name: Test data pipeline and bundled snapshot
         run: python -m unittest discover -s pipeline/tests
 
+      - name: Prepare local build configuration
+        run: cp CCFCal/Local.xcconfig.example CCFCal/Local.xcconfig
+
       - name: Build macOS app
         run: >-
           xcodebuild -project CCFCal/CCFCal.xcodeproj
