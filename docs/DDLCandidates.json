@@ -1,47 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-02T13:32:46+08:00",
+  "generated_at": "2026-08-03T13:48:37+08:00",
   "items": [
-    {
-      "id": "ubicomp-iswc2026-37c2f0800f04",
-      "title": "UbiComp/ISWC2026",
-      "short_name": "UbiComp/ISWC2026",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "HCI"
-      ],
-      "url": "https://www.ubicomp.org/ubicomp-iswc-2026",
-      "deadlines": [
-        {
-          "stage": "third round (only for resubmissions after major revisions)",
-          "timestamp": "2026-08-02T11:59:59Z"
-        },
-        {
-          "stage": "fourth round",
-          "timestamp": "2026-11-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-02T11:59:59Z"
-    },
-    {
-      "id": "cscloud2026-a8224addf739",
-      "title": "CSCloud2026",
-      "short_name": "CSCloud2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://www.cloud-conf.net/cscloud/2026/cscloud/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-02T11:59:59Z"
-    },
     {
       "id": "icaif2026-473de181deb3",
       "title": "ICAIF2026",
@@ -95,24 +55,6 @@
       "deadlines": [
         {
           "stage": "ARR Submission; commitment deadline: 2026-10-11",
-          "timestamp": "2026-08-04T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
-    },
-    {
-      "id": "mmasia2026-483fcad042e0",
-      "title": "MMAsia2026",
-      "short_name": "MMAsia2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.mmasia2026.org/",
-      "deadlines": [
-        {
-          "stage": "Regular Paper / Special Session Submission",
           "timestamp": "2026-08-04T11:59:59Z"
         }
       ],
@@ -227,6 +169,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-08-14T11:59:59Z"
+    },
+    {
+      "id": "mmasia2026-483fcad042e0",
+      "title": "MMAsia2026",
+      "short_name": "MMAsia2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://www.mmasia2026.org/",
+      "deadlines": [
+        {
+          "stage": "Regular Paper / Special Session Submission",
+          "timestamp": "2026-08-15T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-15T11:59:59Z"
     },
     {
       "id": "mmm2027-0d71bebc726e",
@@ -937,6 +897,28 @@
       "next_deadline_timestamp": "2026-10-02T11:59:00Z"
     },
     {
+      "id": "fpga2027-b1431b26e9f7",
+      "title": "FPGA2027",
+      "short_name": "FPGA2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://www.isfpga.org/",
+      "deadlines": [
+        {
+          "stage": "Abstracts Due",
+          "timestamp": "2026-10-02T11:59:59Z"
+        },
+        {
+          "stage": "Submissions Due",
+          "timestamp": "2026-10-09T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-02T11:59:59Z"
+    },
+    {
       "id": "ipdps2027-87558d4f9313",
       "title": "IPDPS2027",
       "short_name": "IPDPS2027",
@@ -1165,6 +1147,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-10-16T11:59:59Z"
+    },
+    {
+      "id": "ubicomp-iswc2026-37c2f0800f04",
+      "title": "UbiComp/ISWC2026",
+      "short_name": "UbiComp/ISWC2026",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "HCI"
+      ],
+      "url": "https://www.ubicomp.org/ubicomp-iswc-2026",
+      "deadlines": [
+        {
+          "stage": "fourth round",
+          "timestamp": "2026-11-02T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-02T11:59:59Z"
     },
     {
       "id": "refsq2027-41325ed9666c",
