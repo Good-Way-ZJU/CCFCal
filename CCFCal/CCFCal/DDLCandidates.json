@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-03T13:48:37+08:00",
+  "generated_at": "2026-08-04T13:19:36+08:00",
   "items": [
-    {
-      "id": "icaif2026-473de181deb3",
-      "title": "ICAIF2026",
-      "short_name": "ICAIF2026",
-      "kind": "conference",
-      "ccf_rank": "N",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://icaif2026.org/index.html",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-03T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-03T11:59:59Z"
-    },
     {
       "id": "dai2026-d2eeaad89fac",
       "title": "DAI2026",
@@ -851,6 +833,28 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-22T11:59:59Z"
+    },
+    {
+      "id": "eurographics2027-4bb8701a9f19",
+      "title": "Eurographics2027",
+      "short_name": "Eurographics2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://eg2027.isti.cnr.it/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-09-25T23:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-10-01T23:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-25T23:59:59Z"
     },
     {
       "id": "ecir2027-3526900eb939",
