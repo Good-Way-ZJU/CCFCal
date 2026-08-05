@@ -1,91 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-04T13:19:36+08:00",
+  "generated_at": "2026-08-05T13:19:49+08:00",
   "items": [
-    {
-      "id": "dai2026-d2eeaad89fac",
-      "title": "DAI2026",
-      "short_name": "DAI2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://www.adai.ai/dai/2026/index.html",
-      "deadlines": [
-        {
-          "stage": "Research / Industry Track",
-          "timestamp": "2026-08-04T11:59:59Z"
-        },
-        {
-          "stage": "AI Paper Track",
-          "timestamp": "2026-08-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
-    },
-    {
-      "id": "eacl2027-b62ad371024a",
-      "title": "EACL2027",
-      "short_name": "EACL2027",
-      "kind": "conference",
-      "ccf_rank": "N",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://2027.eacl.org/",
-      "deadlines": [
-        {
-          "stage": "ARR Submission; commitment deadline: 2026-10-11",
-          "timestamp": "2026-08-04T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
-    },
-    {
-      "id": "ppopp2027-57d6e92a6cbe",
-      "title": "PPoPP2027",
-      "short_name": "PPoPP2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://ppopp27.sigplan.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-04T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
-    },
-    {
-      "id": "csfw2027-e6c90f299782",
-      "title": "CSFW2027",
-      "short_name": "CSFW2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://www.ieee-security.org/TC/CSF2027/",
-      "deadlines": [
-        {
-          "stage": "Summer",
-          "timestamp": "2026-08-04T11:59:59Z"
-        },
-        {
-          "stage": "Fall",
-          "timestamp": "2026-10-16T11:59:59Z"
-        },
-        {
-          "stage": "Winter",
-          "timestamp": "2027-01-29T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-04T11:59:59Z"
-    },
     {
       "id": "cidr2027-70c24c1d92ee",
       "title": "CIDR2027",
@@ -129,6 +45,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-08-08T11:59:59Z"
+    },
+    {
+      "id": "dai2026-d2eeaad89fac",
+      "title": "DAI2026",
+      "short_name": "DAI2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://www.adai.ai/dai/2026/index.html",
+      "deadlines": [
+        {
+          "stage": "AI Paper Track",
+          "timestamp": "2026-08-11T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-11T11:59:59Z"
     },
     {
       "id": "iui2027-42eacda301dd",
@@ -1091,6 +1025,24 @@
       "next_deadline_timestamp": "2026-10-12T11:59:59Z"
     },
     {
+      "id": "coling2027-8dffbb8e92c3",
+      "title": "COLING2027",
+      "short_name": "COLING2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://2027.coling-iccl.org/",
+      "deadlines": [
+        {
+          "stage": "ARR Submission",
+          "timestamp": "2026-10-13T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-13T11:59:59Z"
+    },
+    {
       "id": "naacl2027-83b41439d4f4",
       "title": "NAACL2027",
       "short_name": "NAACL2027",
@@ -1148,6 +1100,28 @@
         {
           "stage": "Schedule for TCHES Volume 2027/4",
           "timestamp": "2027-04-16T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-16T11:59:59Z"
+    },
+    {
+      "id": "csfw2027-e6c90f299782",
+      "title": "CSFW2027",
+      "short_name": "CSFW2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.ieee-security.org/TC/CSF2027/",
+      "deadlines": [
+        {
+          "stage": "Fall",
+          "timestamp": "2026-10-16T11:59:59Z"
+        },
+        {
+          "stage": "Winter",
+          "timestamp": "2027-01-29T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-10-16T11:59:59Z"
