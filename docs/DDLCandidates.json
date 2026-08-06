@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-05T13:19:49+08:00",
+  "generated_at": "2026-08-06T13:21:52+08:00",
   "items": [
-    {
-      "id": "cidr2027-70c24c1d92ee",
-      "title": "CIDR2027",
-      "short_name": "CIDR2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://www.cidrdb.org/cidr2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-05T06:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-05T06:59:59Z"
-    },
     {
       "id": "adma2026-3f801e6c5a40",
       "title": "ADMA2026",
