@@ -1,33 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-06T13:21:52+08:00",
+  "generated_at": "2026-08-09T11:47:34+08:00",
   "items": [
-    {
-      "id": "adma2026-3f801e6c5a40",
-      "title": "ADMA2026",
-      "short_name": "ADMA2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://adma2026.github.io/",
-      "deadlines": [
-        {
-          "stage": "Short Paper",
-          "timestamp": "2026-08-08T11:59:59Z"
-        },
-        {
-          "stage": "Poster Paper",
-          "timestamp": "2026-09-12T11:59:59Z"
-        },
-        {
-          "stage": "Encore Paper",
-          "timestamp": "2026-09-12T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-08T11:59:59Z"
-    },
     {
       "id": "dai2026-d2eeaad89fac",
       "title": "DAI2026",
@@ -553,6 +527,28 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-11T11:59:59Z"
+    },
+    {
+      "id": "adma2026-3f801e6c5a40",
+      "title": "ADMA2026",
+      "short_name": "ADMA2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://adma2026.github.io/",
+      "deadlines": [
+        {
+          "stage": "Poster Paper",
+          "timestamp": "2026-09-12T11:59:59Z"
+        },
+        {
+          "stage": "Encore Paper",
+          "timestamp": "2026-09-12T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-12T11:59:59Z"
     },
     {
       "id": "date2027-f2c1c1771332",
