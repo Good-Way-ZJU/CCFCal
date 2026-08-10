@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-09T11:47:34+08:00",
+  "generated_at": "2026-08-10T12:01:24+08:00",
   "items": [
     {
       "id": "dai2026-d2eeaad89fac",
@@ -1121,6 +1121,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-11-02T11:59:59Z"
+    },
+    {
+      "id": "rtas2027-32af56064d80",
+      "title": "RTAS2027",
+      "short_name": "RTAS2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://2027.rtas.org/",
+      "deadlines": [
+        {
+          "stage": "Submission Deadline (Firm)",
+          "timestamp": "2026-11-06T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-06T11:59:59Z"
     },
     {
       "id": "refsq2027-41325ed9666c",
