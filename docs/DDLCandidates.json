@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-12T12:11:53+08:00",
+  "generated_at": "2026-08-13T12:16:15+08:00",
   "items": [
     {
       "id": "iui2027-42eacda301dd",
@@ -755,6 +755,28 @@
       "next_deadline_timestamp": "2026-09-22T11:59:59Z"
     },
     {
+      "id": "acns2027-1cdc60ff6749",
+      "title": "ACNS2027",
+      "short_name": "ACNS2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://acns2027.isg.rhul.ac.uk/",
+      "deadlines": [
+        {
+          "stage": "Cycle 1 Submission deadline",
+          "timestamp": "2026-09-25T11:59:59Z"
+        },
+        {
+          "stage": "Cycle 2 Submission deadline",
+          "timestamp": "2027-01-22T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-25T11:59:59Z"
+    },
+    {
       "id": "eurographics2027-4bb8701a9f19",
       "title": "Eurographics2027",
       "short_name": "Eurographics2027",
@@ -797,6 +819,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-25T23:59:59Z"
+    },
+    {
+      "id": "satml2027-5f462406f0a0",
+      "title": "SATML2027",
+      "short_name": "SATML2027",
+      "kind": "conference",
+      "ccf_rank": "N",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://satml.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-30T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-30T11:59:59Z"
     },
     {
       "id": "aamas2027-6ff341e55b00",
@@ -1151,6 +1191,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-10-16T11:59:59Z"
+    },
+    {
+      "id": "ct-rsa2027-72c06b8086d4",
+      "title": "CT-RSA2027",
+      "short_name": "CT-RSA2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.esat.kuleuven.be/cosic/events/ct-rsa-2027/",
+      "deadlines": [
+        {
+          "stage": "Paper submission deadline",
+          "timestamp": "2026-10-23T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-23T11:59:59Z"
     },
     {
       "id": "ubicomp-iswc2026-37c2f0800f04",
