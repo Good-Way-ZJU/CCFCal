@@ -1,33 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-15T10:56:10+08:00",
+  "generated_at": "2026-08-16T11:04:58+08:00",
   "items": [
-    {
-      "id": "mmasia2026-483fcad042e0",
-      "title": "MMAsia2026",
-      "short_name": "MMAsia2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.mmasia2026.org/",
-      "deadlines": [
-        {
-          "stage": "Regular Paper",
-          "timestamp": "2026-08-15T11:59:59Z"
-        },
-        {
-          "stage": "Special Session Paper",
-          "timestamp": "2026-08-22T11:59:59Z"
-        },
-        {
-          "stage": "Demo / Industry Submission",
-          "timestamp": "2026-09-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-15T11:59:59Z"
-    },
     {
       "id": "mmm2027-0d71bebc726e",
       "title": "MMM2027",
@@ -195,6 +169,28 @@
         }
       ],
       "next_deadline_timestamp": "2026-08-22T11:59:00Z"
+    },
+    {
+      "id": "mmasia2026-483fcad042e0",
+      "title": "MMAsia2026",
+      "short_name": "MMAsia2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://www.mmasia2026.org/",
+      "deadlines": [
+        {
+          "stage": "Special Session Paper",
+          "timestamp": "2026-08-22T11:59:59Z"
+        },
+        {
+          "stage": "Demo / Industry Submission",
+          "timestamp": "2026-09-02T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-22T11:59:59Z"
     },
     {
       "id": "bigdata2026-bec88d2dbfd0",
