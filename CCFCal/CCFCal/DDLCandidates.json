@@ -1,43 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-16T11:04:58+08:00",
+  "generated_at": "2026-08-18T11:00:04+08:00",
   "items": [
-    {
-      "id": "mmm2027-0d71bebc726e",
-      "title": "MMM2027",
-      "short_name": "MMM2027",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.mmm2027.net/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-17T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-17T11:59:59Z"
-    },
-    {
-      "id": "pkc2027-7d9a57b0210e",
-      "title": "PKC2027",
-      "short_name": "PKC2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://pkc.iacr.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-17T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-17T11:59:59Z"
-    },
     {
       "id": "wsdm2027-8f2bc00a51b2",
       "title": "WSDM2027",
