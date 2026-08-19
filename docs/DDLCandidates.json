@@ -1,33 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-18T11:00:04+08:00",
+  "generated_at": "2026-08-19T11:02:24+08:00",
   "items": [
-    {
-      "id": "wsdm2027-8f2bc00a51b2",
-      "title": "WSDM2027",
-      "short_name": "WSDM2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://wsdm-conference.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Abstract",
-          "timestamp": "2026-08-18T11:59:59Z"
-        },
-        {
-          "stage": "Full Paper",
-          "timestamp": "2026-08-25T11:59:59Z"
-        },
-        {
-          "stage": "Short Paper",
-          "timestamp": "2026-11-18T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-18T11:59:59Z"
-    },
     {
       "id": "usenix-security2027-8f1babae6b59",
       "title": "USENIX Security2027",
@@ -214,6 +188,28 @@
         {
           "stage": "Full Paper",
           "timestamp": "2026-09-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-25T11:59:59Z"
+    },
+    {
+      "id": "wsdm2027-8f2bc00a51b2",
+      "title": "WSDM2027",
+      "short_name": "WSDM2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://wsdm-conference.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-08-25T11:59:59Z"
+        },
+        {
+          "stage": "Short Paper",
+          "timestamp": "2026-11-18T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-08-25T11:59:59Z"
