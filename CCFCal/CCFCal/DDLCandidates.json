@@ -1,37 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-19T11:02:24+08:00",
+  "generated_at": "2026-08-20T11:01:38+08:00",
   "items": [
-    {
-      "id": "usenix-security2027-8f1babae6b59",
-      "title": "USENIX Security2027",
-      "short_name": "USENIX Security2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://www.usenix.org/conference/usenixsecurity27",
-      "deadlines": [
-        {
-          "stage": "Abstract",
-          "timestamp": "2026-08-19T11:59:59Z"
-        },
-        {
-          "stage": "Cycle 1 Deadline",
-          "timestamp": "2026-08-26T11:59:59Z"
-        },
-        {
-          "stage": "Abstract",
-          "timestamp": "2027-01-20T11:59:59Z"
-        },
-        {
-          "stage": "Cycle 2 Deadline",
-          "timestamp": "2027-01-27T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-19T11:59:59Z"
-    },
     {
       "id": "ndss2027-d254df7a501d",
       "title": "NDSS2027",
@@ -283,6 +253,32 @@
         }
       ],
       "next_deadline_timestamp": "2026-08-26T00:00:00Z"
+    },
+    {
+      "id": "usenix-security2027-8f1babae6b59",
+      "title": "USENIX Security2027",
+      "short_name": "USENIX Security2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.usenix.org/conference/usenixsecurity27",
+      "deadlines": [
+        {
+          "stage": "Cycle 1 Deadline",
+          "timestamp": "2026-08-26T11:59:59Z"
+        },
+        {
+          "stage": "Abstract",
+          "timestamp": "2027-01-20T11:59:59Z"
+        },
+        {
+          "stage": "Cycle 2 Deadline",
+          "timestamp": "2027-01-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-26T11:59:59Z"
     },
     {
       "id": "mobicom2027-b0e0a0e25023",
