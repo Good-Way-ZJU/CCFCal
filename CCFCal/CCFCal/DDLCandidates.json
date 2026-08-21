@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-20T11:01:38+08:00",
+  "generated_at": "2026-08-21T11:08:03+08:00",
   "items": [
-    {
-      "id": "ndss2027-d254df7a501d",
-      "title": "NDSS2027",
-      "short_name": "NDSS2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://www.ndss-symposium.org/ndss2027/",
-      "deadlines": [
-        {
-          "stage": "Fall",
-          "timestamp": "2026-08-20T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-20T11:59:59Z"
-    },
     {
       "id": "iui2027-42eacda301dd",
       "title": "IUI2027",
@@ -33,24 +15,6 @@
       "deadlines": [
         {
           "stage": "Full Paper",
-          "timestamp": "2026-08-21T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-21T11:59:59Z"
-    },
-    {
-      "id": "msn2026-2147f69f2d8a",
-      "title": "MSN2026",
-      "short_name": "MSN2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://ieee-msn.org/2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
           "timestamp": "2026-08-21T11:59:59Z"
         }
       ],
@@ -319,6 +283,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-08-28T18:00:00Z"
+    },
+    {
+      "id": "msn2026-2147f69f2d8a",
+      "title": "MSN2026",
+      "short_name": "MSN2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://ieee-msn.org/2026",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-08-31T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-31T11:59:59Z"
     },
     {
       "id": "pets2027-ac58aa8d5178",
