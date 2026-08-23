@@ -1,91 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-22T10:58:49+08:00",
+  "generated_at": "2026-08-23T11:07:49+08:00",
   "items": [
-    {
-      "id": "wacv2027-f1e752e7ad09",
-      "title": "WACV2027",
-      "short_name": "WACV2027",
-      "kind": "conference",
-      "ccf_rank": "N",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://wacv.thecvf.com/",
-      "deadlines": [
-        {
-          "stage": "Abstract",
-          "timestamp": "2026-08-22T11:59:00Z"
-        },
-        {
-          "stage": "Second round",
-          "timestamp": "2026-08-29T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-22T11:59:00Z"
-    },
-    {
-      "id": "mmasia2026-483fcad042e0",
-      "title": "MMAsia2026",
-      "short_name": "MMAsia2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.mmasia2026.org/",
-      "deadlines": [
-        {
-          "stage": "Special Session Paper",
-          "timestamp": "2026-08-22T11:59:59Z"
-        },
-        {
-          "stage": "Demo / Industry Submission",
-          "timestamp": "2026-09-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-22T11:59:59Z"
-    },
-    {
-      "id": "bigdata2026-bec88d2dbfd0",
-      "title": "BigData2026",
-      "short_name": "BigData2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SYS"
-      ],
-      "url": "https://bigdataieee.org/BigData2026/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-22T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-22T11:59:59Z"
-    },
-    {
-      "id": "asiaccs2027-0ffc23142fee",
-      "title": "AsiaCCS2027",
-      "short_name": "AsiaCCS2027",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://asiaccs2027.cityu.edu.mo/index.html",
-      "deadlines": [
-        {
-          "stage": "1st round Deadline",
-          "timestamp": "2026-08-22T11:59:59Z"
-        },
-        {
-          "stage": "2nd round Deadline",
-          "timestamp": "2026-12-12T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-22T11:59:59Z"
-    },
     {
       "id": "ieee-vr2027-fe2989fe6a02",
       "title": "IEEE VR2027",
@@ -267,6 +183,24 @@
       "next_deadline_timestamp": "2026-08-28T18:00:00Z"
     },
     {
+      "id": "wacv2027-f1e752e7ad09",
+      "title": "WACV2027",
+      "short_name": "WACV2027",
+      "kind": "conference",
+      "ccf_rank": "N",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://wacv.thecvf.com/",
+      "deadlines": [
+        {
+          "stage": "Second round",
+          "timestamp": "2026-08-29T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-08-29T11:59:59Z"
+    },
+    {
       "id": "msn2026-2147f69f2d8a",
       "title": "MSN2026",
       "short_name": "MSN2026",
@@ -309,6 +243,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-01T11:59:59Z"
+    },
+    {
+      "id": "mmasia2026-483fcad042e0",
+      "title": "MMAsia2026",
+      "short_name": "MMAsia2026",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://www.mmasia2026.org/",
+      "deadlines": [
+        {
+          "stage": "Demo / Industry Submission",
+          "timestamp": "2026-09-02T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-02T11:59:59Z"
     },
     {
       "id": "icdt2027-8a3e52b46353",
@@ -1299,6 +1251,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-12-01T22:59:59Z"
+    },
+    {
+      "id": "asiaccs2027-0ffc23142fee",
+      "title": "AsiaCCS2027",
+      "short_name": "AsiaCCS2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://asiaccs2027.cityu.edu.mo/index.html",
+      "deadlines": [
+        {
+          "stage": "2nd round Deadline",
+          "timestamp": "2026-12-12T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-12-12T11:59:59Z"
     },
     {
       "id": "ijcnn2027-255929db4f7b",
