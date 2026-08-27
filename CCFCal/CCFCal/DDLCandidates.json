@@ -1,55 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-26T11:10:32+08:00",
+  "generated_at": "2026-08-27T20:39:41+08:00",
   "items": [
-    {
-      "id": "usenix-security2027-8f1babae6b59",
-      "title": "USENIX Security2027",
-      "short_name": "USENIX Security2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://www.usenix.org/conference/usenixsecurity27",
-      "deadlines": [
-        {
-          "stage": "Cycle 1 Deadline",
-          "timestamp": "2026-08-26T11:59:59Z"
-        },
-        {
-          "stage": "Abstract",
-          "timestamp": "2027-01-20T11:59:59Z"
-        },
-        {
-          "stage": "Cycle 2 Deadline",
-          "timestamp": "2027-01-27T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-26T11:59:59Z"
-    },
-    {
-      "id": "mobicom2027-b0e0a0e25023",
-      "title": "MobiCom2027",
-      "short_name": "MobiCom2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://www.sigmobile.org/mobicom/2027/",
-      "deadlines": [
-        {
-          "stage": "Abstract",
-          "timestamp": "2026-08-27T11:59:59Z"
-        },
-        {
-          "stage": "Summer Deadlines",
-          "timestamp": "2026-09-03T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-27T11:59:59Z"
-    },
     {
       "id": "3dv2027-83f681fd4005",
       "title": "3DV2027",
@@ -231,6 +183,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-02T11:59:59Z"
+    },
+    {
+      "id": "mobicom2027-b0e0a0e25023",
+      "title": "MobiCom2027",
+      "short_name": "MobiCom2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://www.sigmobile.org/mobicom/2027/",
+      "deadlines": [
+        {
+          "stage": "Summer Deadlines",
+          "timestamp": "2026-09-03T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-03T11:59:59Z"
     },
     {
       "id": "icdt2027-8a3e52b46353",
@@ -1045,6 +1015,46 @@
       "next_deadline_timestamp": "2026-10-23T11:59:59Z"
     },
     {
+      "id": "cvm2027-ed34973ab7cf",
+      "title": "CVM2027",
+      "short_name": "CVM2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "CG"
+      ],
+      "url": "http://iccvm.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-10-23T23:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-10-26T23:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-23T23:59:59Z"
+    },
+    {
+      "id": "mlsys2027-b6aa06151084",
+      "title": "MLSys2027",
+      "short_name": "MLSys2027",
+      "kind": "conference",
+      "ccf_rank": "N",
+      "domains": [
+        "SYS"
+      ],
+      "url": "https://mlsys.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-10-30T20:00:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-30T20:00:00Z"
+    },
+    {
       "id": "ubicomp-iswc2026-37c2f0800f04",
       "title": "UbiComp/ISWC2026",
       "short_name": "UbiComp/ISWC2026",
@@ -1259,6 +1269,50 @@
       "next_deadline_timestamp": "2026-12-12T11:59:59Z"
     },
     {
+      "id": "issta2027-27799c8160c7",
+      "title": "ISSTA2027",
+      "short_name": "ISSTA2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SE"
+      ],
+      "url": "https://conf.researchr.org/home/issta-2027",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2027-01-09T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2027-01-12T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2027-01-09T11:59:59Z"
+    },
+    {
+      "id": "usenix-security2027-8f1babae6b59",
+      "title": "USENIX Security2027",
+      "short_name": "USENIX Security2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.usenix.org/conference/usenixsecurity27",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2027-01-20T11:59:59Z"
+        },
+        {
+          "stage": "Cycle 2 Deadline",
+          "timestamp": "2027-01-27T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2027-01-20T11:59:59Z"
+    },
+    {
       "id": "ijcnn2027-255929db4f7b",
       "title": "IJCNN2027",
       "short_name": "IJCNN2027",
@@ -1293,6 +1347,24 @@
         }
       ],
       "next_deadline_timestamp": "2027-02-01T11:59:59Z"
+    },
+    {
+      "id": "ieee-cec2027-a292785a0504",
+      "title": "IEEE CEC2027",
+      "short_name": "IEEE CEC2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://ieeecec.org/2027",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-03-01T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2027-03-01T11:59:59Z"
     }
   ]
 }
