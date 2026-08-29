@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-27T20:39:41+08:00",
+  "generated_at": "2026-08-29T16:50:54+08:00",
   "items": [
-    {
-      "id": "3dv2027-83f681fd4005",
-      "title": "3DV2027",
-      "short_name": "3DV2027",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://3dvconf.github.io/2027/",
-      "deadlines": [
-        {
-          "stage": "Supplementary material due Sep 2, 2026. All deadlines are 11:00 am PDT.",
-          "timestamp": "2026-08-28T18:00:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-28T18:00:00Z"
-    },
     {
       "id": "wacv2027-f1e752e7ad09",
       "title": "WACV2027",
