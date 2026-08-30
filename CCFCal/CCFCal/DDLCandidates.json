@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-29T16:50:54+08:00",
+  "generated_at": "2026-08-30T16:08:41+08:00",
   "items": [
-    {
-      "id": "wacv2027-f1e752e7ad09",
-      "title": "WACV2027",
-      "short_name": "WACV2027",
-      "kind": "conference",
-      "ccf_rank": "N",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://wacv.thecvf.com/",
-      "deadlines": [
-        {
-          "stage": "Second round",
-          "timestamp": "2026-08-29T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-29T11:59:59Z"
-    },
     {
       "id": "msn2026-2147f69f2d8a",
       "title": "MSN2026",
