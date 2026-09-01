@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-08-30T16:08:41+08:00",
+  "generated_at": "2026-09-01T15:35:53+08:00",
   "items": [
-    {
-      "id": "msn2026-2147f69f2d8a",
-      "title": "MSN2026",
-      "short_name": "MSN2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://ieee-msn.org/2026",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-08-31T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-08-31T11:59:59Z"
-    },
     {
       "id": "ieee-vr2027-fe2989fe6a02",
       "title": "IEEE VR2027",
