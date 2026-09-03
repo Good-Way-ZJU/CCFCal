@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-02T14:59:12+08:00",
+  "generated_at": "2026-09-03T15:02:58+08:00",
   "items": [
-    {
-      "id": "mmasia2026-483fcad042e0",
-      "title": "MMAsia2026",
-      "short_name": "MMAsia2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://www.mmasia2026.org/",
-      "deadlines": [
-        {
-          "stage": "Demo / Industry Submission",
-          "timestamp": "2026-09-02T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-02T11:59:59Z"
-    },
     {
       "id": "mobicom2027-b0e0a0e25023",
       "title": "MobiCom2027",
@@ -933,6 +915,28 @@
         }
       ],
       "next_deadline_timestamp": "2026-10-23T23:59:59Z"
+    },
+    {
+      "id": "sensys2027-8bf321e0d344",
+      "title": "SenSys2027",
+      "short_name": "SenSys2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://sensys.acm.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-10-30T11:59:00Z"
+        },
+        {
+          "stage": "2nd deadline",
+          "timestamp": "2026-11-06T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-30T11:59:00Z"
     },
     {
       "id": "mlsys2027-b6aa06151084",
