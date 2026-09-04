@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-03T15:02:58+08:00",
+  "generated_at": "2026-09-04T15:07:00+08:00",
   "items": [
-    {
-      "id": "mobicom2027-b0e0a0e25023",
-      "title": "MobiCom2027",
-      "short_name": "MobiCom2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://www.sigmobile.org/mobicom/2027/",
-      "deadlines": [
-        {
-          "stage": "Summer Deadlines",
-          "timestamp": "2026-09-03T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-03T11:59:59Z"
-    },
     {
       "id": "icdt2027-8a3e52b46353",
       "title": "ICDT2027",
@@ -1013,6 +995,28 @@
         }
       ],
       "next_deadline_timestamp": "2026-11-06T11:59:59Z"
+    },
+    {
+      "id": "cvpr2027-72d32b5284e8",
+      "title": "CVPR2027",
+      "short_name": "CVPR2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "AI"
+      ],
+      "url": "https://cvpr.thecvf.com/Conferences/2027",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-11-11T11:59:00Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-11-17T11:59:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-11T11:59:00Z"
     },
     {
       "id": "s-p2027-faa47003dafe",
