@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-05T14:50:34+08:00",
+  "generated_at": "2026-09-07T15:12:04+08:00",
   "items": [
     {
       "id": "asplos2027-e48cd018d065",
@@ -1151,6 +1151,28 @@
         }
       ],
       "next_deadline_timestamp": "2026-12-01T04:59:59Z"
+    },
+    {
+      "id": "acisp2027-7173caab2552",
+      "title": "ACISP2027",
+      "short_name": "ACISP2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://acisp.org/",
+      "deadlines": [
+        {
+          "stage": "1st round Deadline",
+          "timestamp": "2026-12-01T11:59:59Z"
+        },
+        {
+          "stage": "2nd round Deadline",
+          "timestamp": "2027-03-02T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-12-01T11:59:59Z"
     },
     {
       "id": "pets2027-ac58aa8d5178",
