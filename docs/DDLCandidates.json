@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-07T15:12:04+08:00",
+  "generated_at": "2026-09-08T15:07:47+08:00",
   "items": [
     {
       "id": "asplos2027-e48cd018d065",
@@ -1279,6 +1279,24 @@
         }
       ],
       "next_deadline_timestamp": "2027-01-20T11:59:59Z"
+    },
+    {
+      "id": "cav2027-12cbe6a596db",
+      "title": "CAV2027",
+      "short_name": "CAV2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "TH"
+      ],
+      "url": "https://conferences.i-cav.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2027-01-21T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2027-01-21T11:59:59Z"
     },
     {
       "id": "ijcnn2027-255929db4f7b",
