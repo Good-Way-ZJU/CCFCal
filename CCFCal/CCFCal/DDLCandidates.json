@@ -1,6 +1,6 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-08T15:07:47+08:00",
+  "generated_at": "2026-09-09T15:15:02+08:00",
   "items": [
     {
       "id": "asplos2027-e48cd018d065",
@@ -1111,6 +1111,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-11-18T11:59:59Z"
+    },
+    {
+      "id": "dasfaa2027-38a635ba1c9e",
+      "title": "DASFAA2027",
+      "short_name": "DASFAA2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "DB"
+      ],
+      "url": "https://dasfaa2027.github.io/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-11-26T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-26T11:59:59Z"
     },
     {
       "id": "dsn2027-91cf1dac2c62",
