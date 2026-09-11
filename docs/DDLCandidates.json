@@ -1,47 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-09T15:15:02+08:00",
+  "generated_at": "2026-09-11T15:10:43+08:00",
   "items": [
-    {
-      "id": "asplos2027-e48cd018d065",
-      "title": "ASPLOS2027",
-      "short_name": "ASPLOS2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.asplos-conference.org/asplos2027/cfp/",
-      "deadlines": [
-        {
-          "stage": "September Cycle Submission Deadline",
-          "timestamp": "2026-09-10T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-10T11:59:59Z"
-    },
-    {
-      "id": "nsdi2027-bdc8ebd908f5",
-      "title": "NSDI2027",
-      "short_name": "NSDI2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://www.usenix.org/conference/nsdi27",
-      "deadlines": [
-        {
-          "stage": "Abstract",
-          "timestamp": "2026-09-11T03:59:59Z"
-        },
-        {
-          "stage": "Full Paper",
-          "timestamp": "2026-09-18T03:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-11T03:59:59Z"
-    },
     {
       "id": "icdt2027-8a3e52b46353",
       "title": "ICDT2027",
@@ -251,6 +211,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-17T11:59:59Z"
+    },
+    {
+      "id": "nsdi2027-bdc8ebd908f5",
+      "title": "NSDI2027",
+      "short_name": "NSDI2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://www.usenix.org/conference/nsdi27",
+      "deadlines": [
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-09-18T03:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-18T03:59:59Z"
     },
     {
       "id": "eurosys2027-dfce2bbb94bb",
