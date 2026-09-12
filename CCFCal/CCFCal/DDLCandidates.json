@@ -1,83 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-11T15:10:43+08:00",
+  "generated_at": "2026-09-12T15:02:10+08:00",
   "items": [
-    {
-      "id": "icdt2027-8a3e52b46353",
-      "title": "ICDT2027",
-      "short_name": "ICDT2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://edbticdt2027.github.io/",
-      "deadlines": [
-        {
-          "stage": "Full Paper",
-          "timestamp": "2026-09-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-11T11:59:59Z"
-    },
-    {
-      "id": "ieee-acm-cgo2027-974747322277",
-      "title": "IEEE/ACM CGO2027",
-      "short_name": "IEEE/ACM CGO2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://conf.researchr.org/home/cgo-2027",
-      "deadlines": [
-        {
-          "stage": "Second Submission",
-          "timestamp": "2026-09-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-11T11:59:59Z"
-    },
-    {
-      "id": "chi2027-d2279900eb68",
-      "title": "CHI2027",
-      "short_name": "CHI2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "HCI"
-      ],
-      "url": "https://chi2027.acm.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-11T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-11T11:59:59Z"
-    },
-    {
-      "id": "mmsys2027-1b4e920deeeb",
-      "title": "MMSys2027",
-      "short_name": "MMSys2027",
-      "kind": "conference",
-      "ccf_rank": "N",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://2027.acmmmsys.org",
-      "deadlines": [
-        {
-          "stage": "Abstract",
-          "timestamp": "2026-09-11T11:59:59Z"
-        },
-        {
-          "stage": "Full Paper",
-          "timestamp": "2026-09-18T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-11T11:59:59Z"
-    },
     {
       "id": "adma2026-3f801e6c5a40",
       "title": "ADMA2026",
@@ -248,6 +172,24 @@
         {
           "stage": "Fall Submission Deadline",
           "timestamp": "2026-09-25T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-18T11:59:59Z"
+    },
+    {
+      "id": "mmsys2027-1b4e920deeeb",
+      "title": "MMSys2027",
+      "short_name": "MMSys2027",
+      "kind": "conference",
+      "ccf_rank": "N",
+      "domains": [
+        "NET"
+      ],
+      "url": "https://2027.acmmmsys.org",
+      "deadlines": [
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-09-18T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2026-09-18T11:59:59Z"
@@ -1089,6 +1031,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-11-18T11:59:59Z"
+    },
+    {
+      "id": "dac2027-7ad83959bc2f",
+      "title": "DAC2027",
+      "short_name": "DAC2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://dac.com/2027/authors/call-for-contributions",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-11-19T01:00:00Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-19T01:00:00Z"
     },
     {
       "id": "dasfaa2027-38a635ba1c9e",
