@@ -1,29 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-12T15:02:10+08:00",
+  "generated_at": "2026-09-13T15:21:17+08:00",
   "items": [
-    {
-      "id": "adma2026-3f801e6c5a40",
-      "title": "ADMA2026",
-      "short_name": "ADMA2026",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "DB"
-      ],
-      "url": "https://adma2026.github.io/",
-      "deadlines": [
-        {
-          "stage": "Poster Paper",
-          "timestamp": "2026-09-12T11:59:59Z"
-        },
-        {
-          "stage": "Encore Paper",
-          "timestamp": "2026-09-12T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-12T11:59:59Z"
-    },
     {
       "id": "date2027-f2c1c1771332",
       "title": "DATE2027",
