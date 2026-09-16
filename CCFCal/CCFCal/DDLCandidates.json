@@ -1,25 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-15T15:30:23+08:00",
+  "generated_at": "2026-09-16T15:29:48+08:00",
   "items": [
-    {
-      "id": "icra2027-d35047b60dd1",
-      "title": "ICRA2027",
-      "short_name": "ICRA2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "AI"
-      ],
-      "url": "https://2027.ieee-icra.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-16T06:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-16T06:59:59Z"
-    },
     {
       "id": "fast2027-2320939fe861",
       "title": "FAST2027",
@@ -178,6 +160,28 @@
         "AI"
       ],
       "url": "https://iclr.cc/Conferences/2027",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-09-19T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-09-26T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-19T11:59:59Z"
+    },
+    {
+      "id": "dfrws2027-9872b5de02a5",
+      "title": "DFRWS2027",
+      "short_name": "DFRWS2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://dfrws.org/conferences/dfceurope2027/",
       "deadlines": [
         {
           "stage": "Abstract",
@@ -665,6 +669,24 @@
       "next_deadline_timestamp": "2026-10-11T11:59:00Z"
     },
     {
+      "id": "ifip-wg-11-92027-b9acd8a5dd50",
+      "title": "IFIP WG 11.92027",
+      "short_name": "IFIP WG 11.92027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.ifip119.org/Conferences/",
+      "deadlines": [
+        {
+          "stage": "Submission Deadline",
+          "timestamp": "2026-10-11T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-11T11:59:59Z"
+    },
+    {
       "id": "alt2027-17c94634c887",
       "title": "ALT2027",
       "short_name": "ALT2027",
@@ -927,6 +949,28 @@
       "next_deadline_timestamp": "2026-10-30T20:00:00Z"
     },
     {
+      "id": "sacmat2027-7ca20eac0366",
+      "title": "SACMAT2027",
+      "short_name": "SACMAT2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.sacmat.org/2027/",
+      "deadlines": [
+        {
+          "stage": "First Cycle",
+          "timestamp": "2026-10-31T11:59:59Z"
+        },
+        {
+          "stage": "Second Cycle",
+          "timestamp": "2027-02-13T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-10-31T11:59:59Z"
+    },
+    {
       "id": "eurogp2027-a340cb6c480a",
       "title": "EuroGP2027",
       "short_name": "EuroGP2027",
@@ -1135,6 +1179,28 @@
         }
       ],
       "next_deadline_timestamp": "2026-11-13T11:59:59Z"
+    },
+    {
+      "id": "codaspy2027-c8d364952d55",
+      "title": "CODASPY2027",
+      "short_name": "CODASPY2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://www.codaspy.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Abstract",
+          "timestamp": "2026-11-17T11:59:59Z"
+        },
+        {
+          "stage": "Full Paper",
+          "timestamp": "2026-11-24T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-17T11:59:59Z"
     },
     {
       "id": "wsdm2027-8f2bc00a51b2",
@@ -1381,6 +1447,24 @@
       "next_deadline_timestamp": "2026-12-12T11:59:59Z"
     },
     {
+      "id": "icdf2c2027-f3f377c7b8c3",
+      "title": "ICDF2C2027",
+      "short_name": "ICDF2C2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://icdf2c.eai-conferences.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Full Paper Submission deadline",
+          "timestamp": "2026-12-16T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-12-16T11:59:59Z"
+    },
+    {
       "id": "issta2027-27799c8160c7",
       "title": "ISSTA2027",
       "short_name": "ISSTA2027",
@@ -1514,6 +1598,24 @@
         {
           "stage": "Auxiliary Paper",
           "timestamp": "2027-05-16T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2027-03-02T11:59:59Z"
+    },
+    {
+      "id": "securecomm2027-ea2be1a74dba",
+      "title": "SecureComm2027",
+      "short_name": "SecureComm2027",
+      "kind": "conference",
+      "ccf_rank": "C",
+      "domains": [
+        "SEC"
+      ],
+      "url": "https://securecomm.eai-conferences.org/2027/",
+      "deadlines": [
+        {
+          "stage": "Full Paper Submission deadline",
+          "timestamp": "2027-03-02T11:59:59Z"
         }
       ],
       "next_deadline_timestamp": "2027-03-02T11:59:59Z"
