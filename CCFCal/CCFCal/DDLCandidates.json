@@ -1,61 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-16T15:29:48+08:00",
+  "generated_at": "2026-09-17T15:26:35+08:00",
   "items": [
-    {
-      "id": "fast2027-2320939fe861",
-      "title": "FAST2027",
-      "short_name": "FAST2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://www.usenix.org/conference/fast27",
-      "deadlines": [
-        {
-          "stage": "Fall deadline",
-          "timestamp": "2026-09-16T11:59:00Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-16T11:59:00Z"
-    },
-    {
-      "id": "wcnc2027-153077a2c490",
-      "title": "WCNC2027",
-      "short_name": "WCNC2027",
-      "kind": "conference",
-      "ccf_rank": "C",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://wcnc2027.ieee-wcnc.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-16T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-16T11:59:59Z"
-    },
-    {
-      "id": "icassp2027-14d416dd10e7",
-      "title": "ICASSP2027",
-      "short_name": "ICASSP2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "CG"
-      ],
-      "url": "https://2027.ieeeicassp.org/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-17T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-17T11:59:59Z"
-    },
     {
       "id": "vmcai2027-1671d44de13e",
       "title": "VMCAI2027",
@@ -233,6 +179,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-22T11:59:59Z"
+    },
+    {
+      "id": "icassp2027-14d416dd10e7",
+      "title": "ICASSP2027",
+      "short_name": "ICASSP2027",
+      "kind": "conference",
+      "ccf_rank": "B",
+      "domains": [
+        "CG"
+      ],
+      "url": "https://2027.ieeeicassp.org/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-09-24T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-24T11:59:59Z"
     },
     {
       "id": "acns2027-1cdc60ff6749",
