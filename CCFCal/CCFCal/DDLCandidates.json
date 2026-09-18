@@ -1,43 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-17T15:26:35+08:00",
+  "generated_at": "2026-09-18T15:15:41+08:00",
   "items": [
-    {
-      "id": "vmcai2027-1671d44de13e",
-      "title": "VMCAI2027",
-      "short_name": "VMCAI2027",
-      "kind": "conference",
-      "ccf_rank": "B",
-      "domains": [
-        "SE"
-      ],
-      "url": "https://conf.researchr.org/home/VMCAI-2027",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-17T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-17T11:59:59Z"
-    },
-    {
-      "id": "nsdi2027-bdc8ebd908f5",
-      "title": "NSDI2027",
-      "short_name": "NSDI2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://www.usenix.org/conference/nsdi27",
-      "deadlines": [
-        {
-          "stage": "Full Paper",
-          "timestamp": "2026-09-18T03:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-18T03:59:59Z"
-    },
     {
       "id": "eurosys2027-dfce2bbb94bb",
       "title": "EuroSys2027",
@@ -1023,6 +987,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-11-02T11:59:59Z"
+    },
+    {
+      "id": "stoc2027-41a8e4652763",
+      "title": "STOC2027",
+      "short_name": "STOC2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "TH"
+      ],
+      "url": "https://acm-stoc.org/stoc2027/",
+      "deadlines": [
+        {
+          "stage": "Deadline",
+          "timestamp": "2026-11-03T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-11-03T11:59:59Z"
     },
     {
       "id": "rtas2027-32af56064d80",
