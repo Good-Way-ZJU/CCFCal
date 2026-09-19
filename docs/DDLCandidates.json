@@ -1,65 +1,7 @@
 {
   "source": "ccfddl.github.io/conference/allconf.yml via ccf4sc-style adapter",
-  "generated_at": "2026-09-18T15:15:41+08:00",
+  "generated_at": "2026-09-19T15:12:39+08:00",
   "items": [
-    {
-      "id": "eurosys2027-dfce2bbb94bb",
-      "title": "EuroSys2027",
-      "short_name": "EuroSys2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "ARCH"
-      ],
-      "url": "https://2027.eurosys.org/",
-      "deadlines": [
-        {
-          "stage": "Abstract",
-          "timestamp": "2026-09-18T11:59:59Z"
-        },
-        {
-          "stage": "Fall Submission Deadline",
-          "timestamp": "2026-09-25T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-18T11:59:59Z"
-    },
-    {
-      "id": "mmsys2027-1b4e920deeeb",
-      "title": "MMSys2027",
-      "short_name": "MMSys2027",
-      "kind": "conference",
-      "ccf_rank": "N",
-      "domains": [
-        "NET"
-      ],
-      "url": "https://2027.acmmmsys.org",
-      "deadlines": [
-        {
-          "stage": "Full Paper",
-          "timestamp": "2026-09-18T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-18T11:59:59Z"
-    },
-    {
-      "id": "eurocrypt2027-1e2ba92cde33",
-      "title": "EUROCRYPT2027",
-      "short_name": "EUROCRYPT2027",
-      "kind": "conference",
-      "ccf_rank": "A",
-      "domains": [
-        "SEC"
-      ],
-      "url": "https://eurocrypt.iacr.org/2027/",
-      "deadlines": [
-        {
-          "stage": "Deadline",
-          "timestamp": "2026-09-18T11:59:59Z"
-        }
-      ],
-      "next_deadline_timestamp": "2026-09-18T11:59:59Z"
-    },
     {
       "id": "iclr2027-69b9075de04e",
       "title": "ICLR2027",
@@ -161,6 +103,24 @@
         }
       ],
       "next_deadline_timestamp": "2026-09-24T11:59:59Z"
+    },
+    {
+      "id": "eurosys2027-dfce2bbb94bb",
+      "title": "EuroSys2027",
+      "short_name": "EuroSys2027",
+      "kind": "conference",
+      "ccf_rank": "A",
+      "domains": [
+        "ARCH"
+      ],
+      "url": "https://2027.eurosys.org/",
+      "deadlines": [
+        {
+          "stage": "Fall Submission Deadline",
+          "timestamp": "2026-09-25T11:59:59Z"
+        }
+      ],
+      "next_deadline_timestamp": "2026-09-25T11:59:59Z"
     },
     {
       "id": "acns2027-1cdc60ff6749",
